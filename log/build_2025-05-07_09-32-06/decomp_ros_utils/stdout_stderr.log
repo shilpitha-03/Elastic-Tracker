@@ -1,0 +1,167 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)
+-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+-- Found OGRE
+--   static     : OFF
+--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found decomp_ros_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake)
+-- Found decomp_basis: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/cmake)
+-- Found decomp_geometry: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_utils
+[ 28%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/vector_visual.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/bound_visual.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_visual.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o[0m
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_common/frame_manager.hpp: No such file or directory
+   10 | #include [01;31m[K<rviz_common/frame_manager.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Krviz_common/frame_manager.hpp: No such file or directory
+    5 | #include [01;31m[K<rviz_common/frame_manager.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::MeshVisual::setMessage(vec_E<std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > > >&)[m[K’:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:45:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOgre::Vector<3, float>::Vector(const std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >&, const std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >&, const std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >&)[m[K’
+   45 |       Ogre::Vector3 v(vs, vs, vs[01;31m[K)[m[K;
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:1[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlane.h:46[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneManager.h:41[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:7[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:333:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class U> Ogre::Vector<dims, T>::Vector(const Ogre::Vector<dims, U>&) [with U = U; int dims = 3; T = float][m[K’
+  333 |         explicit [01;36m[KVector[m[K(const Vector<dims, U>& o) : Vector(o.ptr()) {}
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:333:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:45:33:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >[m[K’ is not derived from ‘[01m[Kconst Ogre::Vector<3, U>[m[K’
+   45 |       Ogre::Vector3 v(vs, vs, vs[01;36m[K)[m[K;
+      |                                 [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:1[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlane.h:46[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneManager.h:41[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:7[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:327:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class U> Ogre::Vector<dims, T>::Vector(const U*) [with U = U; int dims = 3; T = float][m[K’
+  327 |         explicit [01;36m[KVector[m[K(const U* _ptr) {
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:327:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:45:33:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst U*[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >[m[K’
+   45 |       Ogre::Vector3 v(vs, vs, vs[01;36m[K)[m[K;
+      |                                 [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:1[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlane.h:46[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneManager.h:41[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:7[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:324:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int N> Ogre::Vector<dims, T>::Vector(const typename std::enable_if<(N == 4), Ogre::Vector<3, float> >::type&, T) [with int N = N; int dims = 3; T = float][m[K’
+  324 |         explicit [01;36m[KVector[m[K(const typename std::enable_if<N == 4, Vector3>::type& rhs, T fW = 1.0f) : VectorBase<dims, T>(rhs.x, rhs.y, rhs.z, fW) {}
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:324:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:45:33:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+   45 |       Ogre::Vector3 v(vs, vs, vs[01;36m[K)[m[K;
+      |                                 [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:1[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlane.h:46[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneManager.h:41[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:7[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:336:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::Vector<dims, T>::Vector(T) [with int dims = 3; T = float][m[K’
+  336 |         explicit [01;36m[KVector[m[K(T s)
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:336:18:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:1[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlane.h:46[m[K,
+                 from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneManager.h:41[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:7[m[K,
+                 from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:320:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::Vector<dims, T>::Vector(T, T, T, T) [with int dims = 3; T = float][m[K’
+  320 |         [01;36m[KVector[m[K(T _x, T _y, T _z, T _w) : VectorBase<dims, T>(_x, _y, _z, _w) {}
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:320:9:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:319:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::Vector<dims, T>::Vector(T, T, T) [with int dims = 3; T = float][m[K’
+  319 |         [01;36m[KVector[m[K(T _x, T _y, T _z) : VectorBase<dims, T>(_x, _y, _z) {}
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:319:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >[m[K’ to ‘[01m[Kfloat[m[K’
+  319 |         Vector([01;36m[KT _x[m[K, T _y, T _z) : VectorBase<dims, T>(_x, _y, _z) {}
+      |                [01;36m[K~~^~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:318:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::Vector<dims, T>::Vector(T, T) [with int dims = 3; T = float][m[K’
+  318 |         [01;36m[KVector[m[K(T _x, T _y) : VectorBase<dims, T>(_x, _y) {}
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:318:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:317:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::Vector<dims, T>::Vector() [with int dims = 3; T = float][m[K’
+  317 |         [01;36m[KVector[m[K() {}
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:317:9:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:309:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Ogre::Vector<3, float>::Vector(const Ogre::Vector<3, float>&)[m[K’
+  309 |     class _OgreExport [01;36m[KVector[m[K : public VectorBase<dims, T>
+      |                       [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:309:23:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:309:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Ogre::Vector<3, float>::Vector(Ogre::Vector<3, float>&&)[m[K’
+[01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h:309:23:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

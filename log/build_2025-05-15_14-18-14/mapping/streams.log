@@ -1,0 +1,42 @@
+[0.010s] Invoking command in '/mpc/new/Elastic-Tracker/build/mapping': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/mapping/install/mapping:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/mapping -- -j12 -l12
+[0.082s] [ 25%] Built target mapping_core
+[0.112s] [ 75%] Built target visualize_history_path
+[0.112s] [ 75%] Built target mapping_vis_node
+[0.127s] [100%] Built target mapping_nodelet
+[0.148s] Invoked command in '/mpc/new/Elastic-Tracker/build/mapping' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/mapping/install/mapping:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/mapping -- -j12 -l12
+[0.160s] Invoking command in '/mpc/new/Elastic-Tracker/build/mapping': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/mapping/install/mapping:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/mapping
+[0.168s] -- Install configuration: "Release"
+[0.168s] -- Execute custom install script
+[0.168s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/lib/libmapping_core.a
+[0.169s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/lib/libmapping_nodelet.so
+[0.169s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/lib/mapping/mapping_vis_node
+[0.169s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/lib/mapping/visualize_history_path
+[0.169s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/include/mapping/mapping.h
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/config/D435.yaml
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/config/camera.yaml
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/config/rviz_real.rviz
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/config/rviz_sim.rviz
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/launch/mapping.launch.py
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/launch/run.launch.py
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/launch/rviz_sim.launch.py
+[0.170s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/library_path.sh
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/library_path.dsv
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/ament_index/resource_index/package_run_dependencies/mapping
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/ament_index/resource_index/parent_prefix_path/mapping
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/ament_prefix_path.sh
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/ament_prefix_path.dsv
+[0.171s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/path.sh
+[0.172s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/environment/path.dsv
+[0.172s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/local_setup.bash
+[0.172s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/local_setup.sh
+[0.172s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/local_setup.zsh
+[0.172s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/local_setup.dsv
+[0.172s] -- Symlinking: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/package.dsv
+[0.180s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/ament_index/resource_index/packages/mapping
+[0.180s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/ament_index/resource_index/rclcpp_components/mapping
+[0.181s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.181s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/cmake/ament_cmake_export_libraries-extras.cmake
+[0.181s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/cmake/mappingConfig.cmake
+[0.181s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/cmake/mappingConfig-version.cmake
+[0.181s] -- Up-to-date symlink: /mpc/new/Elastic-Tracker/install/mapping/share/mapping/package.xml
+[0.183s] Invoked command in '/mpc/new/Elastic-Tracker/build/mapping' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/mapping/install/mapping:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/mapping

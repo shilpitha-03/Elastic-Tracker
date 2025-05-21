@@ -1,0 +1,2 @@
+Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_basis': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_basis
+Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_basis' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_basis

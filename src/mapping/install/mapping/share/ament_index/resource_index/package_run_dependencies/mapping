@@ -1,0 +1,1 @@
+rclcpp;rclcpp_components;quadrotor_msgs;object_detection_msgs;tf2_ros;cv_bridge;PCL;pcl_conversions;Eigen3;pluginlib

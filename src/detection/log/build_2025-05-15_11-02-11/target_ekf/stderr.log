@@ -1,0 +1,123 @@
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:271:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  271 | }
+      |  [01;31m[K^[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:16:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   16 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K In constructor ‘[01m[KTargetEkfSimNode::TargetEkfSimNode()[m[K’:
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:35:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx_[m[K’ was not declared in this scope
+   35 |     get_parameter("cam_fx", [01;31m[Kfx_[m[K);
+      |                             [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:36:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy_[m[K’ was not declared in this scope
+   36 |     get_parameter("cam_fy", [01;31m[Kfy_[m[K);
+      |                             [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:37:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcx_[m[K’ was not declared in this scope
+   37 |     get_parameter("cam_cx", [01;31m[Kcx_[m[K);
+      |                             [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:38:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy_[m[K’ was not declared in this scope
+   38 |     get_parameter("cam_cy", [01;31m[Kcy_[m[K);
+      |                             [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:39:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   39 |     get_parameter("cam_width", [01;31m[Kwidth_[m[K);
+      |                                [01;31m[K^~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:40:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight_[m[K’ was not declared in this scope
+   40 |     get_parameter("cam_height", [01;31m[Kheight_[m[K);
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:41:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kpitch_thr_[m[K’ was not declared in this scope
+   41 |     get_parameter("pitch_thr", [01;31m[Kpitch_thr_[m[K);
+      |                                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:42:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcheck_fov_[m[K’ was not declared in this scope
+   42 |     get_parameter("check_fov", [01;31m[Kcheck_fov_[m[K);
+      |                                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam2body_R_[m[K’ was not declared in this scope
+   48 |     [01;31m[Kcam2body_R_[m[K = Eigen::Map<const Eigen::Matrix<double,3,3,Eigen::RowMajor>>(tmp.data());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam2body_p_[m[K’ was not declared in this scope
+   50 |     [01;31m[Kcam2body_p_[m[K = Eigen::Map<const Eigen::Vector3d>(tmp.data());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_odom_pub_[m[K’ was not declared in this scope
+   58 |     [01;31m[Ktarget_odom_pub_[m[K = create_publisher<nav_msgs::msg::Odometry>("target_odom", be_qos);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kyolo_odom_pub_[m[K’ was not declared in this scope
+   59 |     [01;31m[Kyolo_odom_pub_[m[K   = create_publisher<nav_msgs::msg::Odometry>("yolo_odom",   be_qos);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kyolo_sub_[m[K’ was not declared in this scope
+   66 |     [01;31m[Kyolo_sub_[m[K.subscribe(this, "target", rmw_qos_profile_sensor_data);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+   67 |     [01;31m[Kodom_sub_[m[K.subscribe(this, "odometry",    rmw_qos_profile_sensor_data);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksync_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksync[m[K’?
+   70 |     [01;31m[Ksync_[m[K.reset(new message_filters::Synchronizer<Policy>(
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Ksync[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[KekfPtr_[m[K’ was not declared in this scope
+   77 |     [01;31m[KekfPtr_[m[K = std::make_shared<Ekf>(1.0/ekf_rate);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_update_stamp_[m[K’ was not declared in this scope
+   78 |     [01;31m[Klast_update_stamp_[m[K = now() - rclcpp::Duration::from_seconds(10.0);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   79 |     [01;31m[Ktimer_[m[K = create_wall_timer(
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K In member function ‘[01m[Kvoid TargetEkfSimNode::predict_state_callback()[m[K’:
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_update_stamp_[m[K’ was not declared in this scope
+   90 |     [01;31m[Klast_update_stamp_[m[K = now();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:93:7:[m[K [01;31m[Kerror: [m[K‘[01m[KekfPtr_[m[K’ was not declared in this scope
+   93 |       [01;31m[KekfPtr_[m[K->predict();
+      |       [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:101:32:[m[K [01;31m[Kerror: [m[K‘[01m[KekfPtr_[m[K’ was not declared in this scope
+  101 |     msg.pose.pose.position.x = [01;31m[KekfPtr_[m[K->pos().x();
+      |                                [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:113:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_odom_pub_[m[K’ was not declared in this scope
+  113 |     [01;31m[Ktarget_odom_pub_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K In member function ‘[01m[Kvoid TargetEkfSimNode::update_state_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr, nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:121:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kyolo_odom_pub_[m[K’ was not declared in this scope
+  121 |     [01;31m[Kyolo_odom_pub_[m[K->publish(*target_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:137:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam2body_p_[m[K’ was not declared in this scope
+  137 |     Eigen::Vector3d cam_p = odom_q * [01;31m[Kcam2body_p_[m[K + odom_p;
+      |                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:138:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam2body_R_[m[K’ was not declared in this scope
+  138 |     Eigen::Quaterniond cam_q = odom_q * Eigen::Quaterniond([01;31m[Kcam2body_R_[m[K);
+      |                                                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:168:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcheck_fov_[m[K’ was not declared in this scope
+  168 |     if ([01;31m[Kcheck_fov_[m[K) {
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:171:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx_[m[K’ was not declared in this scope
+  171 |       double u = in_body.x()*[01;31m[Kfx_[m[K/in_body.z() + cx_;
+      |                              [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:171:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcx_[m[K’ was not declared in this scope
+  171 |       double u = in_body.x()*fx_/in_body.z() + [01;31m[Kcx_[m[K;
+      |                                                [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:172:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy_[m[K’ was not declared in this scope
+  172 |       double v = in_body.y()*[01;31m[Kfy_[m[K/in_body.z() + cy_;
+      |                              [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:172:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy_[m[K’ was not declared in this scope
+  172 |       double v = in_body.y()*fy_/in_body.z() + [01;31m[Kcy_[m[K;
+      |                                                [01;31m[K^~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:173:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+  173 |       if (u < 0 || u > [01;31m[Kwidth_[m[K || v < 0 || v > height_) return;
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:173:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight_[m[K’ was not declared in this scope
+  173 |       if (u < 0 || u > width_ || v < 0 || v > [01;31m[Kheight_[m[K) return;
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:177:26:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_update_stamp_[m[K’ was not declared in this scope
+  177 |     double dt = (now() - [01;31m[Klast_update_stamp_[m[K).seconds();
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:179:7:[m[K [01;31m[Kerror: [m[K‘[01m[KekfPtr_[m[K’ was not declared in this scope
+  179 |       [01;31m[KekfPtr_[m[K->reset(p_world, rpy);
+      |       [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:181:17:[m[K [01;31m[Kerror: [m[K‘[01m[KekfPtr_[m[K’ was not declared in this scope
+  181 |     } else if (![01;31m[KekfPtr_[m[K->update(p_world, rpy)) {
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K At global scope:
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:271:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  271 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/target_ekf_sim_node.dir/build.make:76: CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/target_ekf_sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

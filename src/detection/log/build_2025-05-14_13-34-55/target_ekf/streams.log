@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/detection/build/target_ekf -- -j12 -l12
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target target_ekf_sim_node[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target target_ekf_node[0m
+[0.123s] [ 50%] Built target target_ekf_node
+[0.129s] [ 75%] [32mBuilding CXX object CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o[0m
+[22.423s] [100%] [32m[1mLinking CXX executable target_ekf_sim_node[0m
+[23.274s] [100%] Built target target_ekf_sim_node
+[23.285s] Invoked command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/detection/build/target_ekf -- -j12 -l12
+[23.287s] Invoking command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/src/detection/build/target_ekf
+[23.294s] -- Install configuration: ""
+[23.294s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_node
+[23.294s] -- Installing: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_sim_node
+[23.301s] -- Set runtime path of "/mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_sim_node" to ""
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/package_run_dependencies/target_ekf
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/parent_prefix_path/target_ekf
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/ament_prefix_path.sh
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/ament_prefix_path.dsv
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/path.sh
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/path.dsv
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.bash
+[23.301s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.sh
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.zsh
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.dsv
+[23.302s] -- Installing: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/package.dsv
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/packages/target_ekf
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/cmake/target_ekfConfig.cmake
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/cmake/target_ekfConfig-version.cmake
+[23.302s] -- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/package.xml
+[23.303s] Invoked command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/src/detection/build/target_ekf

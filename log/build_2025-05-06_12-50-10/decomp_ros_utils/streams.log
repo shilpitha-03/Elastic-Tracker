@@ -1,0 +1,51 @@
+[0.011s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': AMENT_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[0.025s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.153s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.190s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.192s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.197s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.218s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.248s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.249s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.266s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.315s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.334s] -- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)
+[0.342s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[0.347s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.348s] -- Found OGRE
+[0.348s] --   static     : OFF
+[0.348s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.348s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.348s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.348s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.348s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[0.349s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.349s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[0.349s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.349s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.349s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.349s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.409s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.451s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.535s] -- Found decomp_ros_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake)
+[0.563s] CMake Error at CMakeLists.txt:16 (find_package):
+[0.563s]   By not providing "Finddecomp_basis.cmake" in CMAKE_MODULE_PATH this project
+[0.563s]   has asked CMake to find a package configuration file provided by
+[0.563s]   "decomp_basis", but CMake did not find one.
+[0.563s] 
+[0.564s]   Could not find a package configuration file provided by "decomp_basis" with
+[0.564s]   any of the following names:
+[0.564s] 
+[0.564s]     decomp_basisConfig.cmake
+[0.564s]     decomp_basis-config.cmake
+[0.564s] 
+[0.564s]   Add the installation prefix of "decomp_basis" to CMAKE_PREFIX_PATH or set
+[0.564s]   "decomp_basis_DIR" to a directory containing one of the above files.  If
+[0.564s]   "decomp_basis" provides a separate development package or SDK, be sure it
+[0.564s]   has been installed.
+[0.564s] 
+[0.564s] 
+[0.564s] -- Configuring incomplete, errors occurred!
+[0.564s] See also "/mpc/new/Elastic-Tracker/build/decomp_ros_utils/CMakeFiles/CMakeOutput.log".
+[0.570s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '1': AMENT_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils

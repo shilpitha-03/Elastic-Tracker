@@ -1,0 +1,511 @@
+[0.000000] (-) TimerEvent: {}
+[0.000146] (object_detection_msgs) JobQueued: {'identifier': 'object_detection_msgs', 'dependencies': OrderedDict()}
+[0.000176] (target_ekf) JobQueued: {'identifier': 'target_ekf', 'dependencies': OrderedDict([('object_detection_msgs', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs')])}
+[0.000206] (object_detection_msgs) JobStarted: {'identifier': 'object_detection_msgs'}
+[0.008910] (object_detection_msgs) JobProgress: {'identifier': 'object_detection_msgs', 'progress': 'cmake'}
+[0.009380] (object_detection_msgs) JobProgress: {'identifier': 'object_detection_msgs', 'progress': 'build'}
+[0.010066] (object_detection_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-85f9a22e-1d5d-4540-b22c-f72cc0acb206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099357] (-) TimerEvent: {}
+[0.102882] (object_detection_msgs) StdoutLine: {'line': b'[  1%] Built target object_detection_msgs__cpp\n'}
+[0.109846] (object_detection_msgs) StdoutLine: {'line': b'[ 12%] Built target object_detection_msgs__rosidl_generator_c\n'}
+[0.114614] (object_detection_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_object_detection_msgs\n'}
+[0.155572] (object_detection_msgs) StdoutLine: {'line': b'[ 23%] Built target object_detection_msgs__rosidl_typesupport_cpp\n'}
+[0.157134] (object_detection_msgs) StdoutLine: {'line': b'[ 34%] Built target object_detection_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.157467] (object_detection_msgs) StdoutLine: {'line': b'[ 46%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.162080] (object_detection_msgs) StdoutLine: {'line': b'[ 57%] Built target object_detection_msgs__rosidl_typesupport_c\n'}
+[0.162819] (object_detection_msgs) StdoutLine: {'line': b'[ 68%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.163066] (object_detection_msgs) StdoutLine: {'line': b'[ 79%] Built target object_detection_msgs__rosidl_typesupport_introspection_c\n'}
+[0.185605] (object_detection_msgs) StdoutLine: {'line': b'[ 79%] Built target object_detection_msgs\n'}
+[0.199446] (-) TimerEvent: {}
+[0.209677] (object_detection_msgs) StdoutLine: {'line': b'[ 80%] Built target object_detection_msgs__py\n'}
+[0.232728] (object_detection_msgs) StdoutLine: {'line': b'[ 90%] Built target object_detection_msgs__rosidl_generator_py\n'}
+[0.253866] (object_detection_msgs) StdoutLine: {'line': b'[ 93%] Built target object_detection_msgs__rosidl_typesupport_c__pyext\n'}
+[0.255123] (object_detection_msgs) StdoutLine: {'line': b'[ 96%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.255337] (object_detection_msgs) StdoutLine: {'line': b'[100%] Built target object_detection_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.299540] (-) TimerEvent: {}
+[0.399821] (-) TimerEvent: {}
+[0.495870] (object_detection_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.496419] (object_detection_msgs) StdoutLine: {'line': b'writing object_detection_msgs.egg-info/PKG-INFO\n'}
+[0.496594] (object_detection_msgs) StdoutLine: {'line': b'writing dependency_links to object_detection_msgs.egg-info/dependency_links.txt\n'}
+[0.496710] (object_detection_msgs) StdoutLine: {'line': b'writing top-level names to object_detection_msgs.egg-info/top_level.txt\n'}
+[0.498790] (object_detection_msgs) StdoutLine: {'line': b"reading manifest file 'object_detection_msgs.egg-info/SOURCES.txt'\n"}
+[0.499448] (object_detection_msgs) StdoutLine: {'line': b"writing manifest file 'object_detection_msgs.egg-info/SOURCES.txt'\n"}
+[0.499871] (-) TimerEvent: {}
+[0.532161] (object_detection_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_object_detection_msgs_egg\n'}
+[0.548032] (object_detection_msgs) CommandEnded: {'returncode': 0}
+[0.548747] (object_detection_msgs) JobProgress: {'identifier': 'object_detection_msgs', 'progress': 'install'}
+[0.560376] (object_detection_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs'], 'cwd': '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-85f9a22e-1d5d-4540-b22c-f72cc0acb206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/detection/build/object_detection_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble')]), 'shell': False}
+[0.572037] (object_detection_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.572609] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/ament_index/resource_index/rosidl_interfaces/object_detection_msgs\n'}
+[0.572845] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.573002] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.573118] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/bounding_box.h\n'}
+[0.573247] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/bounding_boxes.h\n'}
+[0.573443] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/motor_angle.h\n'}
+[0.573593] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/object_count.h\n'}
+[0.573719] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.573836] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__type_support.h\n'}
+[0.574003] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__functions.c\n'}
+[0.574296] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__functions.h\n'}
+[0.574484] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__struct.h\n'}
+[0.574621] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__type_support.h\n'}
+[0.574740] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__functions.c\n'}
+[0.574852] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__functions.c\n'}
+[0.574997] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__functions.h\n'}
+[0.575117] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__functions.h\n'}
+[0.575377] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__struct.h\n'}
+[0.575665] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__functions.c\n'}
+[0.575869] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__type_support.h\n'}
+[0.576153] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__struct.h\n'}
+[0.576263] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__struct.h\n'}
+[0.576393] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__functions.h\n'}
+[0.576545] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__type_support.h\n'}
+[0.576773] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__functions.h\n'}
+[0.576878] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__struct.h\n'}
+[0.577008] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__functions.c\n'}
+[0.577110] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__type_support.h\n'}
+[0.577232] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/car_position.h\n'}
+[0.577335] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.577502] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/library_path.sh\n'}
+[0.577715] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/library_path.dsv\n'}
+[0.577849] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_generator_c.so\n'}
+[0.577979] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.578154] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.578433] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.578577] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__rosidl_typesupport_fastrtps_c.h\n'}
+[0.578789] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[0.578928] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__rosidl_typesupport_fastrtps_c.h\n'}
+[0.579049] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__rosidl_typesupport_fastrtps_c.h\n'}
+[0.579164] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h\n'}
+[0.579292] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.579405] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.579516] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.579627] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.579739] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.579852] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.579969] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__type_support.c\n'}
+[0.580089] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__type_support.c\n'}
+[0.580201] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__type_support.c\n'}
+[0.580314] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__type_support.c\n'}
+[0.580427] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__rosidl_typesupport_introspection_c.h\n'}
+[0.580549] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__rosidl_typesupport_introspection_c.h\n'}
+[0.580664] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_c.h\n'}
+[0.580777] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__rosidl_typesupport_introspection_c.h\n'}
+[0.580891] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__type_support.c\n'}
+[0.581010] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h\n'}
+[0.581123] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.581232] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_c.so\n'}
+[0.581342] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.581453] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.581562] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/object_count.hpp\n'}
+[0.581691] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/bounding_boxes.hpp\n'}
+[0.581806] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/car_position.hpp\n'}
+[0.581919] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.582029] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__traits.hpp\n'}
+[0.582160] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__struct.hpp\n'}
+[0.582335] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__builder.hpp\n'}
+[0.582453] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__type_support.hpp\n'}
+[0.582564] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__type_support.hpp\n'}
+[0.582675] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__type_support.hpp\n'}
+[0.582818] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__struct.hpp\n'}
+[0.582933] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__builder.hpp\n'}
+[0.583044] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__traits.hpp\n'}
+[0.583157] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__traits.hpp\n'}
+[0.583266] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__struct.hpp\n'}
+[0.583378] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__builder.hpp\n'}
+[0.583492] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__traits.hpp\n'}
+[0.583602] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__builder.hpp\n'}
+[0.583720] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__struct.hpp\n'}
+[0.583834] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__type_support.hpp\n'}
+[0.583944] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__builder.hpp\n'}
+[0.584055] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__type_support.hpp\n'}
+[0.584175] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__struct.hpp\n'}
+[0.584287] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__traits.hpp\n'}
+[0.584402] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/motor_angle.hpp\n'}
+[0.584516] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/bounding_box.hpp\n'}
+[0.584629] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.584741] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.584859] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.584971] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.585081] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.585193] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.585306] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/dds_fastrtps\n'}
+[0.585417] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.585529] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.585640] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.585782] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.585894] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.586007] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs\n'}
+[0.586125] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg\n'}
+[0.586287] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail\n'}
+[0.586408] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.586521] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.586634] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.586745] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.586886] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.586998] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/car_position__type_support.cpp\n'}
+[0.587111] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_boxes__type_support.cpp\n'}
+[0.587222] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object_count__type_support.cpp\n'}
+[0.587331] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/bounding_box__type_support.cpp\n'}
+[0.587442] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/motor_angle__type_support.cpp\n'}
+[0.587562] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.587674] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_cpp.so\n'}
+[0.587782] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/pythonpath.sh\n'}
+[0.587891] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/pythonpath.dsv\n'}
+[0.588002] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info\n'}
+[0.588111] (object_detection_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.588223] (object_detection_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.588341] (object_detection_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.588451] (object_detection_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.588562] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs\n'}
+[0.588673] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/libobject_detection_msgs__rosidl_generator_py.so\n'}
+[0.588784] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.588895] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.589014] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/__init__.py\n'}
+[0.589128] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.589238] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.589351] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.589466] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.589580] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg\n'}
+[0.589708] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_bounding_boxes_s.c\n'}
+[0.589826] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_bounding_boxes.py\n'}
+[0.589937] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_bounding_box.py\n'}
+[0.590048] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_object_count.py\n'}
+[0.590171] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_object_count_s.c\n'}
+[0.590413] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_car_position.py\n'}
+[0.590541] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/__init__.py\n'}
+[0.590684] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_motor_angle.py\n'}
+[0.590800] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_bounding_box_s.c\n'}
+[0.590916] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_motor_angle_s.c\n'}
+[0.591075] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_car_position_s.c\n'}
+[0.599989] (-) TimerEvent: {}
+[0.626433] (object_detection_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs'...\n"}
+[0.626705] (object_detection_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg'...\n"}
+[0.631859] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.632087] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.632272] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.632500] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_generator_py.so\n'}
+[0.632643] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBox.idl\n'}
+[0.632810] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBoxes.idl\n'}
+[0.632981] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/ObjectCount.idl\n'}
+[0.633191] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/CarPosition.idl\n'}
+[0.633353] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/MotorAngle.idl\n'}
+[0.633536] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBox.msg\n'}
+[0.633712] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBoxes.msg\n'}
+[0.633846] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/ObjectCount.msg\n'}
+[0.633994] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/CarPosition.msg\n'}
+[0.634137] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/MotorAngle.msg\n'}
+[0.634279] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg\n'}
+[0.634440] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/ObjectCount.msg\n'}
+[0.634586] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBox.msg\n'}
+[0.634724] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/BoundingBoxes.msg\n'}
+[0.634880] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/CarPosition.msg\n'}
+[0.635075] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/msg/MotorAngle.msg\n'}
+[0.635235] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/ament_index/resource_index/package_run_dependencies/object_detection_msgs\n'}
+[0.635381] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/ament_index/resource_index/parent_prefix_path/object_detection_msgs\n'}
+[0.635492] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/ament_prefix_path.sh\n'}
+[0.635599] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/ament_prefix_path.dsv\n'}
+[0.635739] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/path.sh\n'}
+[0.635846] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/environment/path.dsv\n'}
+[0.635954] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/local_setup.bash\n'}
+[0.636062] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/local_setup.sh\n'}
+[0.636169] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/local_setup.zsh\n'}
+[0.636275] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/local_setup.dsv\n'}
+[0.636388] (object_detection_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/package.dsv\n'}
+[0.636500] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/ament_index/resource_index/packages/object_detection_msgs\n'}
+[0.636606] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cExport.cmake\n'}
+[0.636733] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.636903] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.637256] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.637712] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.649201] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.649340] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.653285] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.658756] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.659145] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.659441] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.660299] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.660485] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.660672] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.661088] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.661954] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.662130] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.662388] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.662641] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.663320] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.663662] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.663865] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.664103] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.664259] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.664446] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgsConfig.cmake\n'}
+[0.664659] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgsConfig-version.cmake\n'}
+[0.664810] (object_detection_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/share/object_detection_msgs/package.xml\n'}
+[0.665375] (object_detection_msgs) CommandEnded: {'returncode': 0}
+[0.676276] (object_detection_msgs) JobEnded: {'identifier': 'object_detection_msgs', 'rc': 0}
+[0.677358] (target_ekf) JobStarted: {'identifier': 'target_ekf'}
+[0.686618] (target_ekf) JobProgress: {'identifier': 'target_ekf', 'progress': 'cmake'}
+[0.687301] (target_ekf) JobProgress: {'identifier': 'target_ekf', 'progress': 'build'}
+[0.688057] (target_ekf) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-85f9a22e-1d5d-4540-b22c-f72cc0acb206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble')]), 'shell': False}
+[0.700078] (-) TimerEvent: {}
+[0.730005] (target_ekf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target target_ekf_sim_node\x1b[0m\n'}
+[0.744506] (target_ekf) StdoutLine: {'line': b'[ 50%] Built target target_ekf_node\n'}
+[0.750024] (target_ekf) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o\x1b[0m\n'}
+[0.800183] (-) TimerEvent: {}
+[0.900524] (-) TimerEvent: {}
+[1.001193] (-) TimerEvent: {}
+[1.101563] (-) TimerEvent: {}
+[1.202056] (-) TimerEvent: {}
+[1.302310] (-) TimerEvent: {}
+[1.402627] (-) TimerEvent: {}
+[1.502891] (-) TimerEvent: {}
+[1.603304] (-) TimerEvent: {}
+[1.703809] (-) TimerEvent: {}
+[1.804175] (-) TimerEvent: {}
+[1.904446] (-) TimerEvent: {}
+[2.004710] (-) TimerEvent: {}
+[2.105008] (-) TimerEvent: {}
+[2.205286] (-) TimerEvent: {}
+[2.305553] (-) TimerEvent: {}
+[2.405823] (-) TimerEvent: {}
+[2.506161] (-) TimerEvent: {}
+[2.606436] (-) TimerEvent: {}
+[2.706726] (-) TimerEvent: {}
+[2.806990] (-) TimerEvent: {}
+[2.907230] (-) TimerEvent: {}
+[3.007624] (-) TimerEvent: {}
+[3.108253] (-) TimerEvent: {}
+[3.208544] (-) TimerEvent: {}
+[3.308794] (-) TimerEvent: {}
+[3.409082] (-) TimerEvent: {}
+[3.509372] (-) TimerEvent: {}
+[3.609643] (-) TimerEvent: {}
+[3.710003] (-) TimerEvent: {}
+[3.810259] (-) TimerEvent: {}
+[3.910753] (-) TimerEvent: {}
+[4.010991] (-) TimerEvent: {}
+[4.111225] (-) TimerEvent: {}
+[4.211538] (-) TimerEvent: {}
+[4.311767] (-) TimerEvent: {}
+[4.412097] (-) TimerEvent: {}
+[4.512340] (-) TimerEvent: {}
+[4.612623] (-) TimerEvent: {}
+[4.712929] (-) TimerEvent: {}
+[4.813234] (-) TimerEvent: {}
+[4.913566] (-) TimerEvent: {}
+[5.013838] (-) TimerEvent: {}
+[5.114162] (-) TimerEvent: {}
+[5.214432] (-) TimerEvent: {}
+[5.314631] (-) TimerEvent: {}
+[5.419129] (-) TimerEvent: {}
+[5.519463] (-) TimerEvent: {}
+[5.619748] (-) TimerEvent: {}
+[5.720027] (-) TimerEvent: {}
+[5.820381] (-) TimerEvent: {}
+[5.920674] (-) TimerEvent: {}
+[6.021193] (-) TimerEvent: {}
+[6.121460] (-) TimerEvent: {}
+[6.221808] (-) TimerEvent: {}
+[6.322074] (-) TimerEvent: {}
+[6.422325] (-) TimerEvent: {}
+[6.522615] (-) TimerEvent: {}
+[6.622912] (-) TimerEvent: {}
+[6.723175] (-) TimerEvent: {}
+[6.823469] (-) TimerEvent: {}
+[6.923780] (-) TimerEvent: {}
+[7.024038] (-) TimerEvent: {}
+[7.124498] (-) TimerEvent: {}
+[7.224749] (-) TimerEvent: {}
+[7.325037] (-) TimerEvent: {}
+[7.425327] (-) TimerEvent: {}
+[7.525585] (-) TimerEvent: {}
+[7.625873] (-) TimerEvent: {}
+[7.726125] (-) TimerEvent: {}
+[7.826893] (-) TimerEvent: {}
+[7.927535] (-) TimerEvent: {}
+[8.028104] (-) TimerEvent: {}
+[8.128396] (-) TimerEvent: {}
+[8.229170] (-) TimerEvent: {}
+[8.329527] (-) TimerEvent: {}
+[8.432065] (-) TimerEvent: {}
+[8.532500] (-) TimerEvent: {}
+[8.632898] (-) TimerEvent: {}
+[8.733343] (-) TimerEvent: {}
+[8.834204] (-) TimerEvent: {}
+[8.934507] (-) TimerEvent: {}
+[9.034775] (-) TimerEvent: {}
+[9.135012] (-) TimerEvent: {}
+[9.235279] (-) TimerEvent: {}
+[9.335585] (-) TimerEvent: {}
+[9.435943] (-) TimerEvent: {}
+[9.536206] (-) TimerEvent: {}
+[9.636545] (-) TimerEvent: {}
+[9.736785] (-) TimerEvent: {}
+[9.837066] (-) TimerEvent: {}
+[9.937359] (-) TimerEvent: {}
+[10.037610] (-) TimerEvent: {}
+[10.137960] (-) TimerEvent: {}
+[10.238222] (-) TimerEvent: {}
+[10.338563] (-) TimerEvent: {}
+[10.438822] (-) TimerEvent: {}
+[10.539118] (-) TimerEvent: {}
+[10.639424] (-) TimerEvent: {}
+[10.739815] (-) TimerEvent: {}
+[10.840303] (-) TimerEvent: {}
+[10.940532] (-) TimerEvent: {}
+[11.040817] (-) TimerEvent: {}
+[11.141107] (-) TimerEvent: {}
+[11.241445] (-) TimerEvent: {}
+[11.341734] (-) TimerEvent: {}
+[11.441967] (-) TimerEvent: {}
+[11.542227] (-) TimerEvent: {}
+[11.642506] (-) TimerEvent: {}
+[11.742866] (-) TimerEvent: {}
+[11.843196] (-) TimerEvent: {}
+[11.943533] (-) TimerEvent: {}
+[12.043874] (-) TimerEvent: {}
+[12.144176] (-) TimerEvent: {}
+[12.244475] (-) TimerEvent: {}
+[12.344854] (-) TimerEvent: {}
+[12.445429] (-) TimerEvent: {}
+[12.549716] (-) TimerEvent: {}
+[12.650064] (-) TimerEvent: {}
+[12.750314] (-) TimerEvent: {}
+[12.851165] (-) TimerEvent: {}
+[12.951443] (-) TimerEvent: {}
+[13.053724] (-) TimerEvent: {}
+[13.154371] (-) TimerEvent: {}
+[13.254826] (-) TimerEvent: {}
+[13.355097] (-) TimerEvent: {}
+[13.455355] (-) TimerEvent: {}
+[13.555680] (-) TimerEvent: {}
+[13.655937] (-) TimerEvent: {}
+[13.756208] (-) TimerEvent: {}
+[13.856458] (-) TimerEvent: {}
+[13.956776] (-) TimerEvent: {}
+[14.057049] (-) TimerEvent: {}
+[14.157514] (-) TimerEvent: {}
+[14.258456] (-) TimerEvent: {}
+[14.358927] (-) TimerEvent: {}
+[14.459171] (-) TimerEvent: {}
+[14.559544] (-) TimerEvent: {}
+[14.660071] (-) TimerEvent: {}
+[14.760344] (-) TimerEvent: {}
+[14.860663] (-) TimerEvent: {}
+[14.960985] (-) TimerEvent: {}
+[15.061286] (-) TimerEvent: {}
+[15.161623] (-) TimerEvent: {}
+[15.261968] (-) TimerEvent: {}
+[15.362275] (-) TimerEvent: {}
+[15.462583] (-) TimerEvent: {}
+[15.562934] (-) TimerEvent: {}
+[15.663197] (-) TimerEvent: {}
+[15.763514] (-) TimerEvent: {}
+[15.863805] (-) TimerEvent: {}
+[15.964388] (-) TimerEvent: {}
+[16.064843] (-) TimerEvent: {}
+[16.165128] (-) TimerEvent: {}
+[16.265433] (-) TimerEvent: {}
+[16.365719] (-) TimerEvent: {}
+[16.466466] (-) TimerEvent: {}
+[16.566882] (-) TimerEvent: {}
+[16.667193] (-) TimerEvent: {}
+[16.767459] (-) TimerEvent: {}
+[16.877711] (-) TimerEvent: {}
+[16.979812] (-) TimerEvent: {}
+[17.080135] (-) TimerEvent: {}
+[17.180461] (-) TimerEvent: {}
+[17.280798] (-) TimerEvent: {}
+[17.381047] (-) TimerEvent: {}
+[17.481380] (-) TimerEvent: {}
+[17.581705] (-) TimerEvent: {}
+[17.682174] (-) TimerEvent: {}
+[17.782524] (-) TimerEvent: {}
+[17.882795] (-) TimerEvent: {}
+[17.983118] (-) TimerEvent: {}
+[18.083373] (-) TimerEvent: {}
+[18.183650] (-) TimerEvent: {}
+[18.283898] (-) TimerEvent: {}
+[18.384174] (-) TimerEvent: {}
+[18.484480] (-) TimerEvent: {}
+[18.584723] (-) TimerEvent: {}
+[18.685038] (-) TimerEvent: {}
+[18.785354] (-) TimerEvent: {}
+[18.885705] (-) TimerEvent: {}
+[18.986011] (-) TimerEvent: {}
+[19.086296] (-) TimerEvent: {}
+[19.186601] (-) TimerEvent: {}
+[19.286943] (-) TimerEvent: {}
+[19.387326] (-) TimerEvent: {}
+[19.489047] (-) TimerEvent: {}
+[19.590252] (-) TimerEvent: {}
+[19.690541] (-) TimerEvent: {}
+[19.791208] (-) TimerEvent: {}
+[19.891470] (-) TimerEvent: {}
+[19.991758] (-) TimerEvent: {}
+[20.092040] (-) TimerEvent: {}
+[20.192292] (-) TimerEvent: {}
+[20.292625] (-) TimerEvent: {}
+[20.392904] (-) TimerEvent: {}
+[20.493266] (-) TimerEvent: {}
+[20.593523] (-) TimerEvent: {}
+[20.694798] (-) TimerEvent: {}
+[20.795069] (-) TimerEvent: {}
+[20.895508] (-) TimerEvent: {}
+[20.995869] (-) TimerEvent: {}
+[21.096204] (-) TimerEvent: {}
+[21.196543] (-) TimerEvent: {}
+[21.296885] (-) TimerEvent: {}
+[21.397248] (-) TimerEvent: {}
+[21.497543] (-) TimerEvent: {}
+[21.597991] (-) TimerEvent: {}
+[21.698254] (-) TimerEvent: {}
+[21.798533] (-) TimerEvent: {}
+[21.898927] (-) TimerEvent: {}
+[21.999223] (-) TimerEvent: {}
+[22.099846] (-) TimerEvent: {}
+[22.200462] (-) TimerEvent: {}
+[22.300993] (-) TimerEvent: {}
+[22.401348] (-) TimerEvent: {}
+[22.501605] (-) TimerEvent: {}
+[22.601913] (-) TimerEvent: {}
+[22.702210] (-) TimerEvent: {}
+[22.802546] (-) TimerEvent: {}
+[22.904964] (-) TimerEvent: {}
+[23.005444] (-) TimerEvent: {}
+[23.105238] (target_ekf) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable target_ekf_sim_node\x1b[0m\n'}
+[23.105445] (-) TimerEvent: {}
+[23.205700] (-) TimerEvent: {}
+[23.306069] (-) TimerEvent: {}
+[23.406443] (-) TimerEvent: {}
+[23.506868] (-) TimerEvent: {}
+[23.607168] (-) TimerEvent: {}
+[23.707510] (-) TimerEvent: {}
+[23.807840] (-) TimerEvent: {}
+[23.908108] (-) TimerEvent: {}
+[24.008412] (-) TimerEvent: {}
+[24.028073] (target_ekf) StdoutLine: {'line': b'[100%] Built target target_ekf_sim_node\n'}
+[24.043840] (target_ekf) CommandEnded: {'returncode': 0}
+[24.044473] (target_ekf) JobProgress: {'identifier': 'target_ekf', 'progress': 'install'}
+[24.044690] (target_ekf) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf'], 'cwd': '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-85f9a22e-1d5d-4540-b22c-f72cc0acb206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-4c9c8bfe-423a-4fbc-9bcb-fbc7716f9c69.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/opt/ros/humble')]), 'shell': False}
+[24.051973] (target_ekf) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.052180] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_node\n'}
+[24.052429] (target_ekf) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_sim_node\n'}
+[24.058085] (target_ekf) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/src/detection/install/target_ekf/lib/target_ekf/target_ekf_sim_node" to ""\n'}
+[24.058365] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/package_run_dependencies/target_ekf\n'}
+[24.058523] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/parent_prefix_path/target_ekf\n'}
+[24.058601] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/ament_prefix_path.sh\n'}
+[24.058766] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/ament_prefix_path.dsv\n'}
+[24.058840] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/path.sh\n'}
+[24.058914] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/environment/path.dsv\n'}
+[24.058981] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.bash\n'}
+[24.059049] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.sh\n'}
+[24.059114] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.zsh\n'}
+[24.059180] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/local_setup.dsv\n'}
+[24.059246] (target_ekf) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/package.dsv\n'}
+[24.059314] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/ament_index/resource_index/packages/target_ekf\n'}
+[24.059420] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/cmake/target_ekfConfig.cmake\n'}
+[24.059526] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/cmake/target_ekfConfig-version.cmake\n'}
+[24.059626] (target_ekf) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/src/detection/install/target_ekf/share/target_ekf/package.xml\n'}
+[24.060265] (target_ekf) CommandEnded: {'returncode': 0}
+[24.072505] (target_ekf) JobEnded: {'identifier': 'target_ekf', 'rc': 0}
+[24.073075] (-) EventReactorShutdown: {}

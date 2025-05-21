@@ -1,72 +1,94 @@
-#include "ellipsoid_array_visual.h"
+#include "decomp_rviz_plugins/ellipsoid_array_visual.hpp"
 
-namespace decomp_rviz_plugins {
-  EllipsoidArrayVisual::EllipsoidArrayVisual(Ogre::SceneManager *scene_manager,
-                                     Ogre::SceneNode *parent_node) {
-    scene_manager_ = scene_manager;
-    frame_node_ = parent_node->createChildSceneNode();
+namespace decomp_rviz_plugins
+{
+
+EllipsoidArrayVisual::EllipsoidArrayVisual(
+    Ogre::SceneManager * scene_manager,
+    Ogre::SceneNode    * parent_node)
+: scene_manager_(scene_manager)
+{
+  frame_node_ = parent_node->createChildSceneNode();
+}
+
+EllipsoidArrayVisual::~EllipsoidArrayVisual()
+{
+  scene_manager_->destroySceneNode(frame_node_);
+}
+
+void EllipsoidArrayVisual::setMessage(
+  decomp_ros_msgs::msg::EllipsoidArray::ConstSharedPtr msg)
+{
+  objs_.clear();
+  if (msg->ellipsoids.empty()) {
+    return;
   }
 
-  EllipsoidArrayVisual::~EllipsoidArrayVisual() {
-    scene_manager_->destroySceneNode(frame_node_);
-  }
-
-  void EllipsoidArrayVisual::setMessage(const decomp_ros_msgs::EllipsoidArray::ConstPtr &msg) {
-    objs_.clear();
-
-    if (msg->ellipsoids.empty())
+  // Validate no NaNs
+  for (auto const & e : msg->ellipsoids) {
+    if (std::isnan(e.d[0]) || std::isnan(e.d[1]) || std::isnan(e.d[2])) {
       return;
-
-    for (const auto& it: msg->ellipsoids) {
-      if(std::isnan(it.d[0]) ||
-         std::isnan(it.d[1]) ||
-         std::isnan(it.d[2]))
+    }
+    for (int k = 0; k < 9; ++k) {
+      if (std::isnan(e.e[k])) {
         return;
-      for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
-          if(std::isnan(it.E[3 * i + j]))
-            return;
-    }
-
-    objs_.resize(msg->ellipsoids.size());
-
-    for (auto &it : objs_)
-      it.reset(new rviz::Shape(rviz::Shape::Type::Sphere, scene_manager_,
-                               frame_node_));
-
-    int cnt = 0;
-    for (const auto &it : msg->ellipsoids) {
-      Mat3f E;
-      for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
-          E(i, j) = it.E[3 * i + j];
-      Eigen::SelfAdjointEigenSolver<Mat3f> es(E);
-
-      Ogre::Vector3 scale(2 * es.eigenvalues()[0], 2 * es.eigenvalues()[1],
-                          2 * es.eigenvalues()[2]);
-      objs_[cnt]->setScale(scale);
-
-      Ogre::Vector3 d(it.d[0], it.d[1], it.d[2]);
-      objs_[cnt]->setPosition(d);
-
-      Quatf q(es.eigenvectors().determinant() * es.eigenvectors());
-      Ogre::Quaternion o(q.w(), q.x(), q.y(), q.z());
-      objs_[cnt]->setOrientation(o);
-      cnt++;
+      }
     }
   }
 
-  void EllipsoidArrayVisual::setFramePosition(const Ogre::Vector3 &position) {
-    frame_node_->setPosition(position);
+  // Create one sphere per ellipsoid
+  objs_.resize(msg->ellipsoids.size());
+  for (auto & shape : objs_) {
+    shape.reset(new rviz_rendering::Shape(
+      rviz_rendering::Shape::Type::Sphere, scene_manager_, frame_node_));
   }
 
-  void EllipsoidArrayVisual::setFrameOrientation(
-                                             const Ogre::Quaternion &orientation) {
-    frame_node_->setOrientation(orientation);
-  }
+  // Configure each sphere
+  for (size_t i = 0; i < msg->ellipsoids.size(); ++i) {
+    auto const & m = msg->ellipsoids[i];
 
-  void EllipsoidArrayVisual::setColor(float r, float g, float b, float a) {
-    for (auto &it : objs_)
-      it->setColor(r, g, b, a);
+    // build the 3×3 matrix E
+    Mat3f E;
+    for (int r = 0; r < 3; ++r) {
+      for (int c = 0; c < 3; ++c) {
+        E(r,c) = m.e[3*r + c];
+      }
+    }
+    Eigen::SelfAdjointEigenSolver<Mat3f> es(E);
+
+    // scale = 2×eigenvalues
+    Ogre::Vector3 scale(
+      2*es.eigenvalues()[0],
+      2*es.eigenvalues()[1],
+      2*es.eigenvalues()[2]);
+    objs_[i]->setScale(scale);
+
+    // position = d vector
+    Ogre::Vector3 pos(m.d[0], m.d[1], m.d[2]);
+    objs_[i]->setPosition(pos);
+
+    // orientation from eigenvectors
+    Quatf q(es.eigenvectors().determinant() * es.eigenvectors());
+    Ogre::Quaternion ori(q.w(), q.x(), q.y(), q.z());
+    objs_[i]->setOrientation(ori);
   }
 }
+
+void EllipsoidArrayVisual::setFramePosition(const Ogre::Vector3 & pos)
+{
+  frame_node_->setPosition(pos);
+}
+
+void EllipsoidArrayVisual::setFrameOrientation(const Ogre::Quaternion & ori)
+{
+  frame_node_->setOrientation(ori);
+}
+
+void EllipsoidArrayVisual::setColor(float r, float g, float b, float a)
+{
+  for (auto & shape : objs_) {
+    shape->setColor(r,g,b,a);
+  }
+}
+
+}  // namespace decomp_rviz_plugins

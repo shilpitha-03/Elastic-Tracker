@@ -1,20 +1,28 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>decomp_ros_utils</name>
   <version>0.0.0</version>
-  <description>The decomp_ros_utils package</description>
+  <description>ROS 2 port of the decomp_ros_utils RViz plugin</description>
 
-  <maintainer email="sikang@todo.todo">sikang</maintainer>
+  <maintainer email="sikang@seas.upenn.edu">sikang</maintainer>
+  <license>Apache-2.0</license>
 
-  <license>TODO</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>catkin_simple</build_depend>
-  <depend>roscpp</depend>
-  <depend>rviz</depend>
-  <depend>decomp_ros_msgs</depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>rviz_common</build_depend>
+  <build_depend>Qt5Widgets</build_depend>
+  <build_depend>Eigen3</build_depend>
+  <build_depend>decomp_ros_msgs</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>rviz_common</exec_depend>
+  <exec_depend>decomp_ros_msgs</exec_depend>
 
   <export>
-    <rviz plugin="${prefix}/plugin_description.xml"/>
+    <!-- ament_cmake plugin package -->
+    <build_type>ament_cmake</build_type>
   </export>
 </package>

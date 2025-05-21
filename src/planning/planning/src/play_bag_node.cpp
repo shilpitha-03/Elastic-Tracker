@@ -1,26 +1,41 @@
-#include <mapping/mapping.h>
-#include <quadrotor_msgs/OccMap3d.h>
-#include <quadrotor_msgs/ReplanState.h>
-#include <ros/package.h>
-#include <ros/ros.h>
-#include <sensor_msgs/PointCloud2.h>
+#include <rclcpp/rclcpp.hpp>
+#include <ament_index_cpp/get_package_share_directory.hpp>
 
+#include <quadrotor_msgs/msg/replan_state.hpp>
 #include <wr_msg/wr_msg.hpp>
 
-void replan_state_callback(const quadrotor_msgs::ReplanStateConstPtr& msgPtr) {
-  // ROS_WARN("[log] REPLAN STATE RECEIVED!");
-  if (msgPtr->state == 2) {
-    wr_msg::writeMsg(*msgPtr, ros::package::getPath("planning") + "/../../../debug/replan_state.bin");
-    assert(false);
+using std::placeholders::_1;
+
+class PlayBagNode : public rclcpp::Node {
+public:
+  PlayBagNode()
+  : Node("play_bag_node")
+  {
+    // QoS: reliable, keep last
+    auto qos = rclcpp::QoS(rclcpp::KeepLast(1)).reliable();
+    sub_ = this->create_subscription<quadrotor_msgs::msg::ReplanState>(
+      "replanState", qos,
+      std::bind(&PlayBagNode::replan_state_callback, this, _1));
+    RCLCPP_INFO(this->get_logger(), "play_bag_node started");
   }
-}
 
-int main(int argc, char** argv) {
-  ros::init(argc, argv, "play_bag_node");
-  ros::NodeHandle nh("~");
-  ros::Subscriber replanState_sub =
-      nh.subscribe<quadrotor_msgs::ReplanState>("replanState", 1, replan_state_callback, ros::TransportHints().tcpNoDelay());
+private:
+  void replan_state_callback(const quadrotor_msgs::msg::ReplanState::SharedPtr msg) {
+    if (msg->state == 2) {
+      // write to debug file
+      auto pkg_path = ament_index_cpp::get_package_share_directory("planning");
+      wr_msg::writeMsg(*msg, pkg_path + "/../../../debug/replan_state.bin");
+      RCLCPP_FATAL(this->get_logger(), "ReplanState==2, aborting");
+      rclcpp::shutdown();
+    }
+  }
 
-  ros::spin();
+  rclcpp::Subscription<quadrotor_msgs::msg::ReplanState>::SharedPtr sub_;
+};
+
+int main(int argc, char **argv) {
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<PlayBagNode>());
+  rclcpp::shutdown();
   return 0;
 }

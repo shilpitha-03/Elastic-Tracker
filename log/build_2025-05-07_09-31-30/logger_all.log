@@ -1,0 +1,418 @@
+[0.111s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'decomp_basis', 'decomp_geometry', 'decomp_ros_msgs']
+[0.111s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['decomp_basis', 'decomp_geometry', 'decomp_ros_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7efc10194310>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7efc10163c40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7efc10163c40>>, mixin_verb=('build',))
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.280s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.280s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.281s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mpc/new/Elastic-Tracker'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'ros'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['cmake', 'python']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'cmake'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'python'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extensions ['python_setup_py']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(figs) by extension 'python_setup_py'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(sh_utils) by extension 'python_setup_py'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/object_detection_msgs) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection/object_detection_msgs' with type 'ros.ament_cmake' and name 'object_detection_msgs'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection/target_ekf) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection/target_ekf' with type 'ros.ament_cmake' and name 'target_ekf'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mapping' with type 'ros.ament_cmake' and name 'mapping'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_basis) by extension 'ros'
+[0.322s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning/DecompROS/decomp_basis' with type 'ros.ament_cmake' and name 'decomp_basis'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_geoemtry) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning/DecompROS/decomp_geoemtry' with type 'ros.ament_cmake' and name 'decomp_geometry'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_msgs) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning/DecompROS/decomp_ros_msgs' with type 'ros.ament_cmake' and name 'decomp_ros_msgs'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/DecompROS/decomp_ros_utils) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning/DecompROS/decomp_ros_utils' with type 'ros.ament_cmake' and name 'decomp_ros_utils'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/planning) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/planning) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/planning) ignored
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/traj_opt) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/traj_opt) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning/traj_opt) ignored
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_msgs) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/quadrotor_msgs' with type 'ros.ament_cmake' and name 'quadrotor_msgs'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_simulator) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_simulator) ignored
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.345s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'object_detection_msgs' in 'src/detection/object_detection_msgs'
+[0.345s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'quadrotor_msgs' in 'src/quadrotor_msgs'
+[0.345s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'decomp_ros_utils' in 'src/planning/DecompROS/decomp_ros_utils'
+[0.345s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mapping' in 'src/mapping'
+[0.345s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'target_ekf' in 'src/detection/target_ekf'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_basis' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'decomp_basis' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mpc/new/Elastic-Tracker/build/decomp_basis', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mpc/new/Elastic-Tracker/install/decomp_basis', 'merge_install': False, 'path': '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'decomp_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'decomp_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs', 'merge_install': False, 'path': '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'decomp_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'decomp_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mpc/new/Elastic-Tracker/build/decomp_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mpc/new/Elastic-Tracker/install/decomp_geometry', 'merge_install': False, 'path': '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry', 'symlink_install': False, 'test_result_base': None}
+[0.347s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis'
+[0.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.351s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.351s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/mpc/new/Elastic-Tracker/install/decomp_geometry' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/mpc/new/Elastic-Tracker/install/decomp_basis' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/mpc/new/Elastic-Tracker/install/decomp_geometry' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.352s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/mpc/new/Elastic-Tracker/install/decomp_basis' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.356s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs' with build type 'ament_cmake'
+[0.356s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_basis': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_basis
+[0.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_basis' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_basis -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_basis
+[1.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_basis': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_basis -- -j12 -l12
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_basis' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_basis -- -j12 -l12
+[1.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_basis': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_basis
+[1.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_basis)
+[1.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_basis' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_basis
+[1.060s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis' for CMake module files
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis' for CMake config files
+[1.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_basis', 'cmake_prefix_path')
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.ps1'
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.dsv'
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.sh'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/bin'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/lib/pkgconfig/decomp_basis.pc'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/lib/python3.10/site-packages'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/bin'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.sh'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.bash'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.zsh'
+[1.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_basis/share/colcon-core/packages/decomp_basis)
+[1.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_basis)
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis' for CMake module files
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis' for CMake config files
+[1.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_basis', 'cmake_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/hook/cmake_prefix_path.sh'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/bin'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/lib/pkgconfig/decomp_basis.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/lib/python3.10/site-packages'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_basis/bin'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.ps1'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.sh'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.bash'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/package.zsh'
+[1.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_basis/share/colcon-core/packages/decomp_basis)
+[1.075s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry' with build type 'ament_cmake'
+[1.075s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry'
+[1.076s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.076s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_geometry
+[1.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_geometry
+[1.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_geometry -- -j12 -l12
+[1.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_geometry -- -j12 -l12
+[1.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_geometry
+[1.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_geometry)
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_geometry
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry' for CMake module files
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry' for CMake config files
+[1.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_geometry', 'cmake_prefix_path')
+[1.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.ps1'
+[1.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.dsv'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.sh'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/bin'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/lib/pkgconfig/decomp_geometry.pc'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/lib/python3.10/site-packages'
+[1.736s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/bin'
+[1.736s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.ps1'
+[1.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.dsv'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.sh'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.bash'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.zsh'
+[1.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_geometry/share/colcon-core/packages/decomp_geometry)
+[1.738s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_geometry)
+[1.738s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry' for CMake module files
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry' for CMake config files
+[1.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_geometry', 'cmake_prefix_path')
+[1.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.ps1'
+[1.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.dsv'
+[1.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/hook/cmake_prefix_path.sh'
+[1.740s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/bin'
+[1.740s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/lib/pkgconfig/decomp_geometry.pc'
+[1.740s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/lib/python3.10/site-packages'
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_geometry/bin'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.ps1'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.dsv'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.sh'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.bash'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.zsh'
+[1.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_geometry/share/colcon-core/packages/decomp_geometry)
+[2.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs
+[2.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
+[4.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
+[4.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs
+[4.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_ros_msgs)
+[4.972s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' for CMake module files
+[4.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs
+[4.973s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' for CMake config files
+[4.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_ros_msgs', 'cmake_prefix_path')
+[4.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.ps1'
+[4.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.dsv'
+[4.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.sh'
+[4.975s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib'
+[4.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_ros_msgs', 'ld_library_path_lib')
+[4.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.ps1'
+[4.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.dsv'
+[4.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.sh'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/bin'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/pkgconfig/decomp_ros_msgs.pc'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/python3.10/site-packages'
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/bin'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.ps1'
+[4.979s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.dsv'
+[4.979s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.sh'
+[4.980s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.bash'
+[4.980s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.zsh'
+[4.980s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/colcon-core/packages/decomp_ros_msgs)
+[4.981s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decomp_ros_msgs)
+[4.981s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' for CMake module files
+[4.982s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs' for CMake config files
+[4.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_ros_msgs', 'cmake_prefix_path')
+[4.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.ps1'
+[4.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.dsv'
+[4.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/cmake_prefix_path.sh'
+[4.983s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib'
+[4.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('decomp_ros_msgs', 'ld_library_path_lib')
+[4.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.ps1'
+[4.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.dsv'
+[4.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/hook/ld_library_path_lib.sh'
+[4.984s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/bin'
+[4.985s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/pkgconfig/decomp_ros_msgs.pc'
+[4.985s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/python3.10/site-packages'
+[4.985s] Level 1:colcon.colcon_core.environment:checking '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/bin'
+[4.985s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.ps1'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.dsv'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.sh'
+[4.987s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.bash'
+[4.987s] INFO:colcon.colcon_core.shell:Creating package script '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.zsh'
+[4.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/colcon-core/packages/decomp_ros_msgs)
+[4.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.988s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.992s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.993s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.993s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.993s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.994s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[4.994s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.995s] INFO:colcon.colcon_core.shell:Creating prefix script '/mpc/new/Elastic-Tracker/install/local_setup.ps1'
+[4.996s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mpc/new/Elastic-Tracker/install/_local_setup_util_ps1.py'
+[4.997s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mpc/new/Elastic-Tracker/install/setup.ps1'
+[4.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/mpc/new/Elastic-Tracker/install/local_setup.sh'
+[4.999s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mpc/new/Elastic-Tracker/install/_local_setup_util_sh.py'
+[5.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mpc/new/Elastic-Tracker/install/setup.sh'
+[5.001s] INFO:colcon.colcon_core.shell:Creating prefix script '/mpc/new/Elastic-Tracker/install/local_setup.bash'
+[5.001s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mpc/new/Elastic-Tracker/install/setup.bash'
+[5.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/mpc/new/Elastic-Tracker/install/local_setup.zsh'
+[5.003s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mpc/new/Elastic-Tracker/install/setup.zsh'

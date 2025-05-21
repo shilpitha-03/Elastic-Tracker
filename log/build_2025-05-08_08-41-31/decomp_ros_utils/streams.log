@@ -1,0 +1,376 @@
+[0.013s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.178s] -- The CXX compiler identification is GNU 11.4.0
+[0.188s] -- Detecting C compiler ABI info
+[0.249s] -- Detecting C compiler ABI info - done
+[0.257s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.258s] -- Detecting C compile features
+[0.258s] -- Detecting C compile features - done
+[0.262s] -- Detecting CXX compiler ABI info
+[0.333s] -- Detecting CXX compiler ABI info - done
+[0.341s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.342s] -- Detecting CXX compile features
+[0.342s] -- Detecting CXX compile features - done
+[0.356s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.546s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.709s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.805s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.817s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.836s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.867s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.011s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.020s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.076s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.104s] -- Looking for pthread.h
+[1.169s] -- Looking for pthread.h - found
+[1.169s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.234s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.235s] -- Found Threads: TRUE  
+[1.339s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.397s] -- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)
+[1.445s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.466s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.470s] -- Found OGRE
+[1.470s] --   static     : OFF
+[1.470s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.470s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.470s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.470s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.470s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.470s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.470s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.470s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.471s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.471s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.471s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.494s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.504s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.596s] -- Found X11: /usr/include   
+[1.596s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.676s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.676s] -- Looking for gethostbyname
+[1.735s] -- Looking for gethostbyname - found
+[1.735s] -- Looking for connect
+[1.793s] -- Looking for connect - found
+[1.793s] -- Looking for remove
+[1.852s] -- Looking for remove - found
+[1.852s] -- Looking for shmat
+[1.909s] -- Looking for shmat - found
+[1.909s] -- Looking for IceConnectionNumber in ICE
+[1.971s] -- Looking for IceConnectionNumber in ICE - found
+[2.067s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.153s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.153s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.325s] -- Found decomp_ros_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake)
+[2.346s] -- Found decomp_basis: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/cmake)
+[2.347s] -- Found decomp_geometry: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake)
+[2.437s] -- Configuring done
+[2.486s] -- Generating done
+[2.491s] -- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_utils
+[2.501s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[2.502s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_utils -- -j12 -l12
+[2.546s] [35m[1mConsolidate compiler generated dependencies of target decomp_rviz_plugins[0m
+[2.585s] [ 12%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o[0m
+[2.588s] [ 25%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o[0m
+[2.589s] [ 37%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o[0m
+[2.593s] [ 50%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/objects/mesh_shape.cpp.o[0m
+[4.764s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:[m[K In constructor ‘[01m[Krviz_rendering::objects::MeshShape::MeshShape(Ogre::SceneManager*, Ogre::SceneNode*)[m[K’:
+[4.764s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:13:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOgre::ManualObject::ManualObject()[m[K’
+[4.764s]    13 |   manual_object_.reset(new Ogre::ManualObject([01;31m[K)[m[K);
+[4.764s]       |                                               [01;31m[K^[m[K
+[4.764s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:7[m[K,
+[4.764s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:3[m[K:
+[4.764s] [01m[K/usr/include/OGRE/OgreManualObject.h:109:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::ManualObject::ManualObject(const String&)[m[K’
+[4.764s]   109 |                 [01;36m[KManualObject[m[K(const String& name);
+[4.765s]       |                 [01;36m[K^~~~~~~~~~~~[m[K
+[4.765s] [01m[K/usr/include/OGRE/OgreManualObject.h:109:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.765s] [01m[K/usr/include/OGRE/OgreManualObject.h:106:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOgre::ManualObject::ManualObject(const Ogre::ManualObject&)[m[K’
+[4.765s]   106 |         class _OgreExport [01;36m[KManualObject[m[K : public MovableObject
+[4.765s]       |                           [01;36m[K^~~~~~~~~~~~[m[K
+[4.765s] [01m[K/usr/include/OGRE/OgreManualObject.h:106:27:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.765s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:16:20:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Ogre::SceneManager[m[K’
+[4.765s]    16 |     : scene_manager[01;31m[K->[m[KgetRootSceneNode()->createChildSceneNode();
+[4.765s]       |                    [01;31m[K^~[m[K
+[4.766s] In file included from [01m[K/usr/include/OGRE/OgreSceneNode.h:31[m[K,
+[4.766s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:6[m[K,
+[4.766s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:3[m[K:
+[4.766s] [01m[K/usr/include/OGRE/OgrePrerequisites.h:254:11:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Ogre::SceneManager[m[K’
+[4.766s]   254 |     class [01;36m[KSceneManager[m[K;
+[4.766s]       |           [01;36m[K^~~~~~~~~~~~[m[K
+[5.075s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:160: CMakeFiles/decomp_rviz_plugins.dir/src/objects/mesh_shape.cpp.o] Error 1
+[5.075s] gmake[2]: *** Waiting for unfinished jobs....
+[5.616s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[5.616s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:77:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvec_E[m[K’ does not name a type
+[5.616s]    77 |   void setMessage(const [01;31m[Kvec_E[m[K<vec_Vec3f>& bds);
+[5.616s]       |                         [01;31m[K^~~~~[m[K
+[5.617s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:77:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[5.617s]    77 |   void setMessage(const vec_E[01;31m[K<[m[Kvec_Vec3f>& bds);
+[5.617s]       |                              [01;31m[K^[m[K
+[5.626s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:22:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kvec_E[m[K’ does not name a type
+[5.626s]    22 | void MeshVisual::setMessage(const [01;31m[Kvec_E[m[K<vec_Vec3f> & bds)
+[5.626s]       |                                   [01;31m[K^~~~~[m[K
+[5.626s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:22:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[5.626s]    22 | void MeshVisual::setMessage(const vec_E[01;31m[K<[m[Kvec_Vec3f> & bds)
+[5.626s]       |                                        [01;31m[K^[m[K
+[5.631s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::MeshVisual::setMessage(int)[m[K’:
+[5.631s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:26:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kbds[m[K’ was not declared in this scope
+[5.631s]    26 |   if ([01;31m[Kbds[m[K.empty()) {
+[5.632s]       |       [01;31m[K^~~[m[K
+[5.636s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:33:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kbds[m[K’ was not declared in this scope
+[5.636s]    33 |   for (auto const & vs : [01;31m[Kbds[m[K) {
+[5.636s]       |                          [01;31m[K^~~[m[K
+[5.641s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ was not declared in this scope
+[5.641s]    38 |     [01;31m[KVec3f[m[K p0 = vs[0], p1 = vs[1], p2 = vs[2];
+[5.641s]       |     [01;31m[K^~~~~[m[K
+[5.641s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:39:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kn[m[K’
+[5.641s]    39 |     Vec3f[01;31m[K [m[K[32m[Kn[m[K  = (p2 - p0).cross(p1 - p0).normalized();
+[5.642s]       |          [01;31m[K^[m[K[32m[K~[m[K
+[5.642s]       |          [32m[K;[m[K
+[5.646s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:40:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[5.646s]    40 |     if (std::isnan([01;31m[Kn[m[K(0))) {
+[5.646s]       |                    [01;31m[K^[m[K
+[5.646s]       |                    [32m[Kyn[m[K
+[5.650s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:44:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[5.650s]    44 |       static_cast<float>([01;31m[Kn[m[K(0)),
+[5.650s]       |                          [01;31m[K^[m[K
+[5.650s]       |                          [32m[Kyn[m[K
+[5.652s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:51:13:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ does not name a type
+[5.652s]    51 |       const [01;31m[KVec3f[m[K & pt = vs[i];
+[5.652s]       |             [01;31m[K^~~~~[m[K
+[5.656s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:53:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kpt[m[K’ was not declared in this scope
+[5.656s]    53 |         static_cast<float>([01;31m[Kpt[m[K(0)),
+[5.656s]       |                            [01;31m[K^~[m[K
+[5.656s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::MeshVisual::setColor(float, float, float, float)[m[K’:
+[5.657s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:80:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rviz_rendering::objects::MeshShape[m[K’ has no member named ‘[01m[KsetColor[m[K’
+[5.657s]    80 |   obj_->[01;31m[KsetColor[m[K(r, g, b, a);
+[5.657s]       |         [01;31m[K^~~~~~~~[m[K
+[6.061s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1
+[6.759s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1[m[K:
+[6.759s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:14:24:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[KOgre::Vector3[m[K’ after ‘[01m[Kclass[m[K’
+[6.759s]    14 | namespace Ogre { class [01;31m[KVector3[m[K; class Quaternion; }
+[6.759s]       |                        [01;31m[K^~~~~~~[m[K
+[6.759s] In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h:36[m[K,
+[6.759s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/ros_topic_display.hpp:39[m[K,
+[6.759s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:38[m[K,
+[6.759s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:7[m[K,
+[6.759s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1[m[K:
+[6.759s] [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h:259:29:[m[K [01;36m[Knote: [m[K‘[01m[KOgre::Vector3[m[K’ has a previous declaration here
+[6.760s]   259 |     typedef Vector<3, Real> [01;36m[KVector3[m[K;
+[6.760s]       |                             [01;36m[K^~~~~~~[m[K
+[6.773s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1[m[K:
+[6.773s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:50:19:[m[K [01;31m[Kerror: [m[K‘[01m[KMeshVisual[m[K’ was not declared in this scope
+[6.773s]    50 |   std::shared_ptr<[01;31m[KMeshVisual[m[K>   visual_mesh_;
+[6.773s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[6.773s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:50:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.773s]    50 |   std::shared_ptr<MeshVisual[01;31m[K>[m[K   visual_mesh_;
+[6.773s]       |                             [01;31m[K^[m[K
+[6.782s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:51:19:[m[K [01;31m[Kerror: [m[K‘[01m[KBoundVisual[m[K’ was not declared in this scope
+[6.782s]    51 |   std::shared_ptr<[01;31m[KBoundVisual[m[K>  visual_bound_;
+[6.782s]       |                   [01;31m[K^~~~~~~~~~~[m[K
+[6.782s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:51:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.782s]    51 |   std::shared_ptr<BoundVisual[01;31m[K>[m[K  visual_bound_;
+[6.782s]       |                              [01;31m[K^[m[K
+[6.791s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:52:19:[m[K [01;31m[Kerror: [m[K‘[01m[KVectorVisual[m[K’ was not declared in this scope
+[6.791s]    52 |   std::shared_ptr<[01;31m[KVectorVisual[m[K> visual_vector_;
+[6.791s]       |                   [01;31m[K^~~~~~~~~~~~[m[K
+[6.791s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:52:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.792s]    52 |   std::shared_ptr<VectorVisual[01;31m[K>[m[K visual_vector_;
+[6.792s]       |                               [01;31m[K^[m[K
+[6.793s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:68:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvec_E[m[K’ does not name a type
+[6.793s]    68 |   [01;31m[Kvec_E[m[K<vec_Vec3f> vertices_;
+[6.793s]       |   [01;31m[K^~~~~[m[K
+[6.795s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:69:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvec_E[m[K’ does not name a type
+[6.795s]    69 |   [01;31m[Kvec_E[m[K<std::pair<Vec3f, Vec3f>> vs_;
+[6.795s]       |   [01;31m[K^~~~~[m[K
+[6.797s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2[m[K:
+[6.797s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:77:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvec_E[m[K’ does not name a type
+[6.797s]    77 |   void setMessage(const [01;31m[Kvec_E[m[K<vec_Vec3f>& bds);
+[6.797s]       |                         [01;31m[K^~~~~[m[K
+[6.797s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:77:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[6.797s]    77 |   void setMessage(const vec_E[01;31m[K<[m[Kvec_Vec3f>& bds);
+[6.797s]       |                              [01;31m[K^[m[K
+[7.276s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:7[m[K,
+[7.276s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:10[m[K:
+[7.276s] [01m[K/usr/include/OGRE/OgreVector3.h:51:23:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[KOgre::Vector3[m[K’ after ‘[01m[Kclass[m[K’
+[7.276s]    51 |     class _OgreExport [01;31m[KVector3[m[K
+[7.276s]       |                       [01;31m[K^~~~~~~[m[K
+[7.276s] In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h:36[m[K,
+[7.276s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/ros_topic_display.hpp:39[m[K,
+[7.276s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:38[m[K,
+[7.276s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/ellipsoid_array_display.hpp:6[m[K,
+[7.276s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:1[m[K:
+[7.276s] [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h:259:29:[m[K [01;36m[Knote: [m[K‘[01m[KOgre::Vector3[m[K’ has a previous declaration here
+[7.277s]   259 |     typedef Vector<3, Real> [01;36m[KVector3[m[K;
+[7.277s]       |                             [01;36m[K^~~~~~~[m[K
+[7.280s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:[m[K In member function ‘[01m[Kvirtual void decomp_rviz_plugins::EllipsoidArrayDisplay::processMessage(decomp_ros_msgs::msg::EllipsoidArray_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[7.280s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:65:28:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _ellipsoids_type[m[K’ {aka ‘[01m[Kconst std::vector<decomp_ros_msgs::msg::Ellipsoid_<std::allocator<void> >, std::allocator<decomp_ros_msgs::msg::Ellipsoid_<std::allocator<void> > > >[m[K’} to ‘[01m[Kdecomp_ros_msgs::msg::EllipsoidArray_<std::allocator<void> >::ConstSharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<const decomp_ros_msgs::msg::EllipsoidArray_<std::allocator<void> > >[m[K’}
+[7.280s]    65 |   visual_->setMessage([01;31m[Kmsg->ellipsoids[m[K);
+[7.280s]       |                       [01;31m[K~~~~~^~~~~~~~~~[m[K
+[7.280s]       |                            [01;31m[K|[m[K
+[7.280s]       |                            [01;31m[Kconst _ellipsoids_type {aka const std::vector<decomp_ros_msgs::msg::Ellipsoid_<std::allocator<void> >, std::allocator<decomp_ros_msgs::msg::Ellipsoid_<std::allocator<void> > > >}[m[K
+[7.280s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:3[m[K:
+[7.280s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/ellipsoid_array_visual.hpp:28:72:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decomp_rviz_plugins::EllipsoidArrayVisual::setMessage(decomp_ros_msgs::msg::EllipsoidArray_<std::allocator<void> >::ConstSharedPtr)[m[K’
+[7.280s]    28 |   void setMessage([01;36m[Kdecomp_ros_msgs::msg::EllipsoidArray::ConstSharedPtr msg[m[K);
+[7.280s]       |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.301s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:4[m[K:
+[7.301s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/vector_visual.hpp:14:7:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kusing Vec3f = Eigen::Vector3f[m[K’
+[7.301s]    14 | using [01;31m[KVec3f[m[K = Eigen::Vector3f;
+[7.301s]       |       [01;31m[K^~~~~[m[K
+[7.301s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/bound_visual.hpp:9[m[K,
+[7.301s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:3[m[K:
+[7.301s] [01m[K/mpc/new/Elastic-Tracker/install/decomp_basis/include/decomp_basis/data_type.h:79:17:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ktypedef Vecf<3> Vec3f[m[K’
+[7.301s]    79 | typedef Vecf<3> [01;36m[KVec3f[m[K;
+[7.301s]       |                 [01;36m[K^~~~~[m[K
+[7.304s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:7[m[K,
+[7.304s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:5[m[K:
+[7.305s] [01m[K/usr/include/OGRE/OgreVector3.h:51:23:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[KOgre::Vector3[m[K’ after ‘[01m[Kclass[m[K’
+[7.305s]    51 |     class _OgreExport [01;31m[KVector3[m[K
+[7.305s]       |                       [01;31m[K^~~~~~~[m[K
+[7.305s] In file included from [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h:36[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/ros_topic_display.hpp:39[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:38[m[K,
+[7.305s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:7[m[K,
+[7.305s]                  from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1[m[K:
+[7.305s] [01m[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h:259:29:[m[K [01;36m[Knote: [m[K‘[01m[KOgre::Vector3[m[K’ has a previous declaration here
+[7.305s]   259 |     typedef Vector<3, Real> [01;36m[KVector3[m[K;
+[7.305s]       |                             [01;36m[K^~~~~~~[m[K
+[7.306s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvirtual void decomp_rviz_plugins::PolyhedronArrayDisplay::reset()[m[K’:
+[7.306s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:57:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_mesh_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.306s]    57 |   visual_mesh_.[01;31m[Kreset[m[K();
+[7.306s]       |                [01;31m[K^~~~~[m[K
+[7.306s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:58:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_bound_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.306s]    58 |   visual_bound_.[01;31m[Kreset[m[K();
+[7.306s]       |                 [01;31m[K^~~~~[m[K
+[7.306s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:59:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_vector_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.306s]    59 |   visual_vector_.[01;31m[Kreset[m[K();
+[7.307s]       |                  [01;31m[K^~~~~[m[K
+[7.317s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvirtual void decomp_rviz_plugins::PolyhedronArrayDisplay::processMessage(decomp_ros_msgs::msg::PolyhedronArray_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[7.317s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:73:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvertices_[m[K’ was not declared in this scope
+[7.317s]    73 |   [01;31m[Kvertices_[m[K.clear();
+[7.317s]       |   [01;31m[K^~~~~~~~~[m[K
+[7.323s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:74:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvs_[m[K’ was not declared in this scope
+[7.323s]    74 |   [01;31m[Kvs_[m[K.clear();
+[7.323s]       |   [01;31m[K^~~[m[K
+[7.323s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:76:16:[m[K [01;31m[Kerror: [m[K‘[01m[KDecompROS[m[K’ has not been declared
+[7.323s]    76 |   auto polys = [01;31m[KDecompROS[m[K::ros_to_polyhedron_array(*msg);
+[7.323s]       |                [01;31m[K^~~~~~~~~[m[K
+[7.335s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:78:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcal_vertices[m[K’ was not declared in this scope
+[7.335s]    78 |     auto bds = [01;31m[Kcal_vertices[m[K(poly);
+[7.335s]       |                [01;31m[K^~~~~~~~~~~~[m[K
+[7.338s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::visualizeMesh()[m[K’:
+[7.338s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:90:46:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<decomp_rviz_plugins::MeshVisual>[m[K’ to ‘[01m[Kint[m[K’ in assignment
+[7.338s]    90 |   visual_mesh_ = [01;31m[Kstd::make_shared<MeshVisual>([m[K
+[7.338s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.338s]       |                                              [01;31m[K|[m[K
+[7.338s]       |                                              [01;31m[Kstd::shared_ptr<decomp_rviz_plugins::MeshVisual>[m[K
+[7.338s]    91 | [01;31m[K    context_->getSceneManager(), scene_node_)[m[K;
+[7.338s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[7.338s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:92:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.338s]    92 |   visual_mesh_[01;31m[K->[m[KsetMessage(vertices_);
+[7.338s]       |               [01;31m[K^~[m[K
+[7.347s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:92:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kvertices_[m[K’ was not declared in this scope
+[7.347s]    92 |   visual_mesh_->setMessage([01;31m[Kvertices_[m[K);
+[7.348s]       |                            [01;31m[K^~~~~~~~~[m[K
+[7.348s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:93:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.348s]    93 |   visual_mesh_[01;31m[K->[m[KsetFramePosition(position_);
+[7.348s]       |               [01;31m[K^~[m[K
+[7.348s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:94:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.348s]    94 |   visual_mesh_[01;31m[K->[m[KsetFrameOrientation(orientation_);
+[7.348s]       |               [01;31m[K^~[m[K
+[7.348s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:97:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.348s]    97 |   visual_mesh_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, alpha);
+[7.348s]       |               [01;31m[K^~[m[K
+[7.350s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::visualizeBound()[m[K’:
+[7.350s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:102:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<decomp_rviz_plugins::BoundVisual>[m[K’ to ‘[01m[Kint[m[K’ in assignment
+[7.350s]   102 |   visual_bound_ = [01;31m[Kstd::make_shared<BoundVisual>([m[K
+[7.350s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.350s]       |                                                [01;31m[K|[m[K
+[7.350s]       |                                                [01;31m[Kstd::shared_ptr<decomp_rviz_plugins::BoundVisual>[m[K
+[7.351s]   103 | [01;31m[K    context_->getSceneManager(), scene_node_)[m[K;
+[7.351s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K   
+[7.351s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:104:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.351s]   104 |   visual_bound_[01;31m[K->[m[KsetMessage(vertices_);
+[7.351s]       |                [01;31m[K^~[m[K
+[7.360s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:104:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kvertices_[m[K’ was not declared in this scope
+[7.360s]   104 |   visual_bound_->setMessage([01;31m[Kvertices_[m[K);
+[7.360s]       |                             [01;31m[K^~~~~~~~~[m[K
+[7.360s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:105:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.360s]   105 |   visual_bound_[01;31m[K->[m[KsetFramePosition(position_);
+[7.360s]       |                [01;31m[K^~[m[K
+[7.360s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:106:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.360s]   106 |   visual_bound_[01;31m[K->[m[KsetFrameOrientation(orientation_);
+[7.360s]       |                [01;31m[K^~[m[K
+[7.360s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:108:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.360s]   108 |   visual_bound_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, 1.0f);
+[7.360s]       |                [01;31m[K^~[m[K
+[7.360s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:109:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.361s]   109 |   visual_bound_[01;31m[K->[m[KsetScale(scale_property_->getFloat());
+[7.361s]       |                [01;31m[K^~[m[K
+[7.362s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::visualizeVs()[m[K’:
+[7.362s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:114:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<decomp_rviz_plugins::VectorVisual>[m[K’ to ‘[01m[Kint[m[K’ in assignment
+[7.363s]   114 |   visual_vector_ = [01;31m[Kstd::make_shared<VectorVisual>([m[K
+[7.363s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.363s]       |                                                  [01;31m[K|[m[K
+[7.363s]       |                                                  [01;31m[Kstd::shared_ptr<decomp_rviz_plugins::VectorVisual>[m[K
+[7.363s]   115 | [01;31m[K    context_->getSceneManager(), scene_node_)[m[K;
+[7.363s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[7.363s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:116:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.363s]   116 |   visual_vector_[01;31m[K->[m[KsetMessage(vs_);
+[7.363s]       |                 [01;31m[K^~[m[K
+[7.369s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:116:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kvs_[m[K’ was not declared in this scope
+[7.369s]   116 |   visual_vector_->setMessage([01;31m[Kvs_[m[K);
+[7.369s]       |                              [01;31m[K^~~[m[K
+[7.369s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:117:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.369s]   117 |   visual_vector_[01;31m[K->[m[KsetFramePosition(position_);
+[7.369s]       |                 [01;31m[K^~[m[K
+[7.369s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:118:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.369s]   118 |   visual_vector_[01;31m[K->[m[KsetFrameOrientation(orientation_);
+[7.369s]       |                 [01;31m[K^~[m[K
+[7.369s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:120:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.370s]   120 |   visual_vector_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, 1.0f);
+[7.370s]       |                 [01;31m[K^~[m[K
+[7.370s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:121:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.370s]   121 |   visual_vector_[01;31m[K->[m[KsetScale(vs_scale_property_->getFloat());
+[7.370s]       |                 [01;31m[K^~[m[K
+[7.370s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::visualizeMessage(int)[m[K’:
+[7.370s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:127:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_bound_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.370s]   127 |     case 0: visual_bound_.[01;31m[Kreset[m[K(); visual_vector_.reset(); visualizeMesh(); break;
+[7.370s]       |                           [01;31m[K^~~~~[m[K
+[7.370s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:127:51:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_vector_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.370s]   127 |     case 0: visual_bound_.reset(); visual_vector_.[01;31m[Kreset[m[K(); visualizeMesh(); break;
+[7.370s]       |                                                   [01;31m[K^~~~~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:128:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_mesh_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.371s]   128 |     case 1: visual_mesh_.[01;31m[Kreset[m[K(); visual_vector_.reset(); visualizeBound(); break;
+[7.371s]       |                          [01;31m[K^~~~~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:128:50:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_vector_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.371s]   128 |     case 1: visual_mesh_.reset(); visual_vector_.[01;31m[Kreset[m[K(); visualizeBound(); break;
+[7.371s]       |                                                  [01;31m[K^~~~~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:129:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((decomp_rviz_plugins::PolyhedronArrayDisplay*)this)->decomp_rviz_plugins::PolyhedronArrayDisplay::visual_vector_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[7.371s]   129 |     case 2: visual_vector_.[01;31m[Kreset[m[K(); visualizeMesh(); visualizeBound(); break;
+[7.371s]       |                            [01;31m[K^~~~~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::updateMeshColorAndAlpha()[m[K’:
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:139:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.371s]   139 |     visual_mesh_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, a);
+[7.371s]       |                 [01;31m[K^~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::updateBoundColorAndAlpha()[m[K’:
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:147:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.371s]   147 |     visual_bound_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, 1.0f);
+[7.371s]       |                  [01;31m[K^~[m[K
+[7.371s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::updateVsColorAndAlpha()[m[K’:
+[7.372s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:155:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.372s]   155 |     visual_vector_[01;31m[K->[m[KsetColor(c.r, c.g, c.b, 1.0f);
+[7.372s]       |                   [01;31m[K^~[m[K
+[7.372s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::updateScale()[m[K’:
+[7.372s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:167:35:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.372s]   167 |   if (visual_bound_) visual_bound_[01;31m[K->[m[KsetScale(scale_property_->getFloat());
+[7.372s]       |                                   [01;31m[K^~[m[K
+[7.372s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:[m[K In member function ‘[01m[Kvoid decomp_rviz_plugins::PolyhedronArrayDisplay::updateVsScale()[m[K’:
+[7.372s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:172:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[7.372s]   172 |   if (visual_vector_) visual_vector_[01;31m[K->[m[KsetScale(vs_scale_property_->getFloat());
+[7.372s]       |                                     [01;31m[K^~[m[K
+[10.423s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1
+[10.577s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1
+[10.577s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2
+[10.578s] gmake: *** [Makefile:146: all] Error 2
+[10.580s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '2': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_utils -- -j12 -l12

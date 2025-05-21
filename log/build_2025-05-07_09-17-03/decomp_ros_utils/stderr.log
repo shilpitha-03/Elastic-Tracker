@@ -1,0 +1,20 @@
+In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/objects/mesh_shape.hpp: No such file or directory
+   10 | #include [01;31m[K<rviz_rendering/objects/mesh_shape.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2[m[K:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/objects/mesh_shape.hpp: No such file or directory
+   10 | #include [01;31m[K<rviz_rendering/objects/mesh_shape.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_common/frame_manager.hpp: No such file or directory
+   10 | #include [01;31m[K<rviz_common/frame_manager.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

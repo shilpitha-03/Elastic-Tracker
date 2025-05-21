@@ -1,0 +1,354 @@
+[0.000000] (-) TimerEvent: {}
+[0.000227] (-) JobUnselected: {'identifier': 'decomp_basis'}
+[0.000268] (-) JobUnselected: {'identifier': 'decomp_geometry'}
+[0.000321] (-) JobUnselected: {'identifier': 'decomp_ros_msgs'}
+[0.000348] (-) JobUnselected: {'identifier': 'mapping'}
+[0.000366] (-) JobUnselected: {'identifier': 'object_detection_msgs'}
+[0.000389] (-) JobUnselected: {'identifier': 'quadrotor_msgs'}
+[0.000405] (-) JobUnselected: {'identifier': 'target_ekf'}
+[0.000422] (decomp_ros_utils) JobQueued: {'identifier': 'decomp_ros_utils', 'dependencies': OrderedDict([('decomp_ros_msgs', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs')])}
+[0.000444] (decomp_ros_utils) JobStarted: {'identifier': 'decomp_ros_utils'}
+[0.010721] (decomp_ros_utils) JobProgress: {'identifier': 'decomp_ros_utils', 'progress': 'cmake'}
+[0.011077] (decomp_ros_utils) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_utils', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0190f498-3df2-4697-9142-ccc6358c18e1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_utils'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[0.060686] (decomp_ros_utils) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099442] (-) TimerEvent: {}
+[0.109963] (decomp_ros_utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.117177] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.174200] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.181848] (decomp_ros_utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.182103] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.182486] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.185453] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199566] (-) TimerEvent: {}
+[0.253845] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.261956] (decomp_ros_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.262178] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.262713] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.266564] (decomp_ros_utils) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299693] (-) TimerEvent: {}
+[0.399918] (-) TimerEvent: {}
+[0.439902] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500013] (-) TimerEvent: {}
+[0.542956] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.594038] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.600091] (-) TimerEvent: {}
+[0.600972] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.611690] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.626723] (decomp_ros_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.645788] (decomp_ros_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.698863] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.700165] (-) TimerEvent: {}
+[0.702651] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.728391] (decomp_ros_utils) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.740605] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800316] (-) TimerEvent: {}
+[0.800510] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.800648] (decomp_ros_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.864387] (decomp_ros_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.865250] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900445] (-) TimerEvent: {}
+[0.929395] (decomp_ros_utils) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[0.964873] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[0.982790] (decomp_ros_utils) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[0.993609] (decomp_ros_utils) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[0.994683] (decomp_ros_utils) StdoutLine: {'line': b'-- Found OGRE\n'}
+[0.994770] (decomp_ros_utils) StdoutLine: {'line': b'--   static     : OFF\n'}
+[0.994836] (decomp_ros_utils) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[0.995014] (decomp_ros_utils) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.995180] (decomp_ros_utils) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[0.995249] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[0.995307] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[0.995363] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.995417] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[0.995479] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.995534] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.995586] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.995642] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[1.000541] (-) TimerEvent: {}
+[1.012910] (decomp_ros_utils) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.016684] (decomp_ros_utils) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.077823] (decomp_ros_utils) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.078169] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.100671] (-) TimerEvent: {}
+[1.138972] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.139232] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.197350] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.197611] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.200769] (-) TimerEvent: {}
+[1.257208] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.257418] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.300907] (-) TimerEvent: {}
+[1.315921] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.316083] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.374042] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.374293] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.401043] (-) TimerEvent: {}
+[1.434301] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.501175] (-) TimerEvent: {}
+[1.515940] (decomp_ros_utils) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.577024] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.577190] (decomp_ros_utils) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.601311] (-) TimerEvent: {}
+[1.701547] (-) TimerEvent: {}
+[1.704283] (decomp_ros_utils) StdoutLine: {'line': b'-- Found decomp_ros_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake)\n'}
+[1.721794] (decomp_ros_utils) StdoutLine: {'line': b'-- Found decomp_basis: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/cmake)\n'}
+[1.723036] (decomp_ros_utils) StdoutLine: {'line': b'-- Found decomp_geometry: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake)\n'}
+[1.800400] (decomp_ros_utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.801607] (-) TimerEvent: {}
+[1.817833] (decomp_ros_utils) StdoutLine: {'line': b'-- Generating done\n'}
+[1.822612] (decomp_ros_utils) StdoutLine: {'line': b'-- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_utils\n'}
+[1.834116] (decomp_ros_utils) CommandEnded: {'returncode': 0}
+[1.834683] (decomp_ros_utils) JobProgress: {'identifier': 'decomp_ros_utils', 'progress': 'build'}
+[1.834712] (decomp_ros_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/build/decomp_ros_utils', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_utils', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0190f498-3df2-4697-9142-ccc6358c18e1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_utils'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[1.872430] (decomp_ros_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target decomp_rviz_plugins\x1b[0m\n'}
+[1.893585] (decomp_ros_utils) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/bound_visual.cpp.o\x1b[0m\n'}
+[1.894628] (decomp_ros_utils) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o\x1b[0m\n'}
+[1.894787] (decomp_ros_utils) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_visual.cpp.o\x1b[0m\n'}
+[1.895411] (decomp_ros_utils) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o\x1b[0m\n'}
+[1.895791] (decomp_ros_utils) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/vector_visual.cpp.o\x1b[0m\n'}
+[1.897178] (decomp_ros_utils) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o\x1b[0m\n'}
+[1.897404] (decomp_ros_utils) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/objects/mesh_shape.cpp.o\x1b[0m\n'}
+[1.901718] (-) TimerEvent: {}
+[2.002010] (-) TimerEvent: {}
+[2.102281] (-) TimerEvent: {}
+[2.202700] (-) TimerEvent: {}
+[2.302990] (-) TimerEvent: {}
+[2.403286] (-) TimerEvent: {}
+[2.499972] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:5\x1b[m\x1b[K:\n'}
+[2.500204] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:1:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid preprocessing directive #create\n'}
+[2.500327] (decomp_ros_utils) StderrLine: {'line': b'    1 | # \x1b[01;31m\x1b[Kcreate\x1b[m\x1b[K and edit:\n'}
+[2.500441] (decomp_ros_utils) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.500618] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:2:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmulti-character character constant [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar\x07-Wmultichar\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.500755] (decomp_ros_utils) StderrLine: {'line': b"    2 | cat << \x1b[01;35m\x1b[K'EOF'\x1b[m\x1b[K > include/rviz_common/frame_manager.hpp\n"}
+[2.500869] (decomp_ros_utils) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.503364] (-) TimerEvent: {}
+[2.603632] (-) TimerEvent: {}
+[2.703935] (-) TimerEvent: {}
+[2.749097] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:10\x1b[m\x1b[K:\n'}
+[2.749391] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:1:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid preprocessing directive #create\n'}
+[2.749538] (decomp_ros_utils) StderrLine: {'line': b'    1 | # \x1b[01;31m\x1b[Kcreate\x1b[m\x1b[K and edit:\n'}
+[2.749669] (decomp_ros_utils) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.749784] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:2:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmulti-character character constant [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar\x07-Wmultichar\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749902] (decomp_ros_utils) StderrLine: {'line': b"    2 | cat << \x1b[01;35m\x1b[K'EOF'\x1b[m\x1b[K > include/rviz_common/frame_manager.hpp\n"}
+[2.750018] (decomp_ros_utils) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.804041] (-) TimerEvent: {}
+[2.904342] (-) TimerEvent: {}
+[3.004660] (-) TimerEvent: {}
+[3.104975] (-) TimerEvent: {}
+[3.205282] (-) TimerEvent: {}
+[3.305597] (-) TimerEvent: {}
+[3.405912] (-) TimerEvent: {}
+[3.506242] (-) TimerEvent: {}
+[3.606557] (-) TimerEvent: {}
+[3.706873] (-) TimerEvent: {}
+[3.807187] (-) TimerEvent: {}
+[3.907490] (-) TimerEvent: {}
+[3.962984] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1\x1b[m\x1b[K:\n'}
+[3.963325] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMeshShape\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krviz_rendering\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Krviz_rendering::objects::MeshShape\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.963478] (decomp_ros_utils) StderrLine: {'line': b'   38 |   std::unique_ptr<rviz_rendering::\x1b[01;31m\x1b[KMeshShape\x1b[m\x1b[K> obj_;\n'}
+[3.963607] (decomp_ros_utils) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.963775] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10\x1b[m\x1b[K,\n'}
+[3.963890] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1\x1b[m\x1b[K:\n'}
+[3.963992] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:16:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krviz_rendering::objects::MeshShape\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.964123] (decomp_ros_utils) StderrLine: {'line': b'   16 | class \x1b[01;36m\x1b[KMeshShape\x1b[m\x1b[K\n'}
+[3.964238] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.964334] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1\x1b[m\x1b[K:\n'}
+[3.964444] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.964559] (decomp_ros_utils) StderrLine: {'line': b'   38 |   std::unique_ptr<rviz_rendering::MeshShape\x1b[01;31m\x1b[K>\x1b[m\x1b[K obj_;\n'}
+[3.964683] (decomp_ros_utils) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.964801] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[3.965109] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kdecomp_rviz_plugins::MeshVisual::MeshVisual(Ogre::SceneManager*, Ogre::SceneNode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.965261] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:14:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kreset\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((decomp_rviz_plugins::MeshVisual*)this)->decomp_rviz_plugins::MeshVisual::obj_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.965408] (decomp_ros_utils) StderrLine: {'line': b'   14 |   obj_.\x1b[01;31m\x1b[Kreset\x1b[m\x1b[K(new rviz_rendering::objects::MeshShape(scene_manager_, frame_node_));\n'}
+[3.965534] (decomp_ros_utils) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.965663] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid decomp_rviz_plugins::MeshVisual::setMessage(vec_E<std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.965790] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:24:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.965912] (decomp_ros_utils) StderrLine: {'line': b'   24 |   obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kclear();\n'}
+[3.966014] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.968264] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:30:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.968563] (decomp_ros_utils) StderrLine: {'line': b'   30 |   obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[KbeginTriangles();\n'}
+[3.968703] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.994979] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:56:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.995250] (decomp_ros_utils) StderrLine: {'line': b'   56 |       obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[KaddVertex(v, normal);\n'}
+[3.995428] (decomp_ros_utils) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.995535] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:60:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.995638] (decomp_ros_utils) StderrLine: {'line': b'   60 |         obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[KaddTriangle(start_index, vertex_index - 1, vertex_index);\n'}
+[3.995746] (decomp_ros_utils) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.995862] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:65:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.995982] (decomp_ros_utils) StderrLine: {'line': b'   65 |   obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[KendTriangles();\n'}
+[3.996100] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.996230] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid decomp_rviz_plugins::MeshVisual::setColor(float, float, float, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.996353] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:80:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.996475] (decomp_ros_utils) StderrLine: {'line': b'   80 |   obj_\x1b[01;31m\x1b[K->\x1b[m\x1b[KsetColor(r, g, b, a);\n'}
+[3.996596] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.007599] (-) TimerEvent: {}
+[4.107918] (-) TimerEvent: {}
+[4.208230] (-) TimerEvent: {}
+[4.308555] (-) TimerEvent: {}
+[4.378236] (decomp_ros_utils) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1\n'}
+[4.378416] (decomp_ros_utils) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.408670] (-) TimerEvent: {}
+[4.508926] (-) TimerEvent: {}
+[4.609232] (-) TimerEvent: {}
+[4.709596] (-) TimerEvent: {}
+[4.809878] (-) TimerEvent: {}
+[4.910117] (-) TimerEvent: {}
+[5.010386] (-) TimerEvent: {}
+[5.110619] (-) TimerEvent: {}
+[5.181111] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Krviz_rendering::objects::MeshShape::MeshShape(Ogre::SceneManager*, Ogre::SceneNode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.181376] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:13:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KOgre::ManualObject::ManualObject()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.181463] (decomp_ros_utils) StderrLine: {'line': b'   13 |   manual_object_.reset(new Ogre::ManualObject(\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[5.181531] (decomp_ros_utils) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.181595] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:7\x1b[m\x1b[K,\n'}
+[5.181658] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:3\x1b[m\x1b[K:\n'}
+[5.181719] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE/OgreManualObject.h:109:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KOgre::ManualObject::ManualObject(const String&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.181781] (decomp_ros_utils) StderrLine: {'line': b'  109 |                 \x1b[01;36m\x1b[KManualObject\x1b[m\x1b[K(const String& name);\n'}
+[5.181841] (decomp_ros_utils) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.181901] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE/OgreManualObject.h:109:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[5.181961] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE/OgreManualObject.h:106:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KOgre::ManualObject::ManualObject(const Ogre::ManualObject&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.182023] (decomp_ros_utils) StderrLine: {'line': b'  106 |         class _OgreExport \x1b[01;36m\x1b[KManualObject\x1b[m\x1b[K : public MovableObject\n'}
+[5.182082] (decomp_ros_utils) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.182146] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE/OgreManualObject.h:106:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[5.182211] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:16:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass Ogre::SceneManager\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.182273] (decomp_ros_utils) StderrLine: {'line': b'   16 |     : scene_manager\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetRootSceneNode()->createChildSceneNode();\n'}
+[5.182332] (decomp_ros_utils) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.182390] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE/OgreSceneNode.h:31\x1b[m\x1b[K,\n'}
+[5.182448] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:6\x1b[m\x1b[K,\n'}
+[5.182507] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/objects/mesh_shape.cpp:3\x1b[m\x1b[K:\n'}
+[5.182567] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE/OgrePrerequisites.h:254:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass Ogre::SceneManager\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.182627] (decomp_ros_utils) StderrLine: {'line': b'  254 |     class \x1b[01;36m\x1b[KSceneManager\x1b[m\x1b[K;\n'}
+[5.182686] (decomp_ros_utils) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.210745] (-) TimerEvent: {}
+[5.311020] (-) TimerEvent: {}
+[5.411293] (-) TimerEvent: {}
+[5.476575] (decomp_ros_utils) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:160: CMakeFiles/decomp_rviz_plugins.dir/src/objects/mesh_shape.cpp.o] Error 1\n'}
+[5.511420] (-) TimerEvent: {}
+[5.611695] (-) TimerEvent: {}
+[5.711971] (-) TimerEvent: {}
+[5.812263] (-) TimerEvent: {}
+[5.912578] (-) TimerEvent: {}
+[6.012900] (-) TimerEvent: {}
+[6.113194] (-) TimerEvent: {}
+[6.213454] (-) TimerEvent: {}
+[6.313750] (-) TimerEvent: {}
+[6.414016] (-) TimerEvent: {}
+[6.502839] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1\x1b[m\x1b[K:\n'}
+[6.503009] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:14:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kusing typedef-name \xe2\x80\x98\x1b[01m\x1b[KOgre::Vector3\x1b[m\x1b[K\xe2\x80\x99 after \xe2\x80\x98\x1b[01m\x1b[Kclass\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.503083] (decomp_ros_utils) StderrLine: {'line': b'   14 | namespace Ogre { class \x1b[01;31m\x1b[KVector3\x1b[m\x1b[K; class Quaternion; }\n'}
+[6.503147] (decomp_ros_utils) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.503208] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h:36\x1b[m\x1b[K,\n'}
+[6.503268] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_topic_display.hpp:39\x1b[m\x1b[K,\n'}
+[6.503326] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:38\x1b[m\x1b[K,\n'}
+[6.503385] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:7\x1b[m\x1b[K,\n'}
+[6.503454] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1\x1b[m\x1b[K:\n'}
+[6.503512] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h:259:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOgre::Vector3\x1b[m\x1b[K\xe2\x80\x99 has a previous declaration here\n'}
+[6.503571] (decomp_ros_utils) StderrLine: {'line': b'  259 |     typedef Vector<3, Real> \x1b[01;36m\x1b[KVector3\x1b[m\x1b[K;\n'}
+[6.503628] (decomp_ros_utils) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.514101] (-) TimerEvent: {}
+[6.517362] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1\x1b[m\x1b[K:\n'}
+[6.517513] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:50:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMeshVisual\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.517595] (decomp_ros_utils) StderrLine: {'line': b'   50 |   std::shared_ptr<\x1b[01;31m\x1b[KMeshVisual\x1b[m\x1b[K>   visual_mesh_;\n'}
+[6.517660] (decomp_ros_utils) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.517721] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:50:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.517790] (decomp_ros_utils) StderrLine: {'line': b'   50 |   std::shared_ptr<MeshVisual\x1b[01;31m\x1b[K>\x1b[m\x1b[K   visual_mesh_;\n'}
+[6.517862] (decomp_ros_utils) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.527651] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:51:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBoundVisual\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.527807] (decomp_ros_utils) StderrLine: {'line': b'   51 |   std::shared_ptr<\x1b[01;31m\x1b[KBoundVisual\x1b[m\x1b[K>  visual_bound_;\n'}
+[6.527878] (decomp_ros_utils) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.527941] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:51:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.528005] (decomp_ros_utils) StderrLine: {'line': b'   51 |   std::shared_ptr<BoundVisual\x1b[01;31m\x1b[K>\x1b[m\x1b[K  visual_bound_;\n'}
+[6.528066] (decomp_ros_utils) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.538323] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:52:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVectorVisual\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.538479] (decomp_ros_utils) StderrLine: {'line': b'   52 |   std::shared_ptr<\x1b[01;31m\x1b[KVectorVisual\x1b[m\x1b[K> visual_vector_;\n'}
+[6.538546] (decomp_ros_utils) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.538608] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:52:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.538674] (decomp_ros_utils) StderrLine: {'line': b'   52 |   std::shared_ptr<VectorVisual\x1b[01;31m\x1b[K>\x1b[m\x1b[K visual_vector_;\n'}
+[6.538733] (decomp_ros_utils) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.540253] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:68:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvec_E\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.540366] (decomp_ros_utils) StderrLine: {'line': b'   68 |   \x1b[01;31m\x1b[Kvec_E\x1b[m\x1b[K<vec_Vec3f> vertices_;\n'}
+[6.540434] (decomp_ros_utils) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.542408] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:69:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvec_E\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.542656] (decomp_ros_utils) StderrLine: {'line': b'   69 |   \x1b[01;31m\x1b[Kvec_E\x1b[m\x1b[K<std::pair<Vec3f, Vec3f>> vs_;\n'}
+[6.542786] (decomp_ros_utils) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.614213] (-) TimerEvent: {}
+[6.714523] (-) TimerEvent: {}
+[6.814835] (-) TimerEvent: {}
+[6.915148] (-) TimerEvent: {}
+[7.015458] (-) TimerEvent: {}
+[7.092741] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2\x1b[m\x1b[K:\n'}
+[7.092972] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMeshShape\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krviz_rendering\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Krviz_rendering::objects::MeshShape\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.093098] (decomp_ros_utils) StderrLine: {'line': b'   38 |   std::unique_ptr<rviz_rendering::\x1b[01;31m\x1b[KMeshShape\x1b[m\x1b[K> obj_;\n'}
+[7.093207] (decomp_ros_utils) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.093319] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10\x1b[m\x1b[K,\n'}
+[7.093431] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2\x1b[m\x1b[K:\n'}
+[7.093537] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_rendering/objects/mesh_shape.hpp:16:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krviz_rendering::objects::MeshShape\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[7.093648] (decomp_ros_utils) StderrLine: {'line': b'   16 | class \x1b[01;36m\x1b[KMeshShape\x1b[m\x1b[K\n'}
+[7.093750] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.093881] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2\x1b[m\x1b[K:\n'}
+[7.093985] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[7.094097] (decomp_ros_utils) StderrLine: {'line': b'   38 |   std::unique_ptr<rviz_rendering::MeshShape\x1b[01;31m\x1b[K>\x1b[m\x1b[K obj_;\n'}
+[7.094208] (decomp_ros_utils) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.094312] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:38:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[7.115564] (-) TimerEvent: {}
+[7.116478] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:4\x1b[m\x1b[K:\n'}
+[7.116658] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/vector_visual.hpp:14:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kusing Vec3f = Eigen::Vector3f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.116795] (decomp_ros_utils) StderrLine: {'line': b'   14 | using \x1b[01;31m\x1b[KVec3f\x1b[m\x1b[K = Eigen::Vector3f;\n'}
+[7.116909] (decomp_ros_utils) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.117018] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/install/decomp_geometry/include/decomp_geometry/polyhedron.h:9\x1b[m\x1b[K,\n'}
+[7.117127] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:12\x1b[m\x1b[K,\n'}
+[7.117236] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2\x1b[m\x1b[K:\n'}
+[7.117359] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/install/decomp_basis/include/decomp_basis/data_type.h:79:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Ktypedef Vecf<3> Vec3f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.117504] (decomp_ros_utils) StderrLine: {'line': b'   79 | typedef Vecf<3> \x1b[01;36m\x1b[KVec3f\x1b[m\x1b[K;\n'}
+[7.117611] (decomp_ros_utils) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.122236] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:5\x1b[m\x1b[K:\n'}
+[7.122427] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:2:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcat\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[7.122641] (decomp_ros_utils) StderrLine: {'line': b"    2 | \x1b[01;31m\x1b[Kcat\x1b[m\x1b[K << 'EOF' > include/rviz_common/frame_manager.hpp\n"}
+[7.122713] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.122780] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/cstdio:42\x1b[m\x1b[K,\n'}
+[7.122842] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ext/string_conversions.h:43\x1b[m\x1b[K,\n'}
+[7.122902] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6608\x1b[m\x1b[K,\n'}
+[7.122961] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[7.123019] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[7.123075] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[7.123142] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:33\x1b[m\x1b[K,\n'}
+[7.123200] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/polyhedron_array_display.hpp:7\x1b[m\x1b[K,\n'}
+[7.123258] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1\x1b[m\x1b[K:\n'}
+[7.123315] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:38:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.123374] (decomp_ros_utils) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[KEOF\x1b[m\x1b[K\n'}
+[7.123431] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.123488] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:38:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.123552] (decomp_ros_utils) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[KEOF\x1b[m\x1b[K\n'}
+[7.123610] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.196752] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:2:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcat\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[7.196984] (decomp_ros_utils) StderrLine: {'line': b"    2 | \x1b[01;31m\x1b[Kcat\x1b[m\x1b[K << 'EOF' > include/rviz_common/frame_manager.hpp\n"}
+[7.197055] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.197118] (decomp_ros_utils) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/cstdio:42\x1b[m\x1b[K,\n'}
+[7.197179] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ext/string_conversions.h:43\x1b[m\x1b[K,\n'}
+[7.197239] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6608\x1b[m\x1b[K,\n'}
+[7.197309] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[7.197373] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[7.197430] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[7.197489] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/message_filter_display.hpp:33\x1b[m\x1b[K,\n'}
+[7.197555] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/ellipsoid_array_display.hpp:6\x1b[m\x1b[K,\n'}
+[7.197615] (decomp_ros_utils) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:1\x1b[m\x1b[K:\n'}
+[7.197673] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:38:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.197737] (decomp_ros_utils) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[KEOF\x1b[m\x1b[K\n'}
+[7.197793] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.197850] (decomp_ros_utils) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/rviz_common/frame_manager.hpp:38:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.197910] (decomp_ros_utils) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[KEOF\x1b[m\x1b[K\n'}
+[7.197967] (decomp_ros_utils) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.215698] (-) TimerEvent: {}
+[7.315996] (-) TimerEvent: {}
+[7.416294] (-) TimerEvent: {}
+[7.516588] (-) TimerEvent: {}
+[7.616886] (-) TimerEvent: {}
+[7.717148] (-) TimerEvent: {}
+[7.817425] (-) TimerEvent: {}
+[7.917727] (-) TimerEvent: {}
+[7.959690] (decomp_ros_utils) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1\n'}
+[7.960266] (decomp_ros_utils) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1\n'}
+[7.960683] (decomp_ros_utils) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2\n'}
+[7.961042] (decomp_ros_utils) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.966038] (decomp_ros_utils) CommandEnded: {'returncode': 2}
+[7.977689] (decomp_ros_utils) JobEnded: {'identifier': 'decomp_ros_utils', 'rc': 2}
+[7.988189] (-) EventReactorShutdown: {}

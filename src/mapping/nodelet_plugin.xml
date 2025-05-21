@@ -1,5 +1,10 @@
-<library path="lib/libmapping_nodelet">
-  <class name="mapping/Nodelet" type="mapping::Nodelet" base_class_type="nodelet::Nodelet">
-    <description></description>
+<?xml version="1.0"?>
+<library path="libmapping_nodelet">
+  <class name="mapping::MappingNodelet"
+         type="mapping::MappingNodelet"
+         base_class_type="rclcpp_components::NodeFactory">
+    <description>
+      Occlusion-aware mapping component for Elastic Tracker
+    </description>
   </class>
 </library>

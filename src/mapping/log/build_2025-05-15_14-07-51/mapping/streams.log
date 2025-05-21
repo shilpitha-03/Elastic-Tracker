@@ -1,0 +1,148 @@
+[0.013s] Invoking command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/mapping -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/src/mapping/install/mapping
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.360s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.478s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.479s] -- Detecting C compile features
+[0.480s] -- Detecting C compile features - done
+[0.485s] -- Detecting CXX compiler ABI info
+[0.571s] -- Detecting CXX compiler ABI info - done
+[0.578s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.578s] -- Detecting CXX compile features
+[0.578s] -- Detecting CXX compile features - done
+[0.591s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.831s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.072s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.214s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.229s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.270s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.324s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.369s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.502s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.509s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.566s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.616s] -- Looking for pthread.h
+[1.706s] -- Looking for pthread.h - found
+[1.706s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.791s] -- Found Threads: TRUE  
+[1.944s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.021s] -- Found quadrotor_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake)
+[2.119s] -- Found object_detection_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/object_detection_msgs/share/object_detection_msgs/cmake)
+[2.150s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.327s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.413s] -- Checking for module 'eigen3'
+[2.436s] --   Found eigen3, version 3.4.0
+[2.471s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.471s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.541s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.623s] -- Checking for module 'libusb-1.0'
+[2.639s] --   Found libusb-1.0, version 1.0.25
+[2.672s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.674s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.674s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.725s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.726s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.726s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.726s] [0m** WARNING ** io features related to png will be disabled[0m
+[2.783s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[2.802s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[3.024s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[3.024s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[3.030s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[3.041s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[3.062s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[3.119s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[3.269s] -- Found X11: /usr/include   
+[3.270s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[3.350s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[3.351s] -- Looking for gethostbyname
+[3.428s] -- Looking for gethostbyname - found
+[3.428s] -- Looking for connect
+[3.492s] -- Looking for connect - found
+[3.492s] -- Looking for remove
+[3.599s] -- Looking for remove - found
+[3.599s] -- Looking for shmat
+[3.669s] -- Looking for shmat - found
+[3.670s] -- Looking for IceConnectionNumber in ICE
+[3.759s] -- Looking for IceConnectionNumber in ICE - found
+[3.830s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[3.834s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[3.838s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[3.841s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[3.977s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[3.987s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[3.993s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[4.006s] -- Found utf8cpp: /usr/include/utf8cpp  
+[4.054s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.054s] -- looking for PCL_COMMON
+[4.056s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.056s] -- looking for PCL_OCTREE
+[4.057s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.057s] -- looking for PCL_IO
+[4.058s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.059s] -- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  
+[4.069s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.133s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[4.175s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[4.418s] -- Configuring done
+[4.562s] -- Generating done
+[4.598s] -- Build files have been written to: /mpc/new/Elastic-Tracker/src/mapping/build/mapping
+[4.621s] Invoked command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/mapping -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/src/mapping/install/mapping
+[4.624s] Invoking command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/mapping/build/mapping -- -j12 -l12
+[4.685s] [ 12%] [32mBuilding CXX object CMakeFiles/mapping_core.dir/src/mapping.cc.o[0m
+[13.777s] [ 25%] [32m[1mLinking CXX static library libmapping_core.a[0m
+[13.808s] [ 25%] Built target mapping_core
+[13.828s] [ 50%] [32mBuilding CXX object CMakeFiles/mapping_nodelet.dir/src/mapping_nodelet.cpp.o[0m
+[13.828s] [ 50%] [32mBuilding CXX object CMakeFiles/visualize_history_path.dir/src/visualize_history_path.cpp.o[0m
+[13.829s] [ 62%] [32mBuilding CXX object CMakeFiles/mapping_vis_node.dir/src/mapping_vis_node.cpp.o[0m
+[31.206s] [ 75%] [32m[1mLinking CXX executable mapping_vis_node[0m
+[31.896s] [ 75%] Built target mapping_vis_node
+[37.980s] [ 87%] [32m[1mLinking CXX executable visualize_history_path[0m
+[38.488s] [ 87%] Built target visualize_history_path
+[47.414s] [100%] [32m[1mLinking CXX shared library libmapping_nodelet.so[0m
+[47.899s] [100%] Built target mapping_nodelet
+[47.909s] Invoked command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/mapping/build/mapping -- -j12 -l12
+[47.918s] Invoking command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/src/mapping/build/mapping
+[47.924s] -- Install configuration: "Release"
+[47.925s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_core.a
+[47.925s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_nodelet.so
+[47.927s] -- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_nodelet.so" to ""
+[47.927s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/mapping_vis_node
+[47.927s] -- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/mapping_vis_node" to ""
+[47.927s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/visualize_history_path
+[47.929s] -- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/visualize_history_path" to ""
+[47.929s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include/mapping
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include/mapping/mapping.h
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/D435.yaml
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/rviz_real.rviz
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/camera.yaml
+[47.930s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/rviz_sim.rviz
+[47.931s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch
+[47.931s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/run.launch.py
+[47.931s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/mapping.launch.py
+[47.931s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/rviz_sim.launch.py
+[47.932s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/library_path.sh
+[47.932s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/library_path.dsv
+[47.932s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/package_run_dependencies/mapping
+[47.932s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/parent_prefix_path/mapping
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/ament_prefix_path.sh
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/ament_prefix_path.dsv
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/path.sh
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/path.dsv
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.bash
+[47.933s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.sh
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.zsh
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.dsv
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/package.dsv
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/packages/mapping
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/rclcpp_components/mapping
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[47.934s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/ament_cmake_export_libraries-extras.cmake
+[47.935s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/mappingConfig.cmake
+[47.935s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/mappingConfig-version.cmake
+[47.935s] -- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/package.xml
+[47.937s] Invoked command in '/mpc/new/Elastic-Tracker/src/mapping/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/src/mapping/build/mapping

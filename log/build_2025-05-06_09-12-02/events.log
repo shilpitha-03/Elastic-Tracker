@@ -1,0 +1,518 @@
+[0.000000] (-) TimerEvent: {}
+[0.000651] (-) JobUnselected: {'identifier': 'object_detection_msgs'}
+[0.000765] (-) JobUnselected: {'identifier': 'target_ekf'}
+[0.000786] (quadrotor_msgs) JobQueued: {'identifier': 'quadrotor_msgs', 'dependencies': OrderedDict()}
+[0.000806] (quadrotor_msgs) JobStarted: {'identifier': 'quadrotor_msgs'}
+[0.009272] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'cmake'}
+[0.009859] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/quadrotor_msgs', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/quadrotor_msgs'], 'cwd': '/mpc/new/Elastic-Tracker/build/quadrotor_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/quadrotor_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073738] (quadrotor_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099979] (-) TimerEvent: {}
+[0.121405] (quadrotor_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.127680] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.183404] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.191131] (quadrotor_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.191374] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.191758] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.194875] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200081] (-) TimerEvent: {}
+[0.263201] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.271011] (quadrotor_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.271293] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.271749] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.274914] (quadrotor_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300189] (-) TimerEvent: {}
+[0.400389] (-) TimerEvent: {}
+[0.439813] (quadrotor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500503] (-) TimerEvent: {}
+[0.534432] (quadrotor_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.576177] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.582087] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.591553] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.600602] (-) TimerEvent: {}
+[0.604103] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.623397] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.666176] (quadrotor_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.684400] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.700724] (-) TimerEvent: {}
+[0.800956] (-) TimerEvent: {}
+[0.901159] (-) TimerEvent: {}
+[1.001358] (-) TimerEvent: {}
+[1.032240] (quadrotor_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101446] (-) TimerEvent: {}
+[1.201708] (-) TimerEvent: {}
+[1.301951] (-) TimerEvent: {}
+[1.402195] (-) TimerEvent: {}
+[1.459131] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.502311] (-) TimerEvent: {}
+[1.602542] (-) TimerEvent: {}
+[1.635478] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.662648] (quadrotor_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.664889] (quadrotor_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.693386] (quadrotor_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.693595] (quadrotor_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.693695] (quadrotor_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.693779] (quadrotor_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.702651] (-) TimerEvent: {}
+[1.720149] (quadrotor_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.790467] (quadrotor_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.802723] (-) TimerEvent: {}
+[1.830968] (quadrotor_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.844233] (quadrotor_msgs) StdoutLine: {'line': b'-- Build files have been written to: /mpc/new/Elastic-Tracker/build/quadrotor_msgs\n'}
+[1.852437] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[1.853066] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'build'}
+[1.854170] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/build/quadrotor_msgs', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/build/quadrotor_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/quadrotor_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.888594] (quadrotor_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.897585] (quadrotor_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.902490] (quadrotor_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_quadrotor_msgs\n'}
+[1.902786] (-) TimerEvent: {}
+[2.003008] (-) TimerEvent: {}
+[2.103255] (-) TimerEvent: {}
+[2.154079] (quadrotor_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.154445] (quadrotor_msgs) StdoutLine: {'line': b'creating quadrotor_msgs.egg-info\n'}
+[2.154591] (quadrotor_msgs) StdoutLine: {'line': b'writing quadrotor_msgs.egg-info/PKG-INFO\n'}
+[2.154762] (quadrotor_msgs) StdoutLine: {'line': b'writing dependency_links to quadrotor_msgs.egg-info/dependency_links.txt\n'}
+[2.154900] (quadrotor_msgs) StdoutLine: {'line': b'writing top-level names to quadrotor_msgs.egg-info/top_level.txt\n'}
+[2.155019] (quadrotor_msgs) StdoutLine: {'line': b"writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[2.156539] (quadrotor_msgs) StdoutLine: {'line': b"reading manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[2.156935] (quadrotor_msgs) StdoutLine: {'line': b"writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[2.178112] (quadrotor_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_quadrotor_msgs_egg\n'}
+[2.203366] (-) TimerEvent: {}
+[2.303607] (-) TimerEvent: {}
+[2.403855] (-) TimerEvent: {}
+[2.504104] (-) TimerEvent: {}
+[2.604330] (-) TimerEvent: {}
+[2.630271] (quadrotor_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/position_command__functions.c.o\x1b[0m\n'}
+[2.630608] (quadrotor_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/occ_map3d__functions.c.o\x1b[0m\n'}
+[2.630821] (quadrotor_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/replan_state__functions.c.o\x1b[0m\n'}
+[2.630932] (quadrotor_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/poly_traj__functions.c.o\x1b[0m\n'}
+[2.632295] (quadrotor_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/aux_command__functions.c.o\x1b[0m\n'}
+[2.632474] (quadrotor_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.c.o\x1b[0m\n'}
+[2.633253] (quadrotor_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/so3_command__functions.c.o\x1b[0m\n'}
+[2.633669] (quadrotor_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/takeoff_land__functions.c.o\x1b[0m\n'}
+[2.633829] (quadrotor_msgs) StdoutLine: {'line': b'[ 11%] Built target quadrotor_msgs__cpp\n'}
+[2.644935] (quadrotor_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.645205] (quadrotor_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.645394] (quadrotor_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.697348] (quadrotor_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libquadrotor_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.704435] (-) TimerEvent: {}
+[2.731449] (quadrotor_msgs) StdoutLine: {'line': b'[ 16%] Built target quadrotor_msgs__rosidl_generator_c\n'}
+[2.739518] (quadrotor_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.739722] (quadrotor_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.739836] (quadrotor_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.804527] (-) TimerEvent: {}
+[2.904778] (-) TimerEvent: {}
+[3.005054] (-) TimerEvent: {}
+[3.105329] (-) TimerEvent: {}
+[3.187866] (quadrotor_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/replan_state__type_support.cpp.o\x1b[0m\n'}
+[3.189377] (quadrotor_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/poly_traj__type_support.cpp.o\x1b[0m\n'}
+[3.189625] (quadrotor_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/position_command__type_support.cpp.o\x1b[0m\n'}
+[3.189750] (quadrotor_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/so3_command__type_support.cpp.o\x1b[0m\n'}
+[3.189885] (quadrotor_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/aux_command__type_support.cpp.o\x1b[0m\n'}
+[3.190048] (quadrotor_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/occ_map3d__type_support.cpp.o\x1b[0m\n'}
+[3.197091] (quadrotor_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/px4ctrl_debug__type_support.cpp.o\x1b[0m\n'}
+[3.205416] (-) TimerEvent: {}
+[3.305842] (-) TimerEvent: {}
+[3.373844] (quadrotor_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/occ_map3d__type_support.cpp.o\x1b[0m\n'}
+[3.406018] (-) TimerEvent: {}
+[3.419481] (quadrotor_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/poly_traj__type_support.cpp.o\x1b[0m\n'}
+[3.465332] (quadrotor_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/replan_state__type_support.cpp.o\x1b[0m\n'}
+[3.506121] (-) TimerEvent: {}
+[3.513431] (quadrotor_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/position_command__type_support.cpp.o\x1b[0m\n'}
+[3.516816] (quadrotor_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/occ_map3d__type_support.cpp.o\x1b[0m\n'}
+[3.559131] (quadrotor_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/so3_command__type_support.cpp.o\x1b[0m\n'}
+[3.575242] (quadrotor_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/takeoff_land__type_support.cpp.o\x1b[0m\n'}
+[3.593512] (quadrotor_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/aux_command__type_support.cpp.o\x1b[0m\n'}
+[3.598876] (quadrotor_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/px4ctrl_debug__type_support.cpp.o\x1b[0m\n'}
+[3.606223] (-) TimerEvent: {}
+[3.606567] (quadrotor_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/occ_map3d__type_support.c.o\x1b[0m\n'}
+[3.607775] (quadrotor_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/occ_map3d__type_support.cpp.o\x1b[0m\n'}
+[3.611659] (quadrotor_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/poly_traj__type_support.c.o\x1b[0m\n'}
+[3.613733] (quadrotor_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/replan_state__type_support.c.o\x1b[0m\n'}
+[3.618489] (quadrotor_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/position_command__type_support.c.o\x1b[0m\n'}
+[3.619133] (quadrotor_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/poly_traj__type_support.cpp.o\x1b[0m\n'}
+[3.635001] (quadrotor_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/poly_traj__type_support.cpp.o\x1b[0m\n'}
+[3.639095] (quadrotor_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/replan_state__type_support.cpp.o\x1b[0m\n'}
+[3.647946] (quadrotor_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/takeoff_land__type_support.cpp.o\x1b[0m\n'}
+[3.657174] (quadrotor_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/so3_command__type_support.c.o\x1b[0m\n'}
+[3.669728] (quadrotor_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/aux_command__type_support.c.o\x1b[0m\n'}
+[3.673298] (quadrotor_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.c.o\x1b[0m\n'}
+[3.674643] (quadrotor_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/takeoff_land__type_support.c.o\x1b[0m\n'}
+[3.687653] (quadrotor_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.706326] (-) TimerEvent: {}
+[3.706986] (quadrotor_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/position_command__type_support.cpp.o\x1b[0m\n'}
+[3.711855] (quadrotor_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/occ_map3d__type_support_c.cpp.o\x1b[0m\n'}
+[3.712074] (quadrotor_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/replan_state__type_support.cpp.o\x1b[0m\n'}
+[3.717687] (quadrotor_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/position_command__type_support.cpp.o\x1b[0m\n'}
+[3.727801] (quadrotor_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libquadrotor_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.739935] (quadrotor_msgs) StdoutLine: {'line': b'[ 59%] Built target quadrotor_msgs__rosidl_typesupport_c\n'}
+[3.750556] (quadrotor_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/so3_command__type_support.cpp.o\x1b[0m\n'}
+[3.770259] (quadrotor_msgs) StdoutLine: {'line': b'[ 60%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c\n'}
+[3.780002] (quadrotor_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/aux_command__type_support.cpp.o\x1b[0m\n'}
+[3.806423] (-) TimerEvent: {}
+[3.906882] (-) TimerEvent: {}
+[3.967623] (quadrotor_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.007300] (-) TimerEvent: {}
+[4.053778] (quadrotor_msgs) StdoutLine: {'line': b'[ 63%] Built target quadrotor_msgs__rosidl_typesupport_cpp\n'}
+[4.064864] (quadrotor_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.cpp.o\x1b[0m\n'}
+[4.107408] (-) TimerEvent: {}
+[4.129212] (quadrotor_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/takeoff_land__type_support.cpp.o\x1b[0m\n'}
+[4.207513] (-) TimerEvent: {}
+[4.293853] (quadrotor_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/so3_command__type_support.cpp.o\x1b[0m\n'}
+[4.299600] (quadrotor_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/poly_traj__type_support_c.cpp.o\x1b[0m\n'}
+[4.307635] (-) TimerEvent: {}
+[4.329552] (quadrotor_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/replan_state__type_support_c.cpp.o\x1b[0m\n'}
+[4.348844] (quadrotor_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/position_command__type_support_c.cpp.o\x1b[0m\n'}
+[4.361996] (quadrotor_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/aux_command__type_support.cpp.o\x1b[0m\n'}
+[4.367407] (quadrotor_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/px4ctrl_debug__type_support.cpp.o\x1b[0m\n'}
+[4.377296] (quadrotor_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/takeoff_land__type_support.cpp.o\x1b[0m\n'}
+[4.387154] (quadrotor_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/so3_command__type_support_c.cpp.o\x1b[0m\n'}
+[4.391528] (quadrotor_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/aux_command__type_support_c.cpp.o\x1b[0m\n'}
+[4.407732] (-) TimerEvent: {}
+[4.415340] (quadrotor_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support_c.cpp.o\x1b[0m\n'}
+[4.507838] (-) TimerEvent: {}
+[4.608143] (-) TimerEvent: {}
+[4.641795] (quadrotor_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/takeoff_land__type_support_c.cpp.o\x1b[0m\n'}
+[4.687804] (quadrotor_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.708253] (-) TimerEvent: {}
+[4.808589] (-) TimerEvent: {}
+[4.811420] (quadrotor_msgs) StdoutLine: {'line': b'[ 79%] Built target quadrotor_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.908693] (-) TimerEvent: {}
+[4.981004] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.008781] (-) TimerEvent: {}
+[5.045955] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.058793] (quadrotor_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.108920] (-) TimerEvent: {}
+[5.117668] (quadrotor_msgs) StdoutLine: {'line': b'[ 81%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.133095] (quadrotor_msgs) StdoutLine: {'line': b'[ 81%] Built target quadrotor_msgs\n'}
+[5.148700] (quadrotor_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.209077] (-) TimerEvent: {}
+[5.309308] (-) TimerEvent: {}
+[5.409525] (-) TimerEvent: {}
+[5.509777] (-) TimerEvent: {}
+[5.610030] (-) TimerEvent: {}
+[5.710287] (-) TimerEvent: {}
+[5.810532] (-) TimerEvent: {}
+[5.910779] (-) TimerEvent: {}
+[6.011033] (-) TimerEvent: {}
+[6.111245] (-) TimerEvent: {}
+[6.211516] (-) TimerEvent: {}
+[6.311734] (-) TimerEvent: {}
+[6.377511] (quadrotor_msgs) StdoutLine: {'line': b'[ 82%] Built target quadrotor_msgs__py\n'}
+[6.392273] (quadrotor_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_position_command_s.c.o\x1b[0m\n'}
+[6.392496] (quadrotor_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_replan_state_s.c.o\x1b[0m\n'}
+[6.392600] (quadrotor_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_takeoff_land_s.c.o\x1b[0m\n'}
+[6.392972] (quadrotor_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_occ_map3d_s.c.o\x1b[0m\n'}
+[6.393127] (quadrotor_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_poly_traj_s.c.o\x1b[0m\n'}
+[6.394036] (quadrotor_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_aux_command_s.c.o\x1b[0m\n'}
+[6.394198] (quadrotor_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_so3_command_s.c.o\x1b[0m\n'}
+[6.394346] (quadrotor_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_px4ctrl_debug_s.c.o\x1b[0m\n'}
+[6.411847] (-) TimerEvent: {}
+[6.512144] (-) TimerEvent: {}
+[6.552032] (quadrotor_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/libquadrotor_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[6.587691] (quadrotor_msgs) StdoutLine: {'line': b'[ 93%] Built target quadrotor_msgs__rosidl_generator_py\n'}
+[6.603355] (quadrotor_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.603500] (quadrotor_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.603588] (quadrotor_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.612233] (-) TimerEvent: {}
+[6.711902] (quadrotor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.712043] (quadrotor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.712110] (quadrotor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.712298] (-) TimerEvent: {}
+[6.746679] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs__rosidl_typesupport_c__pyext\n'}
+[6.747191] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[6.747521] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.756714] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[6.757270] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'install'}
+[6.763658] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mpc/new/Elastic-Tracker/build/quadrotor_msgs'], 'cwd': '/mpc/new/Elastic-Tracker/build/quadrotor_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/quadrotor_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.770817] (quadrotor_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.771000] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/rosidl_interfaces/quadrotor_msgs\n'}
+[6.771145] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.771252] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.771346] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/takeoff_land.h\n'}
+[6.771434] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/px4ctrl_debug.h\n'}
+[6.771520] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/occ_map3d.h\n'}
+[6.771619] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/replan_state.h\n'}
+[6.771695] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/aux_command.h\n'}
+[6.771776] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/position_command.h\n'}
+[6.771859] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.771941] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__functions.c\n'}
+[6.772035] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.h\n'}
+[6.772123] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__functions.c\n'}
+[6.772227] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__functions.c\n'}
+[6.772321] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.c\n'}
+[6.772422] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.h\n'}
+[6.772507] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__struct.h\n'}
+[6.772597] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__functions.c\n'}
+[6.772677] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__functions.h\n'}
+[6.772764] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__functions.h\n'}
+[6.772846] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__functions.h\n'}
+[6.772928] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__functions.h\n'}
+[6.773011] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__functions.c\n'}
+[6.773103] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__struct.h\n'}
+[6.773186] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.h\n'}
+[6.773264] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__struct.h\n'}
+[6.773343] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__functions.h\n'}
+[6.773426] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__struct.h\n'}
+[6.773508] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.h\n'}
+[6.773585] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.h\n'}
+[6.773667] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__struct.h\n'}
+[6.773744] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.h\n'}
+[6.773821] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__struct.h\n'}
+[6.773898] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__struct.h\n'}
+[6.773979] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__struct.h\n'}
+[6.774057] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.h\n'}
+[6.774133] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.h\n'}
+[6.774208] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__functions.h\n'}
+[6.774283] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__functions.h\n'}
+[6.774359] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__functions.c\n'}
+[6.774440] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.h\n'}
+[6.774515] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__functions.c\n'}
+[6.774591] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.774667] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/so3_command.h\n'}
+[6.774743] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/poly_traj.h\n'}
+[6.774879] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.sh\n'}
+[6.775010] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.dsv\n'}
+[6.775166] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so\n'}
+[6.775511] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so" to ""\n'}
+[6.775599] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.775691] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.775757] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.775845] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_fastrtps_c.h\n'}
+[6.775921] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_fastrtps_c.h\n'}
+[6.775998] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776081] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776158] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776234] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776297] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776370] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_fastrtps_c.h\n'}
+[6.776446] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.776510] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.776735] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.776817] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.776898] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.776974] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/aux_command.hpp\n'}
+[6.777165] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/position_command.hpp\n'}
+[6.777244] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/px4ctrl_debug.hpp\n'}
+[6.777319] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/occ_map3d.hpp\n'}
+[6.777403] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/poly_traj.hpp\n'}
+[6.777469] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/takeoff_land.hpp\n'}
+[6.777563] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/replan_state.hpp\n'}
+[6.777629] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.777695] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__builder.hpp\n'}
+[6.777760] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__traits.hpp\n'}
+[6.777846] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__traits.hpp\n'}
+[6.777953] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__traits.hpp\n'}
+[6.778020] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.hpp\n'}
+[6.778085] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.hpp\n'}
+[6.778148] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__builder.hpp\n'}
+[6.778239] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.hpp\n'}
+[6.778346] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.hpp\n'}
+[6.778414] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__builder.hpp\n'}
+[6.778479] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__builder.hpp\n'}
+[6.778570] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__traits.hpp\n'}
+[6.778635] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__struct.hpp\n'}
+[6.778730] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__struct.hpp\n'}
+[6.778796] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__struct.hpp\n'}
+[6.778859] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__builder.hpp\n'}
+[6.778957] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__traits.hpp\n'}
+[6.779022] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__struct.hpp\n'}
+[6.779086] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__builder.hpp\n'}
+[6.779181] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.hpp\n'}
+[6.779249] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.hpp\n'}
+[6.779315] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.hpp\n'}
+[6.779402] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__struct.hpp\n'}
+[6.779498] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__builder.hpp\n'}
+[6.779576] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__builder.hpp\n'}
+[6.779653] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__traits.hpp\n'}
+[6.779718] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__struct.hpp\n'}
+[6.779804] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__traits.hpp\n'}
+[6.779867] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__struct.hpp\n'}
+[6.779942] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__struct.hpp\n'}
+[6.780017] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__traits.hpp\n'}
+[6.780090] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.hpp\n'}
+[6.780162] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/so3_command.hpp\n'}
+[6.780233] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.780332] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.780395] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.780471] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.780544] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.780620] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.780696] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.780771] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.780847] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.780928] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.781005] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/dds_fastrtps\n'}
+[6.781093] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.781153] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.781234] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.781295] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.781600] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.781699] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.781776] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.781868] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.781944] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.782023] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_introspection_c.h\n'}
+[6.782099] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_introspection_c.h\n'}
+[6.782174] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_introspection_c.h\n'}
+[6.782237] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_introspection_c.h\n'}
+[6.782310] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.c\n'}
+[6.782385] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.c\n'}
+[6.782458] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.c\n'}
+[6.782521] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_introspection_c.h\n'}
+[6.782594] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.c\n'}
+[6.782670] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.c\n'}
+[6.782746] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.c\n'}
+[6.782822] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.c\n'}
+[6.782898] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_introspection_c.h\n'}
+[6.782975] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_introspection_c.h\n'}
+[6.783051] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_introspection_c.h\n'}
+[6.783128] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.c\n'}
+[6.783218] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.783501] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.783580] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so\n'}
+[6.783794] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.783897] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs\n'}
+[6.783976] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg\n'}
+[6.784051] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail\n'}
+[6.784127] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.cpp\n'}
+[6.784204] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.cpp\n'}
+[6.784267] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.784334] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.784423] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.cpp\n'}
+[6.784509] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.cpp\n'}
+[6.784597] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.cpp\n'}
+[6.784702] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.784770] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.784836] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.cpp\n'}
+[6.784922] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.cpp\n'}
+[6.785033] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.785099] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.785159] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.cpp\n'}
+[6.785237] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.785325] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.785425] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.785794] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.785916] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so\n'}
+[6.786087] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.786215] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.sh\n'}
+[6.786337] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.dsv\n'}
+[6.786482] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info\n'}
+[6.786600] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.786736] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.786872] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.787001] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.787126] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs\n'}
+[6.787262] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.787392] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.787462] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.787542] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/__init__.py\n'}
+[6.787603] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.787678] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.787754] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.787836] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/libquadrotor_msgs__rosidl_generator_py.so\n'}
+[6.787897] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg\n'}
+[6.787972] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command_s.c\n'}
+[6.788048] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj_s.c\n'}
+[6.788123] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state_s.c\n'}
+[6.788197] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land.py\n'}
+[6.788273] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command_s.c\n'}
+[6.788346] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug.py\n'}
+[6.788445] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land_s.c\n'}
+[6.788517] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d.py\n'}
+[6.788578] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/__init__.py\n'}
+[6.788652] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command.py\n'}
+[6.788726] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command.py\n'}
+[6.788799] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d_s.c\n'}
+[6.788873] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj.py\n'}
+[6.788946] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command.py\n'}
+[6.789004] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state.py\n'}
+[6.789091] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug_s.c\n'}
+[6.789153] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command_s.c\n'}
+[6.812410] (-) TimerEvent: {}
+[6.831378] (quadrotor_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs'...\n"}
+[6.831504] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/__init__.py'...\n"}
+[6.831568] (quadrotor_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg'...\n"}
+[6.831638] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/__init__.py'...\n"}
+[6.831716] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command.py'...\n"}
+[6.831770] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d.py'...\n"}
+[6.831831] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj.py'...\n"}
+[6.831884] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command.py'...\n"}
+[6.831936] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug.py'...\n"}
+[6.831989] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state.py'...\n"}
+[6.832041] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command.py'...\n"}
+[6.832092] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land.py'...\n"}
+[6.835359] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.835619] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.835788] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.836026] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.836188] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.836409] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.836494] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so\n'}
+[6.836799] (quadrotor_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so" to ""\n'}
+[6.836950] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.idl\n'}
+[6.837075] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.idl\n'}
+[6.837174] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.idl\n'}
+[6.837342] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.idl\n'}
+[6.837505] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.idl\n'}
+[6.837613] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.idl\n'}
+[6.837697] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.idl\n'}
+[6.837768] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.idl\n'}
+[6.837841] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.msg\n'}
+[6.837908] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.msg\n'}
+[6.837962] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.msg\n'}
+[6.838028] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.msg\n'}
+[6.838091] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.msg\n'}
+[6.838144] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.msg\n'}
+[6.838210] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.msg\n'}
+[6.838272] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.msg\n'}
+[6.838336] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg\n'}
+[6.838411] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.msg\n'}
+[6.838520] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.msg\n'}
+[6.838575] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.msg\n'}
+[6.838627] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.msg\n'}
+[6.838714] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.msg\n'}
+[6.838765] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.msg\n'}
+[6.838828] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.msg\n'}
+[6.838889] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.msg\n'}
+[6.838941] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/package_run_dependencies/quadrotor_msgs\n'}
+[6.838993] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/parent_prefix_path/quadrotor_msgs\n'}
+[6.839057] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.sh\n'}
+[6.839122] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.dsv\n'}
+[6.839173] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.sh\n'}
+[6.839237] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.dsv\n'}
+[6.839300] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.bash\n'}
+[6.839351] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.sh\n'}
+[6.839416] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.zsh\n'}
+[6.839489] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.dsv\n'}
+[6.839559] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/package.dsv\n'}
+[6.839655] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/packages/quadrotor_msgs\n'}
+[6.839789] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport.cmake\n'}
+[6.839890] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.840003] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.840110] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.840214] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.840321] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.840418] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.840528] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.840638] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.840740] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.840847] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.840959] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.841075] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.841219] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.841295] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.841400] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.841497] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.841594] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.841750] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.841861] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.841968] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.842072] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.842165] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.842259] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.842366] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake\n'}
+[6.842446] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake\n'}
+[6.842557] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/package.xml\n'}
+[6.844387] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[6.862547] (quadrotor_msgs) JobEnded: {'identifier': 'quadrotor_msgs', 'rc': 0}
+[6.863068] (-) EventReactorShutdown: {}

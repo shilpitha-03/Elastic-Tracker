@@ -1,73 +1,83 @@
-#include <quadrotor_msgs/OccMap3d.h>
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/point_cloud2.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <ament_index_cpp/get_package_share_directory.hpp>
 
+#include <quadrotor_msgs/msg/occ_map3d.hpp>
 #include <prediction/prediction.hpp>
 #include <visualization/visualization.hpp>
+#include <mapping/mapping.hpp>
 
-// int main(int argc, char const *argv[]) {
-//   pre_bspline::Bspline bspline;
-//   bspline.setup(20, 1.1);
-//   Eigen::VectorXd N = bspline.calCoeff(4.0);
-//   std::cout << "N: " << N.transpose() << std::endl;
+using std::placeholders::_1;
 
-//   pre_bspline::PreBspline predict;
-//   return 0;
-// }
+class TestNode : public rclcpp::Node {
+public:
+  TestNode()
+  : Node("test_node")
+  {
+    // subscriptions
+    auto qos = rclcpp::QoS(rclcpp::KeepLast(1)).reliable();
+    gridmap_sub_ = this->create_subscription<quadrotor_msgs::msg::OccMap3d>(
+      "gridmap_inflate", qos,
+      std::bind(&TestNode::gridmap_callback, this, _1));
+    trigger_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      "triger", qos,
+      std::bind(&TestNode::triger_callback, this, _1));
 
-int data_i = 0;
-std::shared_ptr<prediction::Predict> prePtr_;
-std::shared_ptr<visualization::Visualization> visPtr_;
-mapping::OccGridMap map_;
-bool map_received_ = false;
-bool triger_received_ = false;
+    // timer (0.3s)
+    test_timer_ = this->create_wall_timer(
+      std::chrono::milliseconds(300),
+      std::bind(&TestNode::testCallback, this));
 
-Eigen::Vector3d target_p_, target_v_;
+    // core objects (pass node handle)
+    prePtr_ = std::make_shared<prediction::Predict>(*this);
+    visPtr_ = std::make_shared<visualization::Visualization>(*this);
 
-void gridmap_callback(const quadrotor_msgs::OccMap3dConstPtr &msgPtr) {
-  if (map_received_) {
-    return;
+    RCLCPP_WARN(this->get_logger(), "[TEST NODE]: ready.");
   }
-  map_.from_msg(*msgPtr);
-  prePtr_->setMap(map_);
-  ROS_WARN("[TEST NODE] GLOBAL MAP RECEIVED");
-  map_received_ = true;
-}
 
-void testCallback(const ros::TimerEvent &e) {
-}
+private:
+  void gridmap_callback(const quadrotor_msgs::msg::OccMap3d::SharedPtr msg) {
+    if (map_received_) return;
+    map_.from_msg(*msg);
+    prePtr_->setMap(map_);
+    RCLCPP_WARN(this->get_logger(), "[TEST NODE] GLOBAL MAP RECEIVED");
+    map_received_ = true;
+  }
 
-void triger_callback(const geometry_msgs::PoseStampedConstPtr &msgPtr) {
-  target_p_ << msgPtr->pose.position.x, msgPtr->pose.position.y, 1.0;
-  Eigen::Quaterniond q;
-  q.w() = msgPtr->pose.orientation.w;
-  q.x() = msgPtr->pose.orientation.x;
-  q.y() = msgPtr->pose.orientation.y;
-  q.z() = msgPtr->pose.orientation.z;
-  // target_v_ = q.toRotationMatrix() * Eigen::Vector3d(1, 0, 0);
-  target_v_ = Eigen::Vector3d(1, 0, 0);
+  void triger_callback(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+    target_p_ << msg->pose.position.x, msg->pose.position.y, 1.0;
+    // fixed velocity
+    target_v_ << 1.0, 0.0, 0.0;
 
-  std::vector<Eigen::Vector3d> predict_path;
-  std::cout << "target_p: " << target_p_.transpose() << std::endl;
-  std::cout << "target_v: " << target_v_.transpose() << std::endl;
-  prePtr_->predict(target_p_, target_v_, predict_path);
-  visPtr_->visualize_pointcloud(predict_path, "future_pts");
-}
+    std::vector<Eigen::Vector3d> predict_path;
+    RCLCPP_INFO(this->get_logger(),
+                "target_p: [%f, %f, %f]",
+                target_p_.x(), target_p_.y(), target_p_.z());
+    prePtr_->predict(target_p_, target_v_, predict_path);
+    visPtr_->visualize_pointcloud(predict_path, "future_pts");
+  }
+
+  void testCallback() {
+    // you can add periodic tests here
+  }
+
+  // subs/timer
+  rclcpp::Subscription<quadrotor_msgs::msg::OccMap3d>::SharedPtr gridmap_sub_;
+  rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr trigger_sub_;
+  rclcpp::TimerBase::SharedPtr test_timer_;
+
+  // logic
+  mapping::OccGridMap map_;
+  bool map_received_ = false;
+  Eigen::Vector3d target_p_, target_v_;
+  std::shared_ptr<prediction::Predict> prePtr_;
+  std::shared_ptr<visualization::Visualization> visPtr_;
+};
 
 int main(int argc, char **argv) {
-  ros::init(argc, argv, "test_node");
-  ros::NodeHandle nh("~");
-
-  ros::Timer test_timer = nh.createTimer(ros::Duration(0.3), testCallback);
-  ros::Subscriber gridmap_sub_ = nh.subscribe<quadrotor_msgs::OccMap3d>(
-      "gridmap_inflate", 1, &gridmap_callback, ros::TransportHints().tcpNoDelay());
-  ros::Subscriber triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>(
-      "triger", 10, &triger_callback, ros::TransportHints().tcpNoDelay());
-
-  ROS_WARN("[TEST NODE]: ready.");
-
-  prePtr_ = std::make_shared<prediction::Predict>(nh);
-  visPtr_ = std::make_shared<visualization::Visualization>(nh);
-
-  ros::spin();
-
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<TestNode>());
+  rclcpp::shutdown();
   return 0;
 }

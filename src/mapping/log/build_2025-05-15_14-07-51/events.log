@@ -1,0 +1,633 @@
+[0.000000] (-) TimerEvent: {}
+[0.000393] (mapping) JobQueued: {'identifier': 'mapping', 'dependencies': OrderedDict()}
+[0.000429] (mapping) JobStarted: {'identifier': 'mapping'}
+[0.011920] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'cmake'}
+[0.012460] (mapping) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/mapping', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/src/mapping/install/mapping'], 'cwd': '/mpc/new/Elastic-Tracker/src/mapping/build/mapping', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0f07c30-8fe2-4c1e-9380-8658f765dcba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/mapping/build/mapping'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[0.099760] (-) TimerEvent: {}
+[0.188362] (mapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199885] (-) TimerEvent: {}
+[0.300437] (-) TimerEvent: {}
+[0.360556] (mapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.375301] (mapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400551] (-) TimerEvent: {}
+[0.466602] (mapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.478712] (mapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.479435] (mapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.480177] (mapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.485595] (mapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500639] (-) TimerEvent: {}
+[0.571466] (mapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.578245] (mapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.578425] (mapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.578881] (mapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.591097] (mapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600718] (-) TimerEvent: {}
+[0.700959] (-) TimerEvent: {}
+[0.801207] (-) TimerEvent: {}
+[0.830977] (mapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901267] (-) TimerEvent: {}
+[1.001521] (-) TimerEvent: {}
+[1.072583] (mapping) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.101605] (-) TimerEvent: {}
+[1.201860] (-) TimerEvent: {}
+[1.213993] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.229191] (mapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.270078] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.301960] (-) TimerEvent: {}
+[1.324346] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.369589] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.402050] (-) TimerEvent: {}
+[1.502168] (mapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.502316] (-) TimerEvent: {}
+[1.508850] (mapping) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.566157] (mapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.602442] (-) TimerEvent: {}
+[1.616236] (mapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.702644] (-) TimerEvent: {}
+[1.705827] (mapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.706084] (mapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.790229] (mapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.791237] (mapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.802707] (-) TimerEvent: {}
+[1.908259] (-) TimerEvent: {}
+[1.944716] (mapping) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[2.009638] (-) TimerEvent: {}
+[2.021141] (mapping) StdoutLine: {'line': b'-- Found quadrotor_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake)\n'}
+[2.109735] (-) TimerEvent: {}
+[2.118949] (mapping) StdoutLine: {'line': b'-- Found object_detection_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/object_detection_msgs/share/object_detection_msgs/cmake)\n'}
+[2.150081] (mapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.209834] (-) TimerEvent: {}
+[2.310115] (-) TimerEvent: {}
+[2.327620] (mapping) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[2.410226] (-) TimerEvent: {}
+[2.413165] (mapping) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.436413] (mapping) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.470889] (mapping) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.471104] (mapping) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.510323] (-) TimerEvent: {}
+[2.541471] (mapping) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[2.610741] (-) TimerEvent: {}
+[2.623744] (mapping) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.638951] (mapping) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.672533] (mapping) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.674565] (mapping) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[2.674714] (mapping) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.710820] (-) TimerEvent: {}
+[2.725773] (mapping) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[2.725925] (mapping) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.726065] (mapping) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.726158] (mapping) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[2.783311] (mapping) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[2.802053] (mapping) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[2.817682] (-) TimerEvent: {}
+[2.917947] (-) TimerEvent: {}
+[3.018215] (-) TimerEvent: {}
+[3.024252] (mapping) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[3.024708] (mapping) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[3.030736] (mapping) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[3.041440] (mapping) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[3.061911] (mapping) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[3.118306] (-) TimerEvent: {}
+[3.119537] (mapping) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[3.218409] (-) TimerEvent: {}
+[3.269761] (mapping) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[3.270477] (mapping) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[3.318493] (-) TimerEvent: {}
+[3.350685] (mapping) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[3.350901] (mapping) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[3.418729] (-) TimerEvent: {}
+[3.428260] (mapping) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[3.428471] (mapping) StdoutLine: {'line': b'-- Looking for connect\n'}
+[3.492512] (mapping) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[3.492680] (mapping) StdoutLine: {'line': b'-- Looking for remove\n'}
+[3.519494] (-) TimerEvent: {}
+[3.598309] (mapping) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[3.599256] (mapping) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[3.619587] (-) TimerEvent: {}
+[3.669675] (mapping) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[3.669918] (mapping) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[3.719659] (-) TimerEvent: {}
+[3.759710] (mapping) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[3.819762] (-) TimerEvent: {}
+[3.830240] (mapping) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[3.834210] (mapping) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[3.837925] (mapping) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[3.841624] (mapping) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[3.919857] (-) TimerEvent: {}
+[3.977658] (mapping) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[3.987318] (mapping) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[3.993070] (mapping) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[4.006409] (mapping) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[4.019933] (-) TimerEvent: {}
+[4.054380] (mapping) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.054603] (mapping) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[4.056308] (mapping) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[4.056514] (mapping) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[4.057321] (mapping) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[4.057535] (mapping) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[4.058303] (mapping) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[4.058884] (mapping) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  \n'}
+[4.069634] (mapping) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[4.120030] (-) TimerEvent: {}
+[4.133272] (mapping) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[4.175086] (mapping) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[4.220130] (-) TimerEvent: {}
+[4.320448] (-) TimerEvent: {}
+[4.418654] (mapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.420537] (-) TimerEvent: {}
+[4.520806] (-) TimerEvent: {}
+[4.562750] (mapping) StdoutLine: {'line': b'-- Generating done\n'}
+[4.598492] (mapping) StdoutLine: {'line': b'-- Build files have been written to: /mpc/new/Elastic-Tracker/src/mapping/build/mapping\n'}
+[4.621218] (mapping) CommandEnded: {'returncode': 0}
+[4.621668] (-) TimerEvent: {}
+[4.622134] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'build'}
+[4.623619] (mapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/src/mapping/build/mapping', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/src/mapping/build/mapping', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0f07c30-8fe2-4c1e-9380-8658f765dcba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/mapping/build/mapping'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[4.685115] (mapping) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/mapping_core.dir/src/mapping.cc.o\x1b[0m\n'}
+[4.721782] (-) TimerEvent: {}
+[4.822093] (-) TimerEvent: {}
+[4.922367] (-) TimerEvent: {}
+[5.022719] (-) TimerEvent: {}
+[5.122965] (-) TimerEvent: {}
+[5.223214] (-) TimerEvent: {}
+[5.323480] (-) TimerEvent: {}
+[5.423775] (-) TimerEvent: {}
+[5.524059] (-) TimerEvent: {}
+[5.624318] (-) TimerEvent: {}
+[5.724762] (-) TimerEvent: {}
+[5.825091] (-) TimerEvent: {}
+[5.925367] (-) TimerEvent: {}
+[6.025617] (-) TimerEvent: {}
+[6.125880] (-) TimerEvent: {}
+[6.226133] (-) TimerEvent: {}
+[6.332104] (-) TimerEvent: {}
+[6.432431] (-) TimerEvent: {}
+[6.532798] (-) TimerEvent: {}
+[6.633834] (-) TimerEvent: {}
+[6.734582] (-) TimerEvent: {}
+[6.834837] (-) TimerEvent: {}
+[6.935112] (-) TimerEvent: {}
+[7.035388] (-) TimerEvent: {}
+[7.135696] (-) TimerEvent: {}
+[7.236008] (-) TimerEvent: {}
+[7.336265] (-) TimerEvent: {}
+[7.437598] (-) TimerEvent: {}
+[7.537899] (-) TimerEvent: {}
+[7.638222] (-) TimerEvent: {}
+[7.738549] (-) TimerEvent: {}
+[7.840404] (-) TimerEvent: {}
+[7.941159] (-) TimerEvent: {}
+[8.042222] (-) TimerEvent: {}
+[8.142596] (-) TimerEvent: {}
+[8.242969] (-) TimerEvent: {}
+[8.343308] (-) TimerEvent: {}
+[8.443575] (-) TimerEvent: {}
+[8.543907] (-) TimerEvent: {}
+[8.644226] (-) TimerEvent: {}
+[8.744535] (-) TimerEvent: {}
+[8.844815] (-) TimerEvent: {}
+[8.945064] (-) TimerEvent: {}
+[9.045348] (-) TimerEvent: {}
+[9.145631] (-) TimerEvent: {}
+[9.245902] (-) TimerEvent: {}
+[9.346175] (-) TimerEvent: {}
+[9.446428] (-) TimerEvent: {}
+[9.546740] (-) TimerEvent: {}
+[9.647042] (-) TimerEvent: {}
+[9.747289] (-) TimerEvent: {}
+[9.847579] (-) TimerEvent: {}
+[9.947850] (-) TimerEvent: {}
+[10.048143] (-) TimerEvent: {}
+[10.148442] (-) TimerEvent: {}
+[10.248714] (-) TimerEvent: {}
+[10.348980] (-) TimerEvent: {}
+[10.449267] (-) TimerEvent: {}
+[10.549695] (-) TimerEvent: {}
+[10.650005] (-) TimerEvent: {}
+[10.750312] (-) TimerEvent: {}
+[10.850594] (-) TimerEvent: {}
+[10.950880] (-) TimerEvent: {}
+[11.051140] (-) TimerEvent: {}
+[11.151436] (-) TimerEvent: {}
+[11.251687] (-) TimerEvent: {}
+[11.351973] (-) TimerEvent: {}
+[11.452263] (-) TimerEvent: {}
+[11.552751] (-) TimerEvent: {}
+[11.652994] (-) TimerEvent: {}
+[11.753233] (-) TimerEvent: {}
+[11.853480] (-) TimerEvent: {}
+[11.953741] (-) TimerEvent: {}
+[12.056259] (-) TimerEvent: {}
+[12.156540] (-) TimerEvent: {}
+[12.256856] (-) TimerEvent: {}
+[12.357113] (-) TimerEvent: {}
+[12.457446] (-) TimerEvent: {}
+[12.557759] (-) TimerEvent: {}
+[12.658081] (-) TimerEvent: {}
+[12.758339] (-) TimerEvent: {}
+[12.858645] (-) TimerEvent: {}
+[12.958940] (-) TimerEvent: {}
+[13.059247] (-) TimerEvent: {}
+[13.159547] (-) TimerEvent: {}
+[13.259797] (-) TimerEvent: {}
+[13.360090] (-) TimerEvent: {}
+[13.460351] (-) TimerEvent: {}
+[13.560657] (-) TimerEvent: {}
+[13.660999] (-) TimerEvent: {}
+[13.761317] (-) TimerEvent: {}
+[13.777180] (mapping) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX static library libmapping_core.a\x1b[0m\n'}
+[13.808416] (mapping) StdoutLine: {'line': b'[ 25%] Built target mapping_core\n'}
+[13.828366] (mapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mapping_nodelet.dir/src/mapping_nodelet.cpp.o\x1b[0m\n'}
+[13.828607] (mapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/visualize_history_path.dir/src/visualize_history_path.cpp.o\x1b[0m\n'}
+[13.829584] (mapping) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mapping_vis_node.dir/src/mapping_vis_node.cpp.o\x1b[0m\n'}
+[13.861432] (-) TimerEvent: {}
+[13.961711] (-) TimerEvent: {}
+[14.062165] (-) TimerEvent: {}
+[14.162477] (-) TimerEvent: {}
+[14.262737] (-) TimerEvent: {}
+[14.363029] (-) TimerEvent: {}
+[14.463328] (-) TimerEvent: {}
+[14.563605] (-) TimerEvent: {}
+[14.663900] (-) TimerEvent: {}
+[14.764208] (-) TimerEvent: {}
+[14.864526] (-) TimerEvent: {}
+[14.964791] (-) TimerEvent: {}
+[15.065054] (-) TimerEvent: {}
+[15.165372] (-) TimerEvent: {}
+[15.265751] (-) TimerEvent: {}
+[15.366015] (-) TimerEvent: {}
+[15.466311] (-) TimerEvent: {}
+[15.566567] (-) TimerEvent: {}
+[15.668267] (-) TimerEvent: {}
+[15.768601] (-) TimerEvent: {}
+[15.868857] (-) TimerEvent: {}
+[15.969155] (-) TimerEvent: {}
+[16.069493] (-) TimerEvent: {}
+[16.169746] (-) TimerEvent: {}
+[16.270047] (-) TimerEvent: {}
+[16.372897] (-) TimerEvent: {}
+[16.473179] (-) TimerEvent: {}
+[16.573433] (-) TimerEvent: {}
+[16.673677] (-) TimerEvent: {}
+[16.773964] (-) TimerEvent: {}
+[16.874266] (-) TimerEvent: {}
+[16.974531] (-) TimerEvent: {}
+[17.074870] (-) TimerEvent: {}
+[17.175128] (-) TimerEvent: {}
+[17.276186] (-) TimerEvent: {}
+[17.376540] (-) TimerEvent: {}
+[17.476985] (-) TimerEvent: {}
+[17.577388] (-) TimerEvent: {}
+[17.680274] (-) TimerEvent: {}
+[17.780594] (-) TimerEvent: {}
+[17.880952] (-) TimerEvent: {}
+[17.981321] (-) TimerEvent: {}
+[18.081859] (-) TimerEvent: {}
+[18.182162] (-) TimerEvent: {}
+[18.284273] (-) TimerEvent: {}
+[18.384596] (-) TimerEvent: {}
+[18.486601] (-) TimerEvent: {}
+[18.587692] (-) TimerEvent: {}
+[18.688277] (-) TimerEvent: {}
+[18.789480] (-) TimerEvent: {}
+[18.889855] (-) TimerEvent: {}
+[18.990163] (-) TimerEvent: {}
+[19.090477] (-) TimerEvent: {}
+[19.190807] (-) TimerEvent: {}
+[19.292264] (-) TimerEvent: {}
+[19.392610] (-) TimerEvent: {}
+[19.492968] (-) TimerEvent: {}
+[19.593286] (-) TimerEvent: {}
+[19.693641] (-) TimerEvent: {}
+[19.793957] (-) TimerEvent: {}
+[19.894436] (-) TimerEvent: {}
+[19.994701] (-) TimerEvent: {}
+[20.094979] (-) TimerEvent: {}
+[20.196268] (-) TimerEvent: {}
+[20.297614] (-) TimerEvent: {}
+[20.397934] (-) TimerEvent: {}
+[20.498229] (-) TimerEvent: {}
+[20.598498] (-) TimerEvent: {}
+[20.698799] (-) TimerEvent: {}
+[20.799147] (-) TimerEvent: {}
+[20.899450] (-) TimerEvent: {}
+[20.999755] (-) TimerEvent: {}
+[21.100021] (-) TimerEvent: {}
+[21.200361] (-) TimerEvent: {}
+[21.300693] (-) TimerEvent: {}
+[21.401032] (-) TimerEvent: {}
+[21.501306] (-) TimerEvent: {}
+[21.601571] (-) TimerEvent: {}
+[21.701877] (-) TimerEvent: {}
+[21.802128] (-) TimerEvent: {}
+[21.902375] (-) TimerEvent: {}
+[22.002660] (-) TimerEvent: {}
+[22.102988] (-) TimerEvent: {}
+[22.203272] (-) TimerEvent: {}
+[22.303520] (-) TimerEvent: {}
+[22.403799] (-) TimerEvent: {}
+[22.504272] (-) TimerEvent: {}
+[22.604588] (-) TimerEvent: {}
+[22.704884] (-) TimerEvent: {}
+[22.805147] (-) TimerEvent: {}
+[22.905477] (-) TimerEvent: {}
+[23.005819] (-) TimerEvent: {}
+[23.106104] (-) TimerEvent: {}
+[23.206407] (-) TimerEvent: {}
+[23.306709] (-) TimerEvent: {}
+[23.407064] (-) TimerEvent: {}
+[23.507363] (-) TimerEvent: {}
+[23.607671] (-) TimerEvent: {}
+[23.708228] (-) TimerEvent: {}
+[23.808645] (-) TimerEvent: {}
+[23.908959] (-) TimerEvent: {}
+[24.009236] (-) TimerEvent: {}
+[24.109571] (-) TimerEvent: {}
+[24.209889] (-) TimerEvent: {}
+[24.310190] (-) TimerEvent: {}
+[24.410464] (-) TimerEvent: {}
+[24.510856] (-) TimerEvent: {}
+[24.611192] (-) TimerEvent: {}
+[24.711502] (-) TimerEvent: {}
+[24.811768] (-) TimerEvent: {}
+[24.912073] (-) TimerEvent: {}
+[25.020636] (-) TimerEvent: {}
+[25.120890] (-) TimerEvent: {}
+[25.221170] (-) TimerEvent: {}
+[25.321610] (-) TimerEvent: {}
+[25.421972] (-) TimerEvent: {}
+[25.522360] (-) TimerEvent: {}
+[25.622673] (-) TimerEvent: {}
+[25.722964] (-) TimerEvent: {}
+[25.823305] (-) TimerEvent: {}
+[25.924301] (-) TimerEvent: {}
+[26.024652] (-) TimerEvent: {}
+[26.124968] (-) TimerEvent: {}
+[26.225316] (-) TimerEvent: {}
+[26.325648] (-) TimerEvent: {}
+[26.425959] (-) TimerEvent: {}
+[26.526256] (-) TimerEvent: {}
+[26.626545] (-) TimerEvent: {}
+[26.728323] (-) TimerEvent: {}
+[26.828656] (-) TimerEvent: {}
+[26.928954] (-) TimerEvent: {}
+[27.029336] (-) TimerEvent: {}
+[27.129838] (-) TimerEvent: {}
+[27.232271] (-) TimerEvent: {}
+[27.332565] (-) TimerEvent: {}
+[27.432820] (-) TimerEvent: {}
+[27.533157] (-) TimerEvent: {}
+[27.633463] (-) TimerEvent: {}
+[27.733746] (-) TimerEvent: {}
+[27.834067] (-) TimerEvent: {}
+[27.934479] (-) TimerEvent: {}
+[28.034980] (-) TimerEvent: {}
+[28.135300] (-) TimerEvent: {}
+[28.235747] (-) TimerEvent: {}
+[28.336149] (-) TimerEvent: {}
+[28.436511] (-) TimerEvent: {}
+[28.540268] (-) TimerEvent: {}
+[28.640565] (-) TimerEvent: {}
+[28.740863] (-) TimerEvent: {}
+[28.841190] (-) TimerEvent: {}
+[28.941471] (-) TimerEvent: {}
+[29.043537] (-) TimerEvent: {}
+[29.143852] (-) TimerEvent: {}
+[29.244213] (-) TimerEvent: {}
+[29.344580] (-) TimerEvent: {}
+[29.444873] (-) TimerEvent: {}
+[29.545151] (-) TimerEvent: {}
+[29.645480] (-) TimerEvent: {}
+[29.745768] (-) TimerEvent: {}
+[29.846059] (-) TimerEvent: {}
+[29.946314] (-) TimerEvent: {}
+[30.046609] (-) TimerEvent: {}
+[30.146942] (-) TimerEvent: {}
+[30.247252] (-) TimerEvent: {}
+[30.347551] (-) TimerEvent: {}
+[30.447817] (-) TimerEvent: {}
+[30.548137] (-) TimerEvent: {}
+[30.648476] (-) TimerEvent: {}
+[30.748794] (-) TimerEvent: {}
+[30.849341] (-) TimerEvent: {}
+[30.949669] (-) TimerEvent: {}
+[31.049960] (-) TimerEvent: {}
+[31.150317] (-) TimerEvent: {}
+[31.206574] (mapping) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable mapping_vis_node\x1b[0m\n'}
+[31.250415] (-) TimerEvent: {}
+[31.350680] (-) TimerEvent: {}
+[31.451025] (-) TimerEvent: {}
+[31.551375] (-) TimerEvent: {}
+[31.651759] (-) TimerEvent: {}
+[31.752028] (-) TimerEvent: {}
+[31.852428] (-) TimerEvent: {}
+[31.896442] (mapping) StdoutLine: {'line': b'[ 75%] Built target mapping_vis_node\n'}
+[31.952557] (-) TimerEvent: {}
+[32.052984] (-) TimerEvent: {}
+[32.153266] (-) TimerEvent: {}
+[32.253735] (-) TimerEvent: {}
+[32.354013] (-) TimerEvent: {}
+[32.454274] (-) TimerEvent: {}
+[32.555748] (-) TimerEvent: {}
+[32.656071] (-) TimerEvent: {}
+[32.756375] (-) TimerEvent: {}
+[32.856682] (-) TimerEvent: {}
+[32.957009] (-) TimerEvent: {}
+[33.057336] (-) TimerEvent: {}
+[33.157597] (-) TimerEvent: {}
+[33.257863] (-) TimerEvent: {}
+[33.358321] (-) TimerEvent: {}
+[33.458617] (-) TimerEvent: {}
+[33.558868] (-) TimerEvent: {}
+[33.659127] (-) TimerEvent: {}
+[33.759457] (-) TimerEvent: {}
+[33.859706] (-) TimerEvent: {}
+[33.959982] (-) TimerEvent: {}
+[34.060271] (-) TimerEvent: {}
+[34.160602] (-) TimerEvent: {}
+[34.260927] (-) TimerEvent: {}
+[34.361209] (-) TimerEvent: {}
+[34.461458] (-) TimerEvent: {}
+[34.561838] (-) TimerEvent: {}
+[34.662098] (-) TimerEvent: {}
+[34.762383] (-) TimerEvent: {}
+[34.862715] (-) TimerEvent: {}
+[34.963033] (-) TimerEvent: {}
+[35.063337] (-) TimerEvent: {}
+[35.172120] (-) TimerEvent: {}
+[35.272421] (-) TimerEvent: {}
+[35.372710] (-) TimerEvent: {}
+[35.472945] (-) TimerEvent: {}
+[35.573179] (-) TimerEvent: {}
+[35.673505] (-) TimerEvent: {}
+[35.773807] (-) TimerEvent: {}
+[35.874061] (-) TimerEvent: {}
+[35.974370] (-) TimerEvent: {}
+[36.074727] (-) TimerEvent: {}
+[36.175057] (-) TimerEvent: {}
+[36.275346] (-) TimerEvent: {}
+[36.375659] (-) TimerEvent: {}
+[36.475984] (-) TimerEvent: {}
+[36.576267] (-) TimerEvent: {}
+[36.679415] (-) TimerEvent: {}
+[36.779747] (-) TimerEvent: {}
+[36.879999] (-) TimerEvent: {}
+[36.980311] (-) TimerEvent: {}
+[37.080733] (-) TimerEvent: {}
+[37.181005] (-) TimerEvent: {}
+[37.281339] (-) TimerEvent: {}
+[37.381603] (-) TimerEvent: {}
+[37.481872] (-) TimerEvent: {}
+[37.582160] (-) TimerEvent: {}
+[37.682485] (-) TimerEvent: {}
+[37.782739] (-) TimerEvent: {}
+[37.882995] (-) TimerEvent: {}
+[37.980040] (mapping) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable visualize_history_path\x1b[0m\n'}
+[37.983094] (-) TimerEvent: {}
+[38.083401] (-) TimerEvent: {}
+[38.183715] (-) TimerEvent: {}
+[38.283986] (-) TimerEvent: {}
+[38.384268] (-) TimerEvent: {}
+[38.484580] (-) TimerEvent: {}
+[38.488401] (mapping) StdoutLine: {'line': b'[ 87%] Built target visualize_history_path\n'}
+[38.584704] (-) TimerEvent: {}
+[38.684987] (-) TimerEvent: {}
+[38.785213] (-) TimerEvent: {}
+[38.885481] (-) TimerEvent: {}
+[38.985816] (-) TimerEvent: {}
+[39.086218] (-) TimerEvent: {}
+[39.186601] (-) TimerEvent: {}
+[39.287010] (-) TimerEvent: {}
+[39.387303] (-) TimerEvent: {}
+[39.487615] (-) TimerEvent: {}
+[39.587898] (-) TimerEvent: {}
+[39.688160] (-) TimerEvent: {}
+[39.788430] (-) TimerEvent: {}
+[39.888709] (-) TimerEvent: {}
+[39.988950] (-) TimerEvent: {}
+[40.089691] (-) TimerEvent: {}
+[40.190032] (-) TimerEvent: {}
+[40.290347] (-) TimerEvent: {}
+[40.390689] (-) TimerEvent: {}
+[40.491353] (-) TimerEvent: {}
+[40.591638] (-) TimerEvent: {}
+[40.691921] (-) TimerEvent: {}
+[40.792294] (-) TimerEvent: {}
+[40.892600] (-) TimerEvent: {}
+[40.992834] (-) TimerEvent: {}
+[41.093123] (-) TimerEvent: {}
+[41.193409] (-) TimerEvent: {}
+[41.293705] (-) TimerEvent: {}
+[41.393982] (-) TimerEvent: {}
+[41.494286] (-) TimerEvent: {}
+[41.596871] (-) TimerEvent: {}
+[41.697144] (-) TimerEvent: {}
+[41.797426] (-) TimerEvent: {}
+[41.897696] (-) TimerEvent: {}
+[41.997953] (-) TimerEvent: {}
+[42.098252] (-) TimerEvent: {}
+[42.198498] (-) TimerEvent: {}
+[42.298828] (-) TimerEvent: {}
+[42.399100] (-) TimerEvent: {}
+[42.499396] (-) TimerEvent: {}
+[42.599727] (-) TimerEvent: {}
+[42.699964] (-) TimerEvent: {}
+[42.802137] (-) TimerEvent: {}
+[42.902478] (-) TimerEvent: {}
+[43.002789] (-) TimerEvent: {}
+[43.103116] (-) TimerEvent: {}
+[43.203397] (-) TimerEvent: {}
+[43.303734] (-) TimerEvent: {}
+[43.404095] (-) TimerEvent: {}
+[43.504614] (-) TimerEvent: {}
+[43.605049] (-) TimerEvent: {}
+[43.705357] (-) TimerEvent: {}
+[43.805601] (-) TimerEvent: {}
+[43.905865] (-) TimerEvent: {}
+[44.006148] (-) TimerEvent: {}
+[44.106450] (-) TimerEvent: {}
+[44.206765] (-) TimerEvent: {}
+[44.307056] (-) TimerEvent: {}
+[44.407330] (-) TimerEvent: {}
+[44.507738] (-) TimerEvent: {}
+[44.608268] (-) TimerEvent: {}
+[44.708577] (-) TimerEvent: {}
+[44.808887] (-) TimerEvent: {}
+[44.909199] (-) TimerEvent: {}
+[45.009562] (-) TimerEvent: {}
+[45.110000] (-) TimerEvent: {}
+[45.210616] (-) TimerEvent: {}
+[45.310920] (-) TimerEvent: {}
+[45.411219] (-) TimerEvent: {}
+[45.511533] (-) TimerEvent: {}
+[45.611786] (-) TimerEvent: {}
+[45.712083] (-) TimerEvent: {}
+[45.812357] (-) TimerEvent: {}
+[45.912635] (-) TimerEvent: {}
+[46.012939] (-) TimerEvent: {}
+[46.113196] (-) TimerEvent: {}
+[46.213517] (-) TimerEvent: {}
+[46.313831] (-) TimerEvent: {}
+[46.414124] (-) TimerEvent: {}
+[46.514479] (-) TimerEvent: {}
+[46.614711] (-) TimerEvent: {}
+[46.714968] (-) TimerEvent: {}
+[46.815231] (-) TimerEvent: {}
+[46.916303] (-) TimerEvent: {}
+[47.016625] (-) TimerEvent: {}
+[47.116930] (-) TimerEvent: {}
+[47.217251] (-) TimerEvent: {}
+[47.317523] (-) TimerEvent: {}
+[47.414481] (mapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmapping_nodelet.so\x1b[0m\n'}
+[47.417619] (-) TimerEvent: {}
+[47.517932] (-) TimerEvent: {}
+[47.618180] (-) TimerEvent: {}
+[47.718453] (-) TimerEvent: {}
+[47.818699] (-) TimerEvent: {}
+[47.899405] (mapping) StdoutLine: {'line': b'[100%] Built target mapping_nodelet\n'}
+[47.909161] (mapping) CommandEnded: {'returncode': 0}
+[47.909778] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'install'}
+[47.918395] (mapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mpc/new/Elastic-Tracker/src/mapping/build/mapping'], 'cwd': '/mpc/new/Elastic-Tracker/src/mapping/build/mapping', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc/new/Elastic-Tracker'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0f07c30-8fe2-4c1e-9380-8658f765dcba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3d0911ab-ed81-4393-9fbf-82e42a8e128e.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/src/mapping/build/mapping'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[47.919086] (-) TimerEvent: {}
+[47.924774] (mapping) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[47.925005] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_core.a\n'}
+[47.925105] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_nodelet.so\n'}
+[47.926833] (mapping) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/libmapping_nodelet.so" to ""\n'}
+[47.926979] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/mapping_vis_node\n'}
+[47.927675] (mapping) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/mapping_vis_node" to ""\n'}
+[47.927830] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/visualize_history_path\n'}
+[47.929528] (mapping) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/src/mapping/install/mapping/lib/mapping/visualize_history_path" to ""\n'}
+[47.929760] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include\n'}
+[47.929877] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include/mapping\n'}
+[47.929984] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/include/mapping/mapping.h\n'}
+[47.930177] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config\n'}
+[47.930289] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/D435.yaml\n'}
+[47.930383] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/rviz_real.rviz\n'}
+[47.930516] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/camera.yaml\n'}
+[47.930703] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/config/rviz_sim.rviz\n'}
+[47.931177] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch\n'}
+[47.931298] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/run.launch.py\n'}
+[47.931569] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/mapping.launch.py\n'}
+[47.931706] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/launch/rviz_sim.launch.py\n'}
+[47.932191] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/library_path.sh\n'}
+[47.932415] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/library_path.dsv\n'}
+[47.932647] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/package_run_dependencies/mapping\n'}
+[47.932838] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/parent_prefix_path/mapping\n'}
+[47.932999] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/ament_prefix_path.sh\n'}
+[47.933172] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/ament_prefix_path.dsv\n'}
+[47.933329] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/path.sh\n'}
+[47.933494] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/environment/path.dsv\n'}
+[47.933649] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.bash\n'}
+[47.933764] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.sh\n'}
+[47.933897] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.zsh\n'}
+[47.934023] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/local_setup.dsv\n'}
+[47.934153] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/package.dsv\n'}
+[47.934326] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/packages/mapping\n'}
+[47.934503] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/ament_index/resource_index/rclcpp_components/mapping\n'}
+[47.934682] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[47.934817] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[47.934965] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/mappingConfig.cmake\n'}
+[47.935076] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/cmake/mappingConfig-version.cmake\n'}
+[47.935207] (mapping) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/src/mapping/install/mapping/share/mapping/package.xml\n'}
+[47.937265] (mapping) CommandEnded: {'returncode': 0}
+[47.966150] (mapping) JobEnded: {'identifier': 'mapping', 'rc': 0}
+[47.966892] (-) EventReactorShutdown: {}

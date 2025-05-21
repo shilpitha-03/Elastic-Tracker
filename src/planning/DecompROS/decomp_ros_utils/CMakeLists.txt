@@ -1,45 +1,54 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(decomp_ros_utils)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3 -Wall -Wno-deprecated-declarations")
-find_package(catkin REQUIRED COMPONENTS rviz roscpp)
-find_package(catkin_simple REQUIRED)
-find_package(cmake_modules)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(pluginlib REQUIRED)
+find_package(rviz_common REQUIRED)
+find_package(rviz_rendering REQUIRED)
 find_package(Eigen3 REQUIRED)
-include_directories(${EIGEN3_INCLUDE_DIRS} ${DECOMP_UTIL_INCLUDE_DIRS})
+find_package(decomp_ros_msgs REQUIRED)
+find_package(decomp_basis REQUIRED)
+find_package(decomp_geometry REQUIRED)
 
-add_definitions(-DQT_NO_KEYWORDS)
-
-## This setting causes Qt's "MOC" generation to happen automatically.
-## this does not moc things in include!!!!!!! only in src
-set(CMAKE_AUTOMOC ON)
-
-## We'll use the version that rviz used so they are compatible.
-if(rviz_QT_VERSION VERSION_LESS "5")
-  message(STATUS "Using Qt4 based on the rviz_QT_VERSION: ${rviz_QT_VERSION}")
-  find_package(Qt4 ${rviz_QT_VERSION} EXACT REQUIRED QtCore QtGui)
-  include(${QT_USE_FILE})
-else()
-  message(STATUS "Using Qt5 based on the rviz_QT_VERSION: ${rviz_QT_VERSION}")
-  find_package(Qt5 ${rviz_QT_VERSION} EXACT REQUIRED Core Widgets)
-  set(QT_LIBRARIES Qt5::Widgets)
-endif()
-
-catkin_simple()
-
-set(SOURCE_FILES
+add_library(decomp_rviz_plugins SHARED
   src/bound_visual.cpp
   src/mesh_visual.cpp
   src/vector_visual.cpp
   src/ellipsoid_array_visual.cpp
   src/ellipsoid_array_display.cpp
   src/polyhedron_array_display.cpp
-  ${MOC_FILES})
+  src/objects/mesh_shape.cpp          # vendored MeshShape
+)
 
-cs_add_library(decomp_rviz_plugins ${SOURCE_FILES})
-target_link_libraries(decomp_rviz_plugins ${QT_LIBRARIES} ${catkin_LIBRARIES} ${rviz_DEFAULT_PLUGIN_LIBRARIES})
+# expose all of include/, which now contains:
+#   – decomp_rviz_plugins/*
+#   – rviz_rendering/objects/mesh_shape.hpp
+#   – rviz_common/frame_manager.hpp
+target_include_directories(decomp_rviz_plugins
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+)
 
-cs_install()
+ament_target_dependencies(decomp_rviz_plugins
+  rclcpp
+  pluginlib
+  rviz_common
+  rviz_rendering
+  Eigen3
+  decomp_ros_msgs
+  decomp_basis
+  decomp_geometry
+)
 
-cs_export()
+pluginlib_export_plugin_description_file(rviz_common plugin_description.xml)
 
+install(DIRECTORY include/ DESTINATION include)
+install(TARGETS decomp_rviz_plugins
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
+install(FILES plugin_description.xml DESTINATION share/${PROJECT_NAME})
+
+ament_package()

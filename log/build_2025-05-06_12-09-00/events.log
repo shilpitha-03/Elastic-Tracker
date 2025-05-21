@@ -1,0 +1,374 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (-) JobUnselected: {'identifier': 'mapping'}
+[0.000128] (-) JobUnselected: {'identifier': 'object_detection_msgs'}
+[0.000320] (-) JobUnselected: {'identifier': 'quadrotor_msgs'}
+[0.000347] (-) JobUnselected: {'identifier': 'target_ekf'}
+[0.000366] (decomp_ros_msgs) JobQueued: {'identifier': 'decomp_ros_msgs', 'dependencies': OrderedDict()}
+[0.000406] (decomp_ros_msgs) JobStarted: {'identifier': 'decomp_ros_msgs'}
+[0.007896] (decomp_ros_msgs) JobProgress: {'identifier': 'decomp_ros_msgs', 'progress': 'cmake'}
+[0.008317] (decomp_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.052300] (decomp_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.095600] (decomp_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099425] (-) TimerEvent: {}
+[0.101353] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.157839] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.165751] (decomp_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.166058] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.166515] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.169547] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199532] (-) TimerEvent: {}
+[0.237818] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.245982] (decomp_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.246327] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.246864] (decomp_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.250191] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299650] (-) TimerEvent: {}
+[0.399877] (-) TimerEvent: {}
+[0.414811] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499974] (-) TimerEvent: {}
+[0.512713] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.516507] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.525058] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.568348] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600065] (-) TimerEvent: {}
+[0.607691] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.637280] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.700190] (-) TimerEvent: {}
+[0.800430] (-) TimerEvent: {}
+[0.900753] (-) TimerEvent: {}
+[0.975786] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.000839] (-) TimerEvent: {}
+[1.101099] (-) TimerEvent: {}
+[1.201357] (-) TimerEvent: {}
+[1.224513] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301480] (-) TimerEvent: {}
+[1.401773] (-) TimerEvent: {}
+[1.502047] (-) TimerEvent: {}
+[1.537411] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.562112] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.564303] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.590777] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.590925] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.590987] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.591043] (decomp_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.602113] (-) TimerEvent: {}
+[1.614937] (decomp_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.678392] (decomp_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.702209] (-) TimerEvent: {}
+[1.713158] (decomp_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.726350] (decomp_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_msgs\n'}
+[1.732926] (decomp_ros_msgs) CommandEnded: {'returncode': 0}
+[1.733519] (decomp_ros_msgs) JobProgress: {'identifier': 'decomp_ros_msgs', 'progress': 'build'}
+[1.733552] (decomp_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.766631] (decomp_ros_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.774672] (decomp_ros_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.780168] (decomp_ros_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_decomp_ros_msgs\n'}
+[1.802305] (-) TimerEvent: {}
+[1.902582] (-) TimerEvent: {}
+[2.002848] (-) TimerEvent: {}
+[2.023818] (decomp_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.024328] (decomp_ros_msgs) StdoutLine: {'line': b'creating decomp_ros_msgs.egg-info\n'}
+[2.024523] (decomp_ros_msgs) StdoutLine: {'line': b'writing decomp_ros_msgs.egg-info/PKG-INFO\n'}
+[2.024690] (decomp_ros_msgs) StdoutLine: {'line': b'writing dependency_links to decomp_ros_msgs.egg-info/dependency_links.txt\n'}
+[2.024848] (decomp_ros_msgs) StdoutLine: {'line': b'writing top-level names to decomp_ros_msgs.egg-info/top_level.txt\n'}
+[2.025043] (decomp_ros_msgs) StdoutLine: {'line': b"writing manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.026578] (decomp_ros_msgs) StdoutLine: {'line': b"reading manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.027056] (decomp_ros_msgs) StdoutLine: {'line': b"writing manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.049417] (decomp_ros_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_decomp_ros_msgs_egg\n'}
+[2.102939] (-) TimerEvent: {}
+[2.157921] (decomp_ros_msgs) StdoutLine: {'line': b'[  3%] Built target decomp_ros_msgs__cpp\n'}
+[2.165271] (decomp_ros_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.165452] (decomp_ros_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.165528] (decomp_ros_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.171961] (decomp_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/polyhedron__functions.c.o\x1b[0m\n'}
+[2.172142] (decomp_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/ellipsoid__functions.c.o\x1b[0m\n'}
+[2.172242] (decomp_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.c.o\x1b[0m\n'}
+[2.174511] (decomp_ros_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/polyhedron_array__functions.c.o\x1b[0m\n'}
+[2.203030] (-) TimerEvent: {}
+[2.230731] (decomp_ros_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libdecomp_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.259494] (decomp_ros_msgs) StdoutLine: {'line': b'[ 18%] Built target decomp_ros_msgs__rosidl_generator_c\n'}
+[2.267400] (decomp_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.267583] (decomp_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.267685] (decomp_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.303119] (-) TimerEvent: {}
+[2.403383] (-) TimerEvent: {}
+[2.478881] (decomp_ros_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/polyhedron__type_support.cpp.o\x1b[0m\n'}
+[2.479872] (decomp_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/ellipsoid__type_support.cpp.o\x1b[0m\n'}
+[2.480038] (decomp_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/polyhedron_array__type_support.cpp.o\x1b[0m\n'}
+[2.480415] (decomp_ros_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/ellipsoid_array__type_support.cpp.o\x1b[0m\n'}
+[2.503482] (-) TimerEvent: {}
+[2.553379] (decomp_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.cpp.o\x1b[0m\n'}
+[2.553567] (decomp_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/polyhedron__type_support.cpp.o\x1b[0m\n'}
+[2.554289] (decomp_ros_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/ellipsoid__type_support.cpp.o\x1b[0m\n'}
+[2.554494] (decomp_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.cpp.o\x1b[0m\n'}
+[2.578616] (decomp_ros_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/ellipsoid__type_support.cpp.o\x1b[0m\n'}
+[2.603570] (-) TimerEvent: {}
+[2.617005] (decomp_ros_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/ellipsoid_array__type_support.cpp.o\x1b[0m\n'}
+[2.656358] (decomp_ros_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/ellipsoid__type_support.cpp.o\x1b[0m\n'}
+[2.662175] (decomp_ros_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/polyhedron__type_support.cpp.o\x1b[0m\n'}
+[2.701163] (decomp_ros_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/polyhedron_array__type_support.cpp.o\x1b[0m\n'}
+[2.703676] (-) TimerEvent: {}
+[2.740225] (decomp_ros_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.760467] (decomp_ros_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/ellipsoid__type_support.c.o\x1b[0m\n'}
+[2.771986] (decomp_ros_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/ellipsoid__type_support_c.cpp.o\x1b[0m\n'}
+[2.794284] (decomp_ros_msgs) StdoutLine: {'line': b'[ 52%] Built target decomp_ros_msgs__rosidl_typesupport_c\n'}
+[2.803780] (-) TimerEvent: {}
+[2.804437] (decomp_ros_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.c.o\x1b[0m\n'}
+[2.810858] (decomp_ros_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/polyhedron__type_support.c.o\x1b[0m\n'}
+[2.854531] (decomp_ros_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.c.o\x1b[0m\n'}
+[2.858503] (decomp_ros_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/ellipsoid_array__type_support.cpp.o\x1b[0m\n'}
+[2.862465] (decomp_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/polyhedron__type_support.cpp.o\x1b[0m\n'}
+[2.864805] (decomp_ros_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/polyhedron_array__type_support.cpp.o\x1b[0m\n'}
+[2.872394] (decomp_ros_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support_c.cpp.o\x1b[0m\n'}
+[2.901851] (decomp_ros_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.903869] (-) TimerEvent: {}
+[2.906364] (decomp_ros_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.952687] (decomp_ros_msgs) StdoutLine: {'line': b'[ 69%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[2.962726] (decomp_ros_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/polyhedron__type_support_c.cpp.o\x1b[0m\n'}
+[2.972722] (decomp_ros_msgs) StdoutLine: {'line': b'[ 70%] Built target decomp_ros_msgs__rosidl_typesupport_cpp\n'}
+[2.984274] (decomp_ros_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/polyhedron_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.003988] (-) TimerEvent: {}
+[3.104431] (-) TimerEvent: {}
+[3.204735] (-) TimerEvent: {}
+[3.232538] (decomp_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.304829] (-) TimerEvent: {}
+[3.309377] (decomp_ros_msgs) StdoutLine: {'line': b'[ 74%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.404953] (-) TimerEvent: {}
+[3.473148] (decomp_ros_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.490674] (decomp_ros_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.505061] (-) TimerEvent: {}
+[3.541308] (decomp_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.561609] (decomp_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.577029] (decomp_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target decomp_ros_msgs\n'}
+[3.592304] (decomp_ros_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.605131] (-) TimerEvent: {}
+[3.705391] (-) TimerEvent: {}
+[3.805680] (-) TimerEvent: {}
+[3.905909] (-) TimerEvent: {}
+[4.006120] (-) TimerEvent: {}
+[4.106345] (-) TimerEvent: {}
+[4.107997] (decomp_ros_msgs) StdoutLine: {'line': b'[ 80%] Built target decomp_ros_msgs__py\n'}
+[4.123089] (decomp_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_polyhedron_array_s.c.o\x1b[0m\n'}
+[4.123288] (decomp_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_ellipsoid_array_s.c.o\x1b[0m\n'}
+[4.123423] (decomp_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_ellipsoid_s.c.o\x1b[0m\n'}
+[4.123520] (decomp_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_polyhedron_s.c.o\x1b[0m\n'}
+[4.206486] (-) TimerEvent: {}
+[4.219611] (decomp_ros_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/libdecomp_ros_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.256245] (decomp_ros_msgs) StdoutLine: {'line': b'[ 89%] Built target decomp_ros_msgs__rosidl_generator_py\n'}
+[4.271479] (decomp_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.271681] (decomp_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.271791] (decomp_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.306594] (-) TimerEvent: {}
+[4.363303] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.363513] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.363617] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.395059] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.395245] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] Built target decomp_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[4.395833] (decomp_ros_msgs) StdoutLine: {'line': b'[100%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.404021] (decomp_ros_msgs) CommandEnded: {'returncode': 0}
+[4.404494] (decomp_ros_msgs) JobProgress: {'identifier': 'decomp_ros_msgs', 'progress': 'install'}
+[4.406684] (-) TimerEvent: {}
+[4.411256] (decomp_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.417745] (decomp_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.417942] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/decomp_ros_msgs\n'}
+[4.418054] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.418156] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.418224] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid_array.h\n'}
+[4.418314] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron.h\n'}
+[4.418420] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid.h\n'}
+[4.418487] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.418552] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__functions.h\n'}
+[4.418640] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__functions.c\n'}
+[4.418731] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.h\n'}
+[4.418796] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__functions.c\n'}
+[4.418859] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__functions.h\n'}
+[4.418947] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__struct.h\n'}
+[4.419053] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__struct.h\n'}
+[4.419121] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__struct.h\n'}
+[4.419186] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.c\n'}
+[4.419251] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.h\n'}
+[4.419337] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.h\n'}
+[4.419450] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__struct.h\n'}
+[4.419517] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.h\n'}
+[4.419614] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__functions.c\n'}
+[4.419689] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.h\n'}
+[4.419753] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__functions.h\n'}
+[4.419846] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.419913] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron_array.h\n'}
+[4.419979] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/library_path.sh\n'}
+[4.420060] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/library_path.dsv\n'}
+[4.420147] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_c.so\n'}
+[4.420315] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[4.420403] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.420494] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.420572] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.420652] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_fastrtps_c.h\n'}
+[4.420716] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_fastrtps_c.h\n'}
+[4.420780] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_fastrtps_c.h\n'}
+[4.420876] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_fastrtps_c.h\n'}
+[4.420937] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.421001] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.421109] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.421204] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.421314] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.421380] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.421445] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.421535] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.c\n'}
+[4.421627] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.c\n'}
+[4.421708] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.c\n'}
+[4.421797] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_introspection_c.h\n'}
+[4.421864] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_introspection_c.h\n'}
+[4.421927] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_introspection_c.h\n'}
+[4.422012] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.c\n'}
+[4.422101] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_introspection_c.h\n'}
+[4.422186] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.422415] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.422504] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_c.so\n'}
+[4.422678] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.422766] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.422850] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.422915] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid_array.hpp\n'}
+[4.423016] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron.hpp\n'}
+[4.423110] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron_array.hpp\n'}
+[4.423173] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid.hpp\n'}
+[4.423260] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.423324] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__traits.hpp\n'}
+[4.423389] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.hpp\n'}
+[4.423453] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__traits.hpp\n'}
+[4.423541] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__builder.hpp\n'}
+[4.423654] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__struct.hpp\n'}
+[4.423719] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.hpp\n'}
+[4.423784] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__traits.hpp\n'}
+[4.423848] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.hpp\n'}
+[4.423913] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__struct.hpp\n'}
+[4.424023] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__builder.hpp\n'}
+[4.424088] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__struct.hpp\n'}
+[4.424153] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__struct.hpp\n'}
+[4.424217] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__builder.hpp\n'}
+[4.424321] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__builder.hpp\n'}
+[4.424408] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.hpp\n'}
+[4.424473] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__traits.hpp\n'}
+[4.424538] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.424638] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.424702] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.424766] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.424861] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.424923] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.424984] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.425045] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/dds_fastrtps\n'}
+[4.425105] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.425167] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.425231] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.425317] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.425415] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs\n'}
+[4.425479] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg\n'}
+[4.425543] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail\n'}
+[4.425606] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.425670] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.425793] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.425876] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.cpp\n'}
+[4.425937] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.cpp\n'}
+[4.426001] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.426066] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.cpp\n'}
+[4.426131] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.cpp\n'}
+[4.426218] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.426420] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.426508] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[4.426712] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.426800] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/pythonpath.sh\n'}
+[4.426887] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/pythonpath.dsv\n'}
+[4.426973] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info\n'}
+[4.427063] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.427150] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.427238] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.427320] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.427405] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs\n'}
+[4.427493] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.427583] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.427670] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/libdecomp_ros_msgs__rosidl_generator_py.so\n'}
+[4.427759] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/__init__.py\n'}
+[4.427840] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.427943] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.428030] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.428096] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.428183] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg\n'}
+[4.428284] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array_s.c\n'}
+[4.428376] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array_s.c\n'}
+[4.428439] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array.py\n'}
+[4.428518] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron.py\n'}
+[4.428601] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_s.c\n'}
+[4.428718] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/__init__.py\n'}
+[4.428798] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array.py\n'}
+[4.428876] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_s.c\n'}
+[4.428969] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid.py\n'}
+[4.463393] (decomp_ros_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs'...\n"}
+[4.463541] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/__init__.py'...\n"}
+[4.463603] (decomp_ros_msgs) StdoutLine: {'line': b"Listing '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg'...\n"}
+[4.463660] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/__init__.py'...\n"}
+[4.463715] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid.py'...\n"}
+[4.463768] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array.py'...\n"}
+[4.463822] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron.py'...\n"}
+[4.463874] (decomp_ros_msgs) StdoutLine: {'line': b"Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array.py'...\n"}
+[4.467299] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.467498] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.467653] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.467832] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.467950] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.468119] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.468206] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_py.so\n'}
+[4.468344] (decomp_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_py.so" to ""\n'}
+[4.468419] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.idl\n'}
+[4.468502] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.idl\n'}
+[4.468583] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.idl\n'}
+[4.468666] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.idl\n'}
+[4.468746] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.msg\n'}
+[4.468829] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.msg\n'}
+[4.468908] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.msg\n'}
+[4.468987] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.msg\n'}
+[4.469061] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg\n'}
+[4.469157] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.msg\n'}
+[4.469224] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.msg\n'}
+[4.469278] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.msg\n'}
+[4.469343] (decomp_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.msg\n'}
+[4.469395] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/package_run_dependencies/decomp_ros_msgs\n'}
+[4.469452] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/parent_prefix_path/decomp_ros_msgs\n'}
+[4.469565] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/ament_prefix_path.sh\n'}
+[4.469654] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[4.469709] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/path.sh\n'}
+[4.469812] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/path.dsv\n'}
+[4.469886] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.bash\n'}
+[4.469975] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.sh\n'}
+[4.470032] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.zsh\n'}
+[4.470108] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.dsv\n'}
+[4.470184] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.dsv\n'}
+[4.470259] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/packages/decomp_ros_msgs\n'}
+[4.470359] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[4.470445] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.470543] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.470632] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.470725] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.470812] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.470905] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.470990] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.471089] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.471181] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.471267] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.471363] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.471463] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.471556] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.471643] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.471736] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.471825] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.471910] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.471991] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.472078] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.472161] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.472245] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.472331] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.472413] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.472496] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgsConfig.cmake\n'}
+[4.472568] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgsConfig-version.cmake\n'}
+[4.472644] (decomp_ros_msgs) StdoutLine: {'line': b'-- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.xml\n'}
+[4.474470] (decomp_ros_msgs) CommandEnded: {'returncode': 0}
+[4.492162] (decomp_ros_msgs) JobEnded: {'identifier': 'decomp_ros_msgs', 'rc': 0}
+[4.492596] (-) EventReactorShutdown: {}

@@ -1,0 +1,10 @@
+[ 50%] Built target target_ekf_node
+[35m[1mConsolidate compiler generated dependencies of target target_ekf_sim_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o[0m
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K In member function ‘[01m[Kvoid TargetEkfSimNode::update_state_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr, nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:207:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+  207 |       ekfPtr_->reset([01;31m[Kp[m[K, rpy);
+      |                      [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/target_ekf_sim_node.dir/build.make:76: CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/target_ekf_sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

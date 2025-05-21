@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000101] (-) JobUnselected: {'identifier': 'decomp_basis'}
+[0.000126] (-) JobUnselected: {'identifier': 'decomp_geometry'}
+[0.000150] (-) JobUnselected: {'identifier': 'decomp_ros_msgs'}
+[0.000174] (-) JobUnselected: {'identifier': 'mapping'}
+[0.000248] (-) JobUnselected: {'identifier': 'object_detection_msgs'}
+[0.000281] (-) JobUnselected: {'identifier': 'quadrotor_msgs'}
+[0.000299] (-) JobUnselected: {'identifier': 'target_ekf'}
+[0.000322] (decomp_ros_utils) JobQueued: {'identifier': 'decomp_ros_utils', 'dependencies': OrderedDict([('decomp_ros_msgs', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs')])}
+[0.000350] (decomp_ros_utils) JobStarted: {'identifier': 'decomp_ros_utils'}
+[0.010719] (decomp_ros_utils) JobProgress: {'identifier': 'decomp_ros_utils', 'progress': 'cmake'}
+[0.010997] (decomp_ros_utils) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils'], 'cwd': '/mpc/new/Elastic-Tracker/build/decomp_ros_utils', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0190f498-3df2-4697-9142-ccc6358c18e1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-7faca5c0-9f17-4613-b7b3-30fcc3d16ce4.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/decomp_ros_utils'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble')]), 'shell': False}
+[0.058494] (decomp_ros_utils) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099503] (-) TimerEvent: {}
+[0.103392] (decomp_ros_utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.110636] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.163986] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.171244] (decomp_ros_utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.171454] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.171887] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.174828] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199571] (-) TimerEvent: {}
+[0.244008] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.251894] (decomp_ros_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.252154] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.252617] (decomp_ros_utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.256482] (decomp_ros_utils) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299663] (-) TimerEvent: {}
+[0.399932] (-) TimerEvent: {}
+[0.442047] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500014] (-) TimerEvent: {}
+[0.549034] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600114] (-) TimerEvent: {}
+[0.601227] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.608480] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.619587] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.634003] (decomp_ros_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.652843] (decomp_ros_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700205] (-) TimerEvent: {}
+[0.707390] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.712052] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.737423] (decomp_ros_utils) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.749553] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800303] (-) TimerEvent: {}
+[0.810400] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.810581] (decomp_ros_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.875697] (decomp_ros_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.876545] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900398] (-) TimerEvent: {}
+[0.943196] (decomp_ros_utils) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[0.982280] (decomp_ros_utils) StdoutLine: {'line': b'-- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[1.000487] (-) TimerEvent: {}
+[1.002375] (decomp_ros_utils) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[1.014182] (decomp_ros_utils) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[1.015309] (decomp_ros_utils) StdoutLine: {'line': b'-- Found OGRE\n'}
+[1.015410] (decomp_ros_utils) StdoutLine: {'line': b'--   static     : OFF\n'}
+[1.015484] (decomp_ros_utils) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[1.015549] (decomp_ros_utils) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[1.015615] (decomp_ros_utils) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[1.015678] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[1.015740] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[1.015801] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[1.015862] (decomp_ros_utils) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[1.016001] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[1.016089] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[1.016154] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[1.016220] (decomp_ros_utils) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[1.035290] (decomp_ros_utils) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.038890] (decomp_ros_utils) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.100575] (-) TimerEvent: {}
+[1.106297] (decomp_ros_utils) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.106572] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.167755] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.167920] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.200667] (-) TimerEvent: {}
+[1.228461] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.228651] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.289461] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.289619] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.300758] (-) TimerEvent: {}
+[1.349113] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.349265] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.400878] (-) TimerEvent: {}
+[1.409548] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.409730] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.470723] (decomp_ros_utils) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.500968] (-) TimerEvent: {}
+[1.558595] (decomp_ros_utils) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.601103] (-) TimerEvent: {}
+[1.621725] (decomp_ros_utils) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.621865] (decomp_ros_utils) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.701235] (-) TimerEvent: {}
+[1.758700] (decomp_ros_utils) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[1.758945] (decomp_ros_utils) StderrLine: {'line': b'  By not providing "Findign_rviz_common.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.759015] (decomp_ros_utils) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.759074] (decomp_ros_utils) StderrLine: {'line': b'  "ign_rviz_common", but CMake did not find one.\n'}
+[1.759131] (decomp_ros_utils) StderrLine: {'line': b'\n'}
+[1.759194] (decomp_ros_utils) StderrLine: {'line': b'  Could not find a package configuration file provided by "ign_rviz_common"\n'}
+[1.759254] (decomp_ros_utils) StderrLine: {'line': b'  with any of the following names:\n'}
+[1.759316] (decomp_ros_utils) StderrLine: {'line': b'\n'}
+[1.759379] (decomp_ros_utils) StderrLine: {'line': b'    ign_rviz_commonConfig.cmake\n'}
+[1.759442] (decomp_ros_utils) StderrLine: {'line': b'    ign_rviz_common-config.cmake\n'}
+[1.759527] (decomp_ros_utils) StderrLine: {'line': b'\n'}
+[1.759581] (decomp_ros_utils) StderrLine: {'line': b'  Add the installation prefix of "ign_rviz_common" to CMAKE_PREFIX_PATH or\n'}
+[1.759655] (decomp_ros_utils) StderrLine: {'line': b'  set "ign_rviz_common_DIR" to a directory containing one of the above files.\n'}
+[1.759721] (decomp_ros_utils) StderrLine: {'line': b'  If "ign_rviz_common" provides a separate development package or SDK, be\n'}
+[1.759789] (decomp_ros_utils) StderrLine: {'line': b'  sure it has been installed.\n'}
+[1.759890] (decomp_ros_utils) StderrLine: {'line': b'\n'}
+[1.759963] (decomp_ros_utils) StderrLine: {'line': b'\x1b[0m\n'}
+[1.760036] (decomp_ros_utils) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.760113] (decomp_ros_utils) StdoutLine: {'line': b'See also "/mpc/new/Elastic-Tracker/build/decomp_ros_utils/CMakeFiles/CMakeOutput.log".\n'}
+[1.767904] (decomp_ros_utils) CommandEnded: {'returncode': 1}
+[1.785769] (decomp_ros_utils) JobEnded: {'identifier': 'decomp_ros_utils', 'rc': 1}
+[1.796334] (-) EventReactorShutdown: {}

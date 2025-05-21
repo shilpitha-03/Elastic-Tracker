@@ -1,0 +1,18 @@
+[0.012s] Invoking command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/detection/build/target_ekf -- -j12 -l12
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target target_ekf_sim_node[0m
+[0.123s] [ 75%] [32mBuilding CXX object CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o[0m
+[0.123s] [ 75%] Built target target_ekf_node
+[5.448s] [01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:[m[K In member function ‘[01m[Kvoid TargetEkfSimNode::update_state_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr, nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[5.448s] [01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:172:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+[5.448s]   172 |       Eigen::Vector3d in_body = cam_q.inverse() * ([01;31m[Kp[m[K - cam_p);
+[5.448s]       |                                                    [01;31m[K^[m[K
+[5.458s] [01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:182:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+[5.458s]   182 |       ekfPtr_->reset([01;31m[Kp[m[K, rpy);
+[5.458s]       |                      [01;31m[K^[m[K
+[5.467s] [01m[K/mpc/new/Elastic-Tracker/src/detection/target_ekf/src/target_ekf_sim_node.cpp:184:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+[5.467s]   184 |     } else if (ekfPtr_->update([01;31m[Kp[m[K, rpy)) {
+[5.468s]       |                                [01;31m[K^[m[K
+[14.110s] gmake[2]: *** [CMakeFiles/target_ekf_sim_node.dir/build.make:76: CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o] Error 1
+[14.111s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/target_ekf_sim_node.dir/all] Error 2
+[14.111s] gmake: *** [Makefile:146: all] Error 2
+[14.113s] Invoked command in '/mpc/new/Elastic-Tracker/src/detection/build/target_ekf' returned '2': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/src/detection/install/object_detection_msgs:/mpc/new/Elastic-Tracker/src/detection/install/target_ekf:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/src/detection/build/target_ekf -- -j12 -l12

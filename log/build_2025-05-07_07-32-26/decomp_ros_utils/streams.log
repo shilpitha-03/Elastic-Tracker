@@ -1,0 +1,112 @@
+[0.011s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[0.074s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.189s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.271s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.271s] -- Detecting CXX compile features
+[0.272s] -- Detecting CXX compile features - done
+[0.275s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.457s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.560s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.611s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.618s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.628s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.642s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.661s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.714s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.718s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.743s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.756s] -- Looking for pthread.h
+[0.817s] -- Looking for pthread.h - found
+[0.817s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.880s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.881s] -- Found Threads: TRUE  
+[0.947s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.985s] -- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)
+[1.004s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.016s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.017s] -- Found OGRE
+[1.017s] --   static     : OFF
+[1.017s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.018s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.018s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.018s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.018s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.018s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.018s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.018s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.018s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.019s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.019s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.039s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.043s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.109s] -- Found X11: /usr/include   
+[1.109s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.170s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.170s] -- Looking for gethostbyname
+[1.231s] -- Looking for gethostbyname - found
+[1.231s] -- Looking for connect
+[1.289s] -- Looking for connect - found
+[1.289s] -- Looking for remove
+[1.348s] -- Looking for remove - found
+[1.349s] -- Looking for shmat
+[1.405s] -- Looking for shmat - found
+[1.405s] -- Looking for IceConnectionNumber in ICE
+[1.465s] -- Looking for IceConnectionNumber in ICE - found
+[1.548s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.606s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.606s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.730s] -- Found decomp_ros_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake)
+[1.746s] -- Found decomp_basis: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/cmake)
+[1.747s] -- Found decomp_geometry: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake)
+[1.823s] -- Configuring done
+[1.839s] -- Generating done
+[1.843s] -- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_utils
+[1.853s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[1.854s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_utils -- -j12 -l12
+[1.896s] [ 57%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o[0m
+[1.896s] [ 57%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o[0m
+[1.897s] [ 57%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/vector_visual.cpp.o[0m
+[1.897s] [ 57%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_visual.cpp.o[0m
+[1.897s] [ 71%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/bound_visual.cpp.o[0m
+[1.898s] [ 85%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o[0m
+[2.131s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1[m[K:
+[2.132s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/mesh_shape.hpp: No such file or directory
+[2.132s]    10 | #include [01;31m[K<rviz_rendering/ogre_helpers/mesh_shape.hpp>[m[K
+[2.132s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.132s] compilation terminated.
+[2.133s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1
+[2.133s] gmake[2]: *** Waiting for unfinished jobs....
+[2.135s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/bound_visual.cpp:1[m[K:
+[2.135s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/bound_visual.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/billboard_line.hpp: No such file or directory
+[2.135s]     7 | #include [01;31m[K<rviz_rendering/ogre_helpers/billboard_line.hpp>[m[K
+[2.135s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.135s] compilation terminated.
+[2.137s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:76: CMakeFiles/decomp_rviz_plugins.dir/src/bound_visual.cpp.o] Error 1
+[2.148s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_visual.cpp:1[m[K:
+[2.148s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/ellipsoid_array_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/shape.hpp: No such file or directory
+[2.149s]    10 | #include [01;31m[K<rviz_rendering/ogre_helpers/shape.hpp>[m[K
+[2.149s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.149s] compilation terminated.
+[2.150s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:118: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_visual.cpp.o] Error 1
+[2.321s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:2[m[K:
+[2.321s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/mesh_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/mesh_shape.hpp: No such file or directory
+[2.321s]    10 | #include [01;31m[K<rviz_rendering/ogre_helpers/mesh_shape.hpp>[m[K
+[2.321s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.321s] compilation terminated.
+[2.324s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1
+[2.325s] In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:3[m[K:
+[2.325s] [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/include/decomp_rviz_plugins/ellipsoid_array_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/shape.hpp: No such file or directory
+[2.325s]    10 | #include [01;31m[K<rviz_rendering/ogre_helpers/shape.hpp>[m[K
+[2.325s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.325s] compilation terminated.
+[2.327s] gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1
+[4.272s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2
+[4.273s] gmake: *** [Makefile:146: all] Error 2
+[4.274s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '2': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_utils -- -j12 -l12

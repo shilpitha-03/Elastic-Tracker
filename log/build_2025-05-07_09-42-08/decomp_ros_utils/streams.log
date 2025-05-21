@@ -1,0 +1,84 @@
+[0.011s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.164s] -- Detecting C compiler ABI info - done
+[0.171s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.171s] -- Detecting C compile features
+[0.172s] -- Detecting C compile features - done
+[0.175s] -- Detecting CXX compiler ABI info
+[0.244s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.252s] -- Detecting CXX compile features
+[0.252s] -- Detecting CXX compile features - done
+[0.256s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.442s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.549s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.601s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.608s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.619s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.634s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.653s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.707s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.712s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.737s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.749s] -- Looking for pthread.h
+[0.810s] -- Looking for pthread.h - found
+[0.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.875s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.876s] -- Found Threads: TRUE  
+[0.943s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.982s] -- Found rviz_common: 11.2.14 (/opt/ros/humble/share/rviz_common/cmake)
+[1.002s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.014s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.015s] -- Found OGRE
+[1.015s] --   static     : OFF
+[1.015s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.015s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.015s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.015s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.015s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.015s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.016s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.016s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.016s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.016s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.016s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.035s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.039s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.106s] -- Found X11: /usr/include   
+[1.106s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.168s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.168s] -- Looking for gethostbyname
+[1.228s] -- Looking for gethostbyname - found
+[1.228s] -- Looking for connect
+[1.289s] -- Looking for connect - found
+[1.289s] -- Looking for remove
+[1.349s] -- Looking for remove - found
+[1.349s] -- Looking for shmat
+[1.409s] -- Looking for shmat - found
+[1.409s] -- Looking for IceConnectionNumber in ICE
+[1.470s] -- Looking for IceConnectionNumber in ICE - found
+[1.558s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.621s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.622s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.759s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[1.759s]   By not providing "Findign_rviz_common.cmake" in CMAKE_MODULE_PATH this
+[1.759s]   project has asked CMake to find a package configuration file provided by
+[1.759s]   "ign_rviz_common", but CMake did not find one.
+[1.759s] 
+[1.759s]   Could not find a package configuration file provided by "ign_rviz_common"
+[1.759s]   with any of the following names:
+[1.759s] 
+[1.759s]     ign_rviz_commonConfig.cmake
+[1.759s]     ign_rviz_common-config.cmake
+[1.759s] 
+[1.759s]   Add the installation prefix of "ign_rviz_common" to CMAKE_PREFIX_PATH or
+[1.759s]   set "ign_rviz_common_DIR" to a directory containing one of the above files.
+[1.759s]   If "ign_rviz_common" provides a separate development package or SDK, be
+[1.759s]   sure it has been installed.
+[1.760s] 
+[1.760s] [0m
+[1.760s] -- Configuring incomplete, errors occurred!
+[1.760s] See also "/mpc/new/Elastic-Tracker/build/decomp_ros_utils/CMakeFiles/CMakeOutput.log".
+[1.768s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_utils' returned '1': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/mpc/new/Elastic-Tracker/install/decomp_basis:/opt/ros/humble LD_LIBRARY_PATH=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib:/mpc/new/Elastic-Tracker/install/mapping/lib:/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_utils

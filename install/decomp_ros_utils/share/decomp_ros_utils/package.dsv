@@ -1,0 +1,5 @@
+source;share/decomp_ros_utils/local_setup.bash
+source;share/decomp_ros_utils/local_setup.dsv
+source;share/decomp_ros_utils/local_setup.ps1
+source;share/decomp_ros_utils/local_setup.sh
+source;share/decomp_ros_utils/local_setup.zsh

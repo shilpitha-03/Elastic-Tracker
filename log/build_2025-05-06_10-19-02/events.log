@@ -1,0 +1,347 @@
+[0.000000] (-) TimerEvent: {}
+[0.000105] (-) JobUnselected: {'identifier': 'object_detection_msgs'}
+[0.000138] (-) JobUnselected: {'identifier': 'quadrotor_msgs'}
+[0.000158] (-) JobUnselected: {'identifier': 'target_ekf'}
+[0.000179] (mapping) JobQueued: {'identifier': 'mapping', 'dependencies': OrderedDict([('object_detection_msgs', '/mpc/new/Elastic-Tracker/install/object_detection_msgs'), ('quadrotor_msgs', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs')])}
+[0.000317] (mapping) JobStarted: {'identifier': 'mapping'}
+[0.011219] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'cmake'}
+[0.011800] (mapping) Command: {'cmd': ['/usr/bin/cmake', '/mpc/new/Elastic-Tracker/src/mapping', '-DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/mapping'], 'cwd': '/mpc/new/Elastic-Tracker/build/mapping', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/mapping'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/opt/ros/humble')]), 'shell': False}
+[0.055252] (mapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099431] (-) TimerEvent: {}
+[0.100054] (mapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.108377] (mapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.160488] (mapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.168028] (mapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.168256] (mapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.168579] (mapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.171602] (mapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199519] (-) TimerEvent: {}
+[0.240173] (mapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.248485] (mapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.248771] (mapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.249270] (mapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.252878] (mapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299604] (-) TimerEvent: {}
+[0.399821] (-) TimerEvent: {}
+[0.419767] (mapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499918] (-) TimerEvent: {}
+[0.515896] (mapping) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.567169] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.573814] (mapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.583347] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.596364] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600020] (-) TimerEvent: {}
+[0.614826] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.667289] (mapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.670653] (mapping) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.693457] (mapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.700136] (-) TimerEvent: {}
+[0.704443] (mapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.766547] (mapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.766729] (mapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800232] (-) TimerEvent: {}
+[0.830050] (mapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.830954] (mapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.894614] (mapping) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.900331] (-) TimerEvent: {}
+[0.926508] (mapping) StdoutLine: {'line': b'-- Found quadrotor_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake)\n'}
+[0.985335] (mapping) StdoutLine: {'line': b'-- Found object_detection_msgs: 0.0.0 (/mpc/new/Elastic-Tracker/install/object_detection_msgs/share/object_detection_msgs/cmake)\n'}
+[1.000025] (mapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.000396] (-) TimerEvent: {}
+[1.081180] (mapping) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.100507] (-) TimerEvent: {}
+[1.125056] (mapping) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.133048] (mapping) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.152503] (mapping) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.152708] (mapping) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.180330] (mapping) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.200608] (-) TimerEvent: {}
+[1.219746] (mapping) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.228709] (mapping) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.249976] (mapping) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.251000] (mapping) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.251110] (mapping) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.286644] (mapping) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.286806] (mapping) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.286916] (mapping) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.286992] (mapping) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[1.300739] (-) TimerEvent: {}
+[1.320958] (mapping) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.328193] (mapping) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.400845] (-) TimerEvent: {}
+[1.466815] (mapping) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.467147] (mapping) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.469345] (mapping) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.477031] (mapping) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.493254] (mapping) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.500927] (-) TimerEvent: {}
+[1.506691] (mapping) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.572220] (mapping) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.572507] (mapping) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.601046] (-) TimerEvent: {}
+[1.632634] (mapping) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.632874] (mapping) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.692710] (mapping) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.692959] (mapping) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.701128] (-) TimerEvent: {}
+[1.750972] (mapping) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.751200] (mapping) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.801267] (-) TimerEvent: {}
+[1.808840] (mapping) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.809088] (mapping) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.872271] (mapping) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.872519] (mapping) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.901375] (-) TimerEvent: {}
+[1.938491] (mapping) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.001464] (-) TimerEvent: {}
+[2.010642] (mapping) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[2.012303] (mapping) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[2.014494] (mapping) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[2.016098] (mapping) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[2.030390] (mapping) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[2.034558] (mapping) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[2.039421] (mapping) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[2.045451] (mapping) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[2.078028] (mapping) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.078201] (mapping) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.078960] (mapping) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.079139] (mapping) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.079835] (mapping) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.079974] (mapping) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.080625] (mapping) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.081187] (mapping) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  \n'}
+[2.083695] (mapping) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.101581] (-) TimerEvent: {}
+[2.117688] (mapping) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[2.201713] (-) TimerEvent: {}
+[2.248017] (mapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.301823] (-) TimerEvent: {}
+[2.331192] (mapping) StdoutLine: {'line': b'-- Generating done\n'}
+[2.349518] (mapping) StdoutLine: {'line': b'-- Build files have been written to: /mpc/new/Elastic-Tracker/build/mapping\n'}
+[2.363087] (mapping) CommandEnded: {'returncode': 0}
+[2.365093] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'build'}
+[2.365126] (mapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mpc/new/Elastic-Tracker/build/mapping', '--', '-j12', '-l12'], 'cwd': '/mpc/new/Elastic-Tracker/build/mapping', 'env': OrderedDict([('HOSTNAME', 'drone-nuc'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib:/mpc/new/Elastic-Tracker/install/object_detection_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib:/new/px4-offboard_ws/src/acados/lib:/mpc/new/acados/lib'), ('ACADOS_SOURCE_DIR', '/mpc/new/acados'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/mpc'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d38b4d00-5b40-4683-9a58-bc9344a497ba.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a6218aec77.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0941c636-45d7-4090-9dc1-1a0b73f7e4c1.sock'), ('AMENT_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mpc/new/Elastic-Tracker/build/mapping'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/mpc/new/Elastic-Tracker/install/object_detection_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/opt/ros/humble')]), 'shell': False}
+[2.401918] (-) TimerEvent: {}
+[2.408808] (mapping) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/mapping_core.dir/src/mapping.cc.o\x1b[0m\n'}
+[2.502005] (-) TimerEvent: {}
+[2.602269] (-) TimerEvent: {}
+[2.702536] (-) TimerEvent: {}
+[2.802791] (-) TimerEvent: {}
+[2.903051] (-) TimerEvent: {}
+[3.003339] (-) TimerEvent: {}
+[3.103620] (-) TimerEvent: {}
+[3.203845] (-) TimerEvent: {}
+[3.304114] (-) TimerEvent: {}
+[3.404388] (-) TimerEvent: {}
+[3.504696] (-) TimerEvent: {}
+[3.604996] (-) TimerEvent: {}
+[3.705281] (-) TimerEvent: {}
+[3.805593] (-) TimerEvent: {}
+[3.905885] (-) TimerEvent: {}
+[4.006175] (-) TimerEvent: {}
+[4.106467] (-) TimerEvent: {}
+[4.206764] (-) TimerEvent: {}
+[4.307073] (-) TimerEvent: {}
+[4.407355] (-) TimerEvent: {}
+[4.507604] (-) TimerEvent: {}
+[4.607828] (-) TimerEvent: {}
+[4.708070] (-) TimerEvent: {}
+[4.808405] (-) TimerEvent: {}
+[4.908702] (-) TimerEvent: {}
+[5.009000] (-) TimerEvent: {}
+[5.109294] (-) TimerEvent: {}
+[5.209590] (-) TimerEvent: {}
+[5.309843] (-) TimerEvent: {}
+[5.410152] (-) TimerEvent: {}
+[5.510481] (-) TimerEvent: {}
+[5.610774] (-) TimerEvent: {}
+[5.711070] (-) TimerEvent: {}
+[5.811337] (-) TimerEvent: {}
+[5.911578] (-) TimerEvent: {}
+[6.011864] (-) TimerEvent: {}
+[6.112162] (-) TimerEvent: {}
+[6.212430] (-) TimerEvent: {}
+[6.312743] (-) TimerEvent: {}
+[6.413051] (-) TimerEvent: {}
+[6.513366] (-) TimerEvent: {}
+[6.613659] (-) TimerEvent: {}
+[6.713954] (-) TimerEvent: {}
+[6.814239] (-) TimerEvent: {}
+[6.914522] (-) TimerEvent: {}
+[7.014816] (-) TimerEvent: {}
+[7.115109] (-) TimerEvent: {}
+[7.215370] (-) TimerEvent: {}
+[7.315606] (-) TimerEvent: {}
+[7.415875] (-) TimerEvent: {}
+[7.516170] (-) TimerEvent: {}
+[7.616462] (-) TimerEvent: {}
+[7.716759] (-) TimerEvent: {}
+[7.817077] (-) TimerEvent: {}
+[7.917359] (-) TimerEvent: {}
+[8.017639] (-) TimerEvent: {}
+[8.117928] (-) TimerEvent: {}
+[8.218229] (-) TimerEvent: {}
+[8.269896] (mapping) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX static library libmapping_core.a\x1b[0m\n'}
+[8.294735] (mapping) StdoutLine: {'line': b'[ 25%] Built target mapping_core\n'}
+[8.311001] (mapping) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/visualize_history_path.dir/src/visualize_history_path.cpp.o\x1b[0m\n'}
+[8.311174] (mapping) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mapping_vis_node.dir/src/mapping_vis_node.cpp.o\x1b[0m\n'}
+[8.311262] (mapping) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mapping_nodelet.dir/src/mapping_nodelet.cpp.o\x1b[0m\n'}
+[8.318310] (-) TimerEvent: {}
+[8.418565] (-) TimerEvent: {}
+[8.518840] (-) TimerEvent: {}
+[8.619132] (-) TimerEvent: {}
+[8.629819] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/src/visualize_history_path.cpp:7:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kvisualization_msgs/msg/marker.hpp: No such file or directory\n'}
+[8.629998] (mapping) StderrLine: {'line': b'    7 | #include \x1b[01;31m\x1b[K<visualization_msgs/msg/marker.hpp>\x1b[m\x1b[K\n'}
+[8.630062] (mapping) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.630135] (mapping) StderrLine: {'line': b'compilation terminated.\n'}
+[8.633176] (mapping) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/visualize_history_path.dir/build.make:76: CMakeFiles/visualize_history_path.dir/src/visualize_history_path.cpp.o] Error 1\n'}
+[8.633389] (mapping) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/visualize_history_path.dir/all] Error 2\n'}
+[8.633449] (mapping) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[8.719312] (-) TimerEvent: {}
+[8.819607] (-) TimerEvent: {}
+[8.919859] (-) TimerEvent: {}
+[9.020151] (-) TimerEvent: {}
+[9.120438] (-) TimerEvent: {}
+[9.220731] (-) TimerEvent: {}
+[9.321017] (-) TimerEvent: {}
+[9.421247] (-) TimerEvent: {}
+[9.521537] (-) TimerEvent: {}
+[9.621845] (-) TimerEvent: {}
+[9.722155] (-) TimerEvent: {}
+[9.822463] (-) TimerEvent: {}
+[9.922769] (-) TimerEvent: {}
+[10.023068] (-) TimerEvent: {}
+[10.123338] (-) TimerEvent: {}
+[10.223595] (-) TimerEvent: {}
+[10.323848] (-) TimerEvent: {}
+[10.424123] (-) TimerEvent: {}
+[10.524441] (-) TimerEvent: {}
+[10.624742] (-) TimerEvent: {}
+[10.725048] (-) TimerEvent: {}
+[10.825362] (-) TimerEvent: {}
+[10.925697] (-) TimerEvent: {}
+[11.026010] (-) TimerEvent: {}
+[11.126317] (-) TimerEvent: {}
+[11.226631] (-) TimerEvent: {}
+[11.326956] (-) TimerEvent: {}
+[11.427314] (-) TimerEvent: {}
+[11.527582] (-) TimerEvent: {}
+[11.627910] (-) TimerEvent: {}
+[11.728200] (-) TimerEvent: {}
+[11.828506] (-) TimerEvent: {}
+[11.928800] (-) TimerEvent: {}
+[12.029087] (-) TimerEvent: {}
+[12.129392] (-) TimerEvent: {}
+[12.229687] (-) TimerEvent: {}
+[12.329960] (-) TimerEvent: {}
+[12.430251] (-) TimerEvent: {}
+[12.530560] (-) TimerEvent: {}
+[12.630870] (-) TimerEvent: {}
+[12.731179] (-) TimerEvent: {}
+[12.831500] (-) TimerEvent: {}
+[12.931849] (-) TimerEvent: {}
+[13.032175] (-) TimerEvent: {}
+[13.132500] (-) TimerEvent: {}
+[13.232823] (-) TimerEvent: {}
+[13.333137] (-) TimerEvent: {}
+[13.433457] (-) TimerEvent: {}
+[13.533779] (-) TimerEvent: {}
+[13.634083] (-) TimerEvent: {}
+[13.711913] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/src/mapping_nodelet.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mapping::MappingNodelet::depth_odom_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr, nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.712092] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/src/mapping_nodelet.cpp:180:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmapping::OccGridMap::setFree(Eigen::Vector3d&, Eigen::Vector3d&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.712163] (mapping) StderrLine: {'line': b'  180 |       \x1b[01;31m\x1b[Kgridmap_.setFree(ld,ru)\x1b[m\x1b[K;\n'}
+[13.712226] (mapping) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[13.712286] (mapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/src/mapping_nodelet.cpp:11\x1b[m\x1b[K:\n'}
+[13.712355] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/include/mapping/mapping.h:192:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid mapping::OccGridMap::setFree(const Vector3i&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.712416] (mapping) StderrLine: {'line': b'  192 |   inline void \x1b[01;36m\x1b[KsetFree\x1b[m\x1b[K(const Eigen::Vector3i& id) {\n'}
+[13.712475] (mapping) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[13.712532] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/include/mapping/mapping.h:192:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[13.712597] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/include/mapping/mapping.h:195:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid mapping::OccGridMap::setFree(const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.712660] (mapping) StderrLine: {'line': b'  195 |   inline void \x1b[01;36m\x1b[KsetFree\x1b[m\x1b[K(const Eigen::Vector3d& p) {\n'}
+[13.712718] (mapping) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[13.712775] (mapping) StderrLine: {'line': b'\x1b[01m\x1b[K/mpc/new/Elastic-Tracker/src/mapping/include/mapping/mapping.h:195:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[13.734222] (-) TimerEvent: {}
+[13.834526] (-) TimerEvent: {}
+[13.934829] (-) TimerEvent: {}
+[14.035125] (-) TimerEvent: {}
+[14.135421] (-) TimerEvent: {}
+[14.235666] (-) TimerEvent: {}
+[14.335899] (-) TimerEvent: {}
+[14.436156] (-) TimerEvent: {}
+[14.536456] (-) TimerEvent: {}
+[14.636755] (-) TimerEvent: {}
+[14.737056] (-) TimerEvent: {}
+[14.837354] (-) TimerEvent: {}
+[14.937640] (-) TimerEvent: {}
+[15.037917] (-) TimerEvent: {}
+[15.138212] (-) TimerEvent: {}
+[15.238503] (-) TimerEvent: {}
+[15.338769] (-) TimerEvent: {}
+[15.439044] (-) TimerEvent: {}
+[15.539336] (-) TimerEvent: {}
+[15.639621] (-) TimerEvent: {}
+[15.739921] (-) TimerEvent: {}
+[15.840233] (-) TimerEvent: {}
+[15.940546] (-) TimerEvent: {}
+[16.040854] (-) TimerEvent: {}
+[16.141165] (-) TimerEvent: {}
+[16.241472] (-) TimerEvent: {}
+[16.341777] (-) TimerEvent: {}
+[16.442080] (-) TimerEvent: {}
+[16.542386] (-) TimerEvent: {}
+[16.642713] (-) TimerEvent: {}
+[16.743033] (-) TimerEvent: {}
+[16.843308] (-) TimerEvent: {}
+[16.943621] (-) TimerEvent: {}
+[17.043927] (-) TimerEvent: {}
+[17.144232] (-) TimerEvent: {}
+[17.244529] (-) TimerEvent: {}
+[17.344847] (-) TimerEvent: {}
+[17.445124] (-) TimerEvent: {}
+[17.545420] (-) TimerEvent: {}
+[17.645712] (-) TimerEvent: {}
+[17.745970] (-) TimerEvent: {}
+[17.846256] (-) TimerEvent: {}
+[17.946558] (-) TimerEvent: {}
+[18.046854] (-) TimerEvent: {}
+[18.104445] (mapping) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mapping_nodelet.dir/build.make:76: CMakeFiles/mapping_nodelet.dir/src/mapping_nodelet.cpp.o] Error 1\n'}
+[18.104678] (mapping) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/mapping_nodelet.dir/all] Error 2\n'}
+[18.146967] (-) TimerEvent: {}
+[18.247244] (-) TimerEvent: {}
+[18.347553] (-) TimerEvent: {}
+[18.447831] (-) TimerEvent: {}
+[18.548119] (-) TimerEvent: {}
+[18.648382] (-) TimerEvent: {}
+[18.748659] (-) TimerEvent: {}
+[18.848937] (-) TimerEvent: {}
+[18.949210] (-) TimerEvent: {}
+[19.029691] (mapping) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable mapping_vis_node\x1b[0m\n'}
+[19.049335] (-) TimerEvent: {}
+[19.149622] (-) TimerEvent: {}
+[19.249978] (-) TimerEvent: {}
+[19.350261] (-) TimerEvent: {}
+[19.450544] (-) TimerEvent: {}
+[19.550899] (-) TimerEvent: {}
+[19.651145] (-) TimerEvent: {}
+[19.751434] (-) TimerEvent: {}
+[19.851674] (-) TimerEvent: {}
+[19.951920] (-) TimerEvent: {}
+[20.052207] (-) TimerEvent: {}
+[20.152516] (-) TimerEvent: {}
+[20.252836] (-) TimerEvent: {}
+[20.353126] (-) TimerEvent: {}
+[20.453416] (-) TimerEvent: {}
+[20.553775] (-) TimerEvent: {}
+[20.654057] (-) TimerEvent: {}
+[20.754332] (-) TimerEvent: {}
+[20.854617] (-) TimerEvent: {}
+[20.954898] (-) TimerEvent: {}
+[21.055182] (-) TimerEvent: {}
+[21.155433] (-) TimerEvent: {}
+[21.255715] (-) TimerEvent: {}
+[21.356002] (-) TimerEvent: {}
+[21.368643] (mapping) StdoutLine: {'line': b'[ 75%] Built target mapping_vis_node\n'}
+[21.369546] (mapping) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.371410] (mapping) CommandEnded: {'returncode': 2}
+[21.381294] (mapping) JobEnded: {'identifier': 'mapping', 'rc': 2}
+[21.391850] (-) EventReactorShutdown: {}

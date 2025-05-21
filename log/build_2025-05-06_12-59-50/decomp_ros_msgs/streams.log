@@ -1,0 +1,318 @@
+[0.008s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.095s] -- The CXX compiler identification is GNU 11.4.0
+[0.101s] -- Detecting C compiler ABI info
+[0.157s] -- Detecting C compiler ABI info - done
+[0.165s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.165s] -- Detecting C compile features
+[0.166s] -- Detecting C compile features - done
+[0.169s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.244s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.244s] -- Detecting CXX compile features
+[0.245s] -- Detecting CXX compile features - done
+[0.248s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.413s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.505s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.509s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.518s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.561s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.597s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.626s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.924s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.187s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.497s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.522s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.525s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.551s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.551s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.551s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.551s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.575s] -- Found PythonExtra: .so  
+[1.637s] -- Configuring done
+[1.672s] -- Generating done
+[1.684s] -- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_ros_msgs
+[1.689s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_msgs -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_ros_msgs
+[1.691s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
+[1.725s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.733s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.739s] [  3%] Built target ament_cmake_python_copy_decomp_ros_msgs
+[1.989s] running egg_info
+[1.989s] creating decomp_ros_msgs.egg-info
+[1.990s] writing decomp_ros_msgs.egg-info/PKG-INFO
+[1.990s] writing dependency_links to decomp_ros_msgs.egg-info/dependency_links.txt
+[1.990s] writing top-level names to decomp_ros_msgs.egg-info/top_level.txt
+[1.990s] writing manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'
+[1.992s] reading manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'
+[1.992s] writing manifest file 'decomp_ros_msgs.egg-info/SOURCES.txt'
+[2.013s] [  3%] Built target ament_cmake_python_build_decomp_ros_msgs_egg
+[2.111s] [  3%] Built target decomp_ros_msgs__cpp
+[2.121s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.121s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.121s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.132s] [ 14%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/ellipsoid__functions.c.o[0m
+[2.132s] [ 14%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/polyhedron__functions.c.o[0m
+[2.132s] [ 14%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.c.o[0m
+[2.135s] [ 16%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/decomp_ros_msgs/msg/detail/polyhedron_array__functions.c.o[0m
+[2.187s] [ 18%] [32m[1mLinking C shared library libdecomp_ros_msgs__rosidl_generator_c.so[0m
+[2.216s] [ 18%] Built target decomp_ros_msgs__rosidl_generator_c
+[2.225s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.225s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.225s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.409s] [ 25%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/polyhedron_array__type_support.cpp.o[0m
+[2.410s] [ 29%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/ellipsoid__type_support.cpp.o[0m
+[2.411s] [ 29%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/polyhedron__type_support.cpp.o[0m
+[2.411s] [ 30%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/decomp_ros_msgs/msg/ellipsoid_array__type_support.cpp.o[0m
+[2.473s] [ 32%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/ellipsoid__type_support.cpp.o[0m
+[2.475s] [ 34%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.cpp.o[0m
+[2.484s] [ 36%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.cpp.o[0m
+[2.484s] [ 38%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/decomp_ros_msgs/msg/detail/polyhedron__type_support.cpp.o[0m
+[2.497s] [ 40%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/ellipsoid__type_support.cpp.o[0m
+[2.584s] [ 41%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/ellipsoid__type_support.cpp.o[0m
+[2.628s] [ 43%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/ellipsoid_array__type_support.cpp.o[0m
+[2.676s] [ 45%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/polyhedron__type_support.cpp.o[0m
+[2.718s] [ 47%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/decomp_ros_msgs/msg/polyhedron_array__type_support.cpp.o[0m
+[2.734s] [ 49%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/ellipsoid__type_support.c.o[0m
+[2.762s] [ 50%] [32m[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_c.so[0m
+[2.766s] [ 52%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/ellipsoid__type_support_c.cpp.o[0m
+[2.784s] [ 56%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support_c.cpp.o[0m
+[2.785s] [ 56%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/ellipsoid_array__type_support.cpp.o[0m
+[2.786s] [ 58%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.c.o[0m
+[2.823s] [ 61%] [32m[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_cpp.so[0m
+[2.823s] [ 61%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/polyhedron__type_support.cpp.o[0m
+[2.826s] [ 61%] Built target decomp_ros_msgs__rosidl_typesupport_c
+[2.837s] [ 63%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/polyhedron__type_support_c.cpp.o[0m
+[2.842s] [ 65%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/polyhedron__type_support.c.o[0m
+[2.877s] [ 65%] Built target decomp_ros_msgs__rosidl_typesupport_cpp
+[2.888s] [ 67%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.c.o[0m
+[2.895s] [ 69%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/decomp_ros_msgs/msg/detail/polyhedron_array__type_support_c.cpp.o[0m
+[2.939s] [ 70%] [32m[1mLinking C shared library libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.990s] [ 70%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_c
+[3.001s] [ 72%] [32mBuilding CXX object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/decomp_ros_msgs/msg/detail/dds_fastrtps/polyhedron_array__type_support.cpp.o[0m
+[3.145s] [ 74%] [32m[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.259s] [ 74%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_cpp
+[3.327s] [ 76%] [32m[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.396s] [ 76%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_c
+[3.486s] [ 78%] [32m[1mLinking CXX shared library libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.551s] [ 78%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[3.566s] [ 78%] Built target decomp_ros_msgs
+[3.582s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.104s] [ 80%] Built target decomp_ros_msgs__py
+[4.119s] [ 87%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_polyhedron_s.c.o[0m
+[4.119s] [ 87%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_ellipsoid_array_s.c.o[0m
+[4.119s] [ 87%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_polyhedron_array_s.c.o[0m
+[4.119s] [ 87%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/decomp_ros_msgs/msg/_ellipsoid_s.c.o[0m
+[4.210s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/libdecomp_ros_msgs__rosidl_generator_py.so[0m
+[4.244s] [ 89%] Built target decomp_ros_msgs__rosidl_generator_py
+[4.259s] [ 94%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.259s] [ 94%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.259s] [ 94%] [32mBuilding C object CMakeFiles/decomp_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.350s] [100%] [32m[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.350s] [100%] [32m[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.350s] [100%] [32m[1mLinking C shared library rosidl_generator_py/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.381s] [100%] Built target decomp_ros_msgs__rosidl_typesupport_c__pyext
+[4.381s] [100%] Built target decomp_ros_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.381s] [100%] Built target decomp_ros_msgs__rosidl_typesupport_introspection_c__pyext
+[4.389s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
+[4.395s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs
+[4.402s] -- Install configuration: ""
+[4.402s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/decomp_ros_msgs
+[4.402s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid_array.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__functions.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__functions.c
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__functions.c
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__functions.h
+[4.403s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__struct.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__struct.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__struct.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.c
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__struct.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__functions.c
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__functions.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__functions.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron_array.h
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/library_path.sh
+[4.404s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/library_path.dsv
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_c.so
+[4.405s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_c.so" to ""
+[4.405s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.405s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.405s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_fastrtps_c.h
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_fastrtps_c.h
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_fastrtps_c.h
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_fastrtps_c.h
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.405s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[4.405s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.405s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.406s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.406s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.c
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.c
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.c
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_introspection_c.h
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_introspection_c.h
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_introspection_c.h
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.c
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_introspection_c.h
+[4.406s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so
+[4.406s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_c.so
+[4.407s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_c.so" to ""
+[4.407s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.407s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid_array.hpp
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron.hpp
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/polyhedron_array.hpp
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/ellipsoid.hpp
+[4.407s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__traits.hpp
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.hpp
+[4.407s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__traits.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__builder.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__struct.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__traits.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__struct.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__builder.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__struct.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__struct.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__builder.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__builder.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.hpp
+[4.408s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__traits.hpp
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.409s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.409s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.409s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_fastrtps_cpp.hpp
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_fastrtps_cpp.hpp
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_fastrtps_cpp.hpp
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/dds_fastrtps
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_fastrtps_cpp.hpp
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.409s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.409s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.409s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs
+[4.409s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg
+[4.410s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__rosidl_typesupport_introspection_cpp.hpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__rosidl_typesupport_introspection_cpp.hpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__rosidl_typesupport_introspection_cpp.hpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid__type_support.cpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron__type_support.cpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__rosidl_typesupport_introspection_cpp.hpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/ellipsoid_array__type_support.cpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/include/decomp_ros_msgs/decomp_ros_msgs/msg/detail/polyhedron_array__type_support.cpp
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[4.410s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.410s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_cpp.so
+[4.411s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/pythonpath.sh
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/pythonpath.dsv
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs
+[4.411s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_c.c
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/libdecomp_ros_msgs__rosidl_generator_py.so
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/__init__.py
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/_decomp_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array_s.c
+[4.412s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array_s.c
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array.py
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron.py
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_s.c
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/__init__.py
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array.py
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_s.c
+[4.413s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid.py
+[4.448s] Listing '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/__init__.py'...
+[4.448s] Listing '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/__init__.py'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid.py'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_ellipsoid_array.py'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron.py'...
+[4.448s] Compiling '/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/msg/_polyhedron_array.py'...
+[4.451s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.451s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.452s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.452s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.452s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.452s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/local/lib/python3.10/dist-packages/decomp_ros_msgs/decomp_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.452s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_py.so
+[4.453s] -- Set runtime path of "/mpc/new/Elastic-Tracker/install/decomp_ros_msgs/lib/libdecomp_ros_msgs__rosidl_generator_py.so" to ""
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.idl
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.idl
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.idl
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.idl
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.msg
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.msg
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.msg
+[4.453s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.msg
+[4.453s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg
+[4.453s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/PolyhedronArray.msg
+[4.453s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/EllipsoidArray.msg
+[4.453s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Polyhedron.msg
+[4.453s] -- Up-to-date: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/msg/Ellipsoid.msg
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/package_run_dependencies/decomp_ros_msgs
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/parent_prefix_path/decomp_ros_msgs
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/ament_prefix_path.sh
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/ament_prefix_path.dsv
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/path.sh
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/environment/path.dsv
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.bash
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.sh
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.zsh
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/local_setup.dsv
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.dsv
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/ament_index/resource_index/packages/decomp_ros_msgs
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cExport.cmake
+[4.454s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_cppExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.455s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cppExport.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_pyExport.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/export_decomp_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.456s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgsConfig.cmake
+[4.457s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/cmake/decomp_ros_msgsConfig-version.cmake
+[4.457s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_ros_msgs/share/decomp_ros_msgs/package.xml
+[4.458s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs

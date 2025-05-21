@@ -1,0 +1,35 @@
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_visual.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdecomp_rviz_plugins/ellipsoid_array_visual.hpp: No such file or directory
+    1 | #include [01;31m[K"decomp_rviz_plugins/ellipsoid_array_visual.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/vector_visual.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdecomp_rviz_plugins/vector_visual.hpp: No such file or directory
+    1 | #include [01;31m[K"decomp_rviz_plugins/vector_visual.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/polyhedron_array_display.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdecomp_rviz_plugins/polyhedron_array_display.hpp: No such file or directory
+    1 | #include [01;31m[K"decomp_rviz_plugins/polyhedron_array_display.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/mesh_visual.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdecomp_rviz_plugins/mesh_visual.hpp: No such file or directory
+    1 | #include [01;31m[K"decomp_rviz_plugins/mesh_visual.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:90: CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:104: CMakeFiles/decomp_rviz_plugins.dir/src/vector_visual.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:118: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_visual.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:146: CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o] Error 1
+In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/bound_visual.cpp:1[m[K:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/bound_visual.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/billboard_line.hpp: No such file or directory
+    7 | #include [01;31m[K<rviz_rendering/ogre_helpers/billboard_line.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:76: CMakeFiles/decomp_rviz_plugins.dir/src/bound_visual.cpp.o] Error 1
+In file included from [01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_display.cpp:2[m[K:
+[01m[K/mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_ros_utils/src/ellipsoid_array_visual.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/shape.hpp: No such file or directory
+   10 | #include [01;31m[K<rviz_rendering/ogre_helpers/shape.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/decomp_rviz_plugins.dir/build.make:132: CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/decomp_rviz_plugins.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

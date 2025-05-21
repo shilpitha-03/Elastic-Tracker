@@ -1,0 +1,47 @@
+[0.010s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_geometry
+[0.074s] -- The C compiler identification is GNU 11.4.0
+[0.120s] -- The CXX compiler identification is GNU 11.4.0
+[0.127s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.191s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.191s] -- Detecting C compile features
+[0.192s] -- Detecting C compile features - done
+[0.194s] -- Detecting CXX compiler ABI info
+[0.262s] -- Detecting CXX compiler ABI info - done
+[0.270s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.270s] -- Detecting CXX compile features
+[0.271s] -- Detecting CXX compile features - done
+[0.274s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.446s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.546s] -- Found decomp_basis: 0.0.0 (/mpc/new/Elastic-Tracker/install/decomp_basis/share/decomp_basis/cmake)
+[0.622s] -- Configuring done
+[0.624s] -- Generating done
+[0.625s] -- Build files have been written to: /mpc/new/Elastic-Tracker/build/decomp_geometry
+[0.629s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake /mpc/new/Elastic-Tracker/src/planning/DecompROS/decomp_geoemtry -DCMAKE_INSTALL_PREFIX=/mpc/new/Elastic-Tracker/install/decomp_geometry
+[0.631s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_geometry -- -j12 -l12
+[0.662s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_geometry -- -j12 -l12
+[0.671s] Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_geometry': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_geometry
+[0.679s] -- Install configuration: ""
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/include
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/include/decomp_geometry
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/include/decomp_geometry/polyhedron.h
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/include/decomp_geometry/ellipsoid.h
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/include/decomp_geometry/geometric_utils.h
+[0.679s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/ament_index/resource_index/package_run_dependencies/decomp_geometry
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/ament_index/resource_index/parent_prefix_path/decomp_geometry
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/environment/ament_prefix_path.sh
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/environment/ament_prefix_path.dsv
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/environment/path.sh
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/environment/path.dsv
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/local_setup.bash
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/local_setup.sh
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/local_setup.zsh
+[0.680s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/local_setup.dsv
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.dsv
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/ament_index/resource_index/packages/decomp_geometry
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake/decomp_geometryConfig.cmake
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/cmake/decomp_geometryConfig-version.cmake
+[0.681s] -- Installing: /mpc/new/Elastic-Tracker/install/decomp_geometry/share/decomp_geometry/package.xml
+[0.683s] Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_geometry' returned '0': CMAKE_PREFIX_PATH=/mpc/new/Elastic-Tracker/install/decomp_basis:/mpc/new/Elastic-Tracker/install/target_ekf:/mpc/new/Elastic-Tracker/install/mapping:/mpc/new/Elastic-Tracker/install/quadrotor_msgs:/mpc/new/Elastic-Tracker/install/object_detection_msgs:/mpc/new/Elastic-Tracker/install/decomp_ros_msgs:/mpc/new/Elastic-Tracker/install/decomp_geometry:/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_geometry

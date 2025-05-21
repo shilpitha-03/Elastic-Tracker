@@ -1,0 +1,434 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mpc/new/Elastic-Tracker/build/quadrotor_msgs
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_copy_quadrotor_msgs
+running egg_info
+creating quadrotor_msgs.egg-info
+writing quadrotor_msgs.egg-info/PKG-INFO
+writing dependency_links to quadrotor_msgs.egg-info/dependency_links.txt
+writing top-level names to quadrotor_msgs.egg-info/top_level.txt
+writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'
+reading manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'
+writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_quadrotor_msgs_egg
+[  3%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/position_command__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/occ_map3d__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/replan_state__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/poly_traj__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/aux_command__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/so3_command__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/takeoff_land__functions.c.o[0m
+[ 11%] Built target quadrotor_msgs__cpp
+[ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 16%] [32m[1mLinking C shared library libquadrotor_msgs__rosidl_generator_c.so[0m
+[ 16%] Built target quadrotor_msgs__rosidl_generator_c
+[ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/replan_state__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/poly_traj__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/position_command__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/so3_command__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/aux_command__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/occ_map3d__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/px4ctrl_debug__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/occ_map3d__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/poly_traj__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/replan_state__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/position_command__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/occ_map3d__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/so3_command__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/takeoff_land__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/aux_command__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/px4ctrl_debug__type_support.cpp.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/occ_map3d__type_support.c.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/occ_map3d__type_support.cpp.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/poly_traj__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/replan_state__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/position_command__type_support.c.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/poly_traj__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/poly_traj__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/replan_state__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/takeoff_land__type_support.cpp.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/so3_command__type_support.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/aux_command__type_support.c.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/takeoff_land__type_support.c.o[0m
+[ 54%] [32m[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_c.so[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/position_command__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/occ_map3d__type_support_c.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/replan_state__type_support.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/position_command__type_support.cpp.o[0m
+[ 59%] [32m[1mLinking C shared library libquadrotor_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 59%] Built target quadrotor_msgs__rosidl_typesupport_c
+[ 60%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/so3_command__type_support.cpp.o[0m
+[ 60%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c
+[ 62%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/aux_command__type_support.cpp.o[0m
+[ 63%] [32m[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_cpp.so[0m
+[ 63%] Built target quadrotor_msgs__rosidl_typesupport_cpp
+[ 64%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/takeoff_land__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/so3_command__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/poly_traj__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/replan_state__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/position_command__type_support_c.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/aux_command__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/px4ctrl_debug__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/takeoff_land__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/so3_command__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/aux_command__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support_c.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/takeoff_land__type_support_c.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 79%] Built target quadrotor_msgs__rosidl_typesupport_introspection_cpp
+[ 80%] [32m[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 80%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_cpp
+[ 81%] [32m[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 81%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c
+[ 81%] Built target quadrotor_msgs
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target quadrotor_msgs__py
+[ 85%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_position_command_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_replan_state_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_takeoff_land_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_occ_map3d_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_poly_traj_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_aux_command_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_so3_command_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_px4ctrl_debug_s.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/libquadrotor_msgs__rosidl_generator_py.so[0m
+[ 93%] Built target quadrotor_msgs__rosidl_generator_py
+[ 96%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target quadrotor_msgs__rosidl_typesupport_c__pyext
+[100%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/rosidl_interfaces/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/takeoff_land.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/px4ctrl_debug.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/occ_map3d.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/replan_state.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/aux_command.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/position_command.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__struct.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__functions.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__functions.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/so3_command.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/poly_traj.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.sh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/aux_command.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/position_command.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/px4ctrl_debug.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/occ_map3d.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/poly_traj.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/takeoff_land.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/replan_state.hpp
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__builder.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__struct.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__traits.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/so3_command.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/dds_fastrtps
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_introspection_c.h
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/occ_map3d__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/so3_command__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/px4ctrl_debug__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/takeoff_land__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/position_command__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/replan_state__type_support.cpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/poly_traj__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/aux_command__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.sh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/__init__.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/libquadrotor_msgs__rosidl_generator_py.so
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/__init__.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state.py
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug_s.c
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command_s.c
+Listing '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/__init__.py'...
+Listing '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/__init__.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_aux_command.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_occ_map3d.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_poly_traj.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_position_command.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_px4ctrl_debug.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_replan_state.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_so3_command.py'...
+Compiling '/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/msg/_takeoff_land.py'...
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/local/lib/python3.10/dist-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so
+-- Set runtime path of "/mpc/new/Elastic-Tracker/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so" to ""
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.idl
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/Px4ctrlDebug.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/TakeoffLand.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PositionCommand.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/ReplanState.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/AuxCommand.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/SO3Command.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/OccMap3d.msg
+-- Up-to-date: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/msg/PolyTraj.msg
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/package_run_dependencies/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/parent_prefix_path/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.sh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.sh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.bash
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.sh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.zsh
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/package.dsv
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/ament_index/resource_index/packages/quadrotor_msgs
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake
+-- Installing: /mpc/new/Elastic-Tracker/install/quadrotor_msgs/share/quadrotor_msgs/package.xml
