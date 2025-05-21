@@ -1,4 +1,0 @@
-Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
-Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mpc/new/Elastic-Tracker/build/decomp_ros_msgs -- -j12 -l12
-Invoking command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs
-Invoked command in '/mpc/new/Elastic-Tracker/build/decomp_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mpc/new/Elastic-Tracker/build/decomp_ros_msgs

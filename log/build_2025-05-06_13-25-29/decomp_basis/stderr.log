@@ -1,7 +1,0 @@
-[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:74 (message):
-  ament_package() called with unused arguments: DEPENDS;Eigen3
-Call Stack (most recent call first):
-  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:68 (_ament_package)
-  CMakeLists.txt:16 (ament_package)
-
-[0m

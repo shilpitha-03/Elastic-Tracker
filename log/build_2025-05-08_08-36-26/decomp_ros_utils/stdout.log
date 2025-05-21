@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target decomp_rviz_plugins[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/mesh_visual.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/ellipsoid_array_display.cpp.o[0m
-[ 37%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/polyhedron_array_display.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/decomp_rviz_plugins.dir/src/objects/mesh_shape.cpp.o[0m

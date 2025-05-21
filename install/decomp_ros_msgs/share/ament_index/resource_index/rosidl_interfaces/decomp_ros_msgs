@@ -1,8 +1,0 @@
-msg/Ellipsoid.idl
-msg/Ellipsoid.msg
-msg/EllipsoidArray.idl
-msg/EllipsoidArray.msg
-msg/Polyhedron.idl
-msg/Polyhedron.msg
-msg/PolyhedronArray.idl
-msg/PolyhedronArray.msg

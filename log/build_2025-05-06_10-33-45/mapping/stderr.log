@@ -1,8 +1,0 @@
-[0m** WARNING ** io features related to pcap will be disabled[0m
-[0m** WARNING ** io features related to png will be disabled[0m
-[31mCMake Error at cmake_install.cmake:125 (file):
-  file INSTALL cannot find
-  "/mpc/new/Elastic-Tracker/src/mapping/src/mapping/nodelet_plugin.xml": No
-  such file or directory.
-
-[0m

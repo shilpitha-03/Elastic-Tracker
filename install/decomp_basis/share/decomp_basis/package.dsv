@@ -1,8 +1,0 @@
-source;share/decomp_basis/hook/cmake_prefix_path.ps1
-source;share/decomp_basis/hook/cmake_prefix_path.dsv
-source;share/decomp_basis/hook/cmake_prefix_path.sh
-source;share/decomp_basis/local_setup.bash
-source;share/decomp_basis/local_setup.dsv
-source;share/decomp_basis/local_setup.ps1
-source;share/decomp_basis/local_setup.sh
-source;share/decomp_basis/local_setup.zsh
