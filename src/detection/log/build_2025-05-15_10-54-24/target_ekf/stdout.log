@@ -1,3 +1,0 @@
-[ 50%] Built target target_ekf_node
-[35m[1mConsolidate compiler generated dependencies of target target_ekf_sim_node[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/target_ekf_sim_node.dir/src/target_ekf_sim_node.cpp.o[0m
