@@ -4,5 +4,7 @@ devel
 build
 debug
 bags
+install
+log
 *.bag
 *.bag.active
