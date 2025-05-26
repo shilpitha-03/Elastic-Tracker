@@ -29,7 +29,6 @@ chmod +x sh_utils/pub_triger.sh
 > If rviz exits with an Ogre related error, its cause at startup it has no tf data so just publish some random tf data to start rviz:
 ```
 rosrun tf static_transform_publisher 0 0 0 0 0 0 map base_link 10
-```
 roslaunch mapping rviz_sim.launch
 ```
 
