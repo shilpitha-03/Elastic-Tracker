@@ -1,97 +1,114 @@
-PROJECT(local_sensing_node)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
-SET(CMAKE_BUILD_TYPE Release) # Release, RelWithDebInfo
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-# set(ENABLE_CUDA false)
-set(ENABLE_CUDA true)
+cmake_minimum_required(VERSION 3.0.2)
+project(local_sensing_node)
+
+## Compile flags
+set(CMAKE_BUILD_TYPE Release)         # Release, RelWithDebInfo, etc.
+add_compile_options(-std=c++14)
+
+## Option for CUDA
+option(ENABLE_CUDA "Enable CUDA support" ON)
 
 if(ENABLE_CUDA)
+  # Point CMake at your CUDA installation if not already set
+  if(NOT DEFINED CUDA_TOOLKIT_ROOT_DIR)
+    set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda)
+  endif()
+
   find_package(CUDA REQUIRED)
-  SET(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-O3 -use_fast_math)
-  set(CUDA_NVCC_FLAGS 
-#       -gencode arch=compute_20,code=sm_20;
-#       -gencode arch=compute_20,code=sm_21;
-#       -gencode arch=compute_30,code=sm_30;
-#       -gencode arch=compute_35,code=sm_35;
-#       -gencode arch=compute_50,code=sm_50;
-#       -gencode arch=compute_52,code=sm_52; 
-#       -gencode arch=compute_60,code=sm_60;
-       -gencode arch=compute_61,code=sm_61;
-        # -gencode arch=compute_70,code=sm_70;
-  ) 
-
-  SET(CUDA_PROPAGATE_HOST_FLAGS OFF)
-
-  find_package(OpenCV REQUIRED)
-  find_package(Eigen3 REQUIRED)
-  find_package(Boost REQUIRED COMPONENTS system filesystem)
-
-  find_package(catkin REQUIRED COMPONENTS
-      roscpp roslib cmake_modules cv_bridge image_transport pcl_ros sensor_msgs geometry_msgs nav_msgs dynamic_reconfigure)
-  generate_dynamic_reconfigure_options(
-    cfg/local_sensing_node.cfg
+  # NVCC flags
+  set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -O3 -use_fast_math")
+  list(APPEND CUDA_NVCC_FLAGS
+    "-gencode arch=compute_61,code=sm_61"
+    # add more -gencode lines here if you target additional architectures
   )
-  catkin_package(
-      DEPENDS OpenCV Eigen Boost
-      CATKIN_DEPENDS roscpp roslib image_transport pcl_ros
-  #INCLUDE_DIRS include
-      LIBRARIES depth_render_cuda
+  set(CUDA_PROPAGATE_HOST_FLAGS OFF)
+endif()
+
+## ROS and 3rd-party deps
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  roslib
+  cmake_modules
+  cv_bridge
+  image_transport
+  pcl_ros
+  sensor_msgs
+  geometry_msgs
+  nav_msgs
+  dynamic_reconfigure
+)
+
+find_package(OpenCV REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(Boost REQUIRED COMPONENTS system filesystem)
+
+## Dynamic reconfigure
+generate_dynamic_reconfigure_options(
+  cfg/local_sensing_node.cfg
+)
+
+## Catkin package export
+catkin_package(
+  DEPENDS OpenCV Eigen3 Boost
+  CATKIN_DEPENDS
+    roscpp
+    roslib
+    cv_bridge
+    image_transport
+    pcl_ros
+    sensor_msgs
+    geometry_msgs
+    nav_msgs
+    dynamic_reconfigure
+  LIBRARIES depth_render_cuda
+)
+
+## Include paths
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIR}
+  ${Boost_INCLUDE_DIRS}
+)
+
+if(ENABLE_CUDA)
+  ###############
+  # CUDA branch #
+  ###############
+
+  ## Build CUDA helper library
+  cuda_add_library(depth_render_cuda
+    src/depth_render.cu
+    OPTIONS ${CUDA_NVCC_FLAGS}
   )
 
-  include_directories(
-    SYSTEM 
-    #include 
-    ${catkin_INCLUDE_DIRS}
-    ${OpenCV_INCLUDE_DIRS}
-    ${Eigen_INCLUDE_DIRS}
-    ${Boost_INCLUDE_DIRS}
-  )
-
-  CUDA_ADD_LIBRARY( depth_render_cuda
-      src/depth_render.cu
-  )
-
-  add_executable(
-    pcl_render_node
+  ## Main node
+  add_executable(pcl_render_node
     src/pcl_render_node.cpp
   )
-  target_link_libraries( pcl_render_node
+  target_link_libraries(pcl_render_node
     depth_render_cuda
     ${OpenCV_LIBS}
     ${Boost_LIBRARIES}
     ${catkin_LIBRARIES}
   )
-
   add_dependencies(pcl_render_node
-  ${catkin_EXPORTED_TARGETS}
-  )
-else(ENABLE_CUDA)
-  find_package(Eigen3 REQUIRED)
-  find_package(catkin REQUIRED COMPONENTS
-      roscpp roslib cmake_modules pcl_ros sensor_msgs geometry_msgs nav_msgs)
-  
-  catkin_package(
-      DEPENDS Eigen
-      CATKIN_DEPENDS roscpp roslib pcl_ros
+    ${catkin_EXPORTED_TARGETS}
   )
 
-  include_directories(
-    SYSTEM 
-    ${catkin_INCLUDE_DIRS}
-    ${Eigen_INCLUDE_DIRS}
-  )
+else()
+  ####################
+  # CPU-only fallback #
+  ####################
 
-  add_executable(
-    pcl_render_node
+  add_executable(pcl_render_node
     src/pointcloud_render_node.cpp
   )
-
-  target_link_libraries( pcl_render_node
+  target_link_libraries(pcl_render_node
     ${catkin_LIBRARIES}
     ${PCL_LIBRARIES}
   )
-  
   add_dependencies(pcl_render_node
-  ${catkin_EXPORTED_TARGETS}
+    ${catkin_EXPORTED_TARGETS}
   )
-endif(ENABLE_CUDA)
+endif()
