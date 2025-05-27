@@ -133,6 +133,7 @@ class Nodelet : public nodelet::Nodelet {
         double x = (j - camConfig_.cx) * z / camConfig_.fx;
         Eigen::Vector3d p(x, y, z);
         p = cam_q * p + cam_p;
+        // Depth drift filtering - Temporal consistency check: Transforms current point p back to previous camera frame.Compares depth of this pixel with previous frame’s depth. If difference (drift_dis) is too large, it's a noisy or inconsistent point → discard it. Keep the point only if it passed all filters.
         bool good_point = true;
         if (get_first_frame_) {
           // NOTE depth filter:
@@ -152,6 +153,7 @@ class Nodelet : public nodelet::Nodelet {
         }
       }
     }
+    // Stores current frame info to be used in the next callback for filtering.
     last_depth_ = depth_img;
     last_cam_p_ = cam_p;
     last_cam_q_ = cam_q;
@@ -252,6 +254,7 @@ class Nodelet : public nodelet::Nodelet {
     Eigen::Vector3d map_size;
     // NOTE whether to use global map
     nh.getParam("use_global_map", use_global_map_);
+    // if global map is used get the mockampa.yaml file parameters or get camera intrinsics parameters and other to compute that depth image projection need for live mapping in void depth_odom_callback().
     if (use_global_map_) {
       double x, y, z, res;
       nh.getParam("x_length", x);
