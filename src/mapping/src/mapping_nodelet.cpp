@@ -18,6 +18,7 @@
 
 namespace mapping {
 
+// message_filters is a ROS utility to sync ROS messages from multiple sensor streams (arrive at different rates or not exactly at the same timestamp) and call a common callback once they are available together.
 typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, nav_msgs::Odometry>
     ImageOdomSyncPolicy;
 typedef message_filters::Synchronizer<ImageOdomSyncPolicy>
@@ -76,6 +77,9 @@ class Nodelet : public nodelet::Nodelet {
   OccGridMap gridmap_;
   int inflate_size_;
 
+
+
+  // Fuse the depth image and pose of the drone to generate 3D points and update a voxel map (like an occupancy grid) for obstacle avoidance or path planning.
   void depth_odom_callback(const sensor_msgs::ImageConstPtr& depth_msg,
                            const nav_msgs::OdometryConstPtr& odom_msg) {
     if (callback_lock_.test_and_set()) {
@@ -83,14 +87,19 @@ class Nodelet : public nodelet::Nodelet {
     }
     ros::Time t1, t2;
     // t1 = ros::Time::now();
+    // convert odometry to camera pose in the world frame. 
     Eigen::Vector3d body_p(odom_msg->pose.pose.position.x,
                            odom_msg->pose.pose.position.y,
                            odom_msg->pose.pose.position.z);
     Eigen::Quaterniond body_q(
         odom_msg->pose.pose.orientation.w, odom_msg->pose.pose.orientation.x,
         odom_msg->pose.pose.orientation.y, odom_msg->pose.pose.orientation.z);
+
+    // cam_p: Transforms the camera position from the drone’s body frame into world frame.
+    // cam_q: Converts camera orientation into world frame using body orientation and known camera-body rotation.
     Eigen::Vector3d cam_p = body_q.toRotationMatrix() * cam2body_p_ + body_p;
     Eigen::Quaterniond cam_q = body_q * Eigen::Quaterniond(cam2body_R_);
+    //converts depth image to opencv format, use pointcloud for faster computation, but depth image  to apply smart filtering, need pixel-level control, or are resource-limited. Ideal for real hardware (monocular depth estimation) or accurate mapping.
     cv_bridge::CvImagePtr depth_ptr = cv_bridge::toCvCopy(depth_msg);
     if (depth_msg->encoding == sensor_msgs::image_encodings::TYPE_32FC1) {
       (depth_ptr->image).convertTo(depth_ptr->image, CV_16UC1, camConfig_.depth_scaling_factor);
@@ -105,7 +114,8 @@ class Nodelet : public nodelet::Nodelet {
     // put the points of the depth into the list of obs_points
 
     // TODO depth filter
-
+    // Loops over pixels in the depth image, skipping pixels by down_sample_factor esentially downsampling the depth image and avoid edge noise by skipping a depth_filter_margin_ border. 
+    // Reads z values from depth image assigns invalid values correctly and converts the (i,j) pixel to a (x,y,z) 3D coordinate in the camera frame using pinhole and then transforms to world frame using camera pose.
     // t1 = ros::Time::now();
     for (int i = depth_filter_margin_; i < nr - depth_filter_margin_; i += down_sample_factor_) {
       for (int j = depth_filter_margin_; j < nc - depth_filter_margin_; j += down_sample_factor_) {
