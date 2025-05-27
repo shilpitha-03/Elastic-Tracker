@@ -224,6 +224,7 @@ class Nodelet : public nodelet::Nodelet {
       gridmap_.setOcc(p);
     }
     gridmap_.inflate(inflate_size_);
+    // Appears once when /global_map is first received and voxel map is populated
     ROS_WARN("[mapping] GLOBAL MAP REVIEVED!");
     map_recieved_ = true;
     return;
